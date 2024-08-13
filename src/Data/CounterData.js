@@ -24,7 +24,7 @@ const counter = [
     id: 4,
     name: "History",
     icon: "fa fa-school",
-    counterNo: 19,
+    counterNo: 13,
   },
 ];
 export default counter;
