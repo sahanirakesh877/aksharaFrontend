@@ -137,7 +137,7 @@ a {
 
 /* parent voice design section start  */
 .demo {
-  background: linear-gradient(to top, #acddf2, #ffffff);
+  background: linear-gradient(to bottom, #f0feff 0%, #c8f1ff 60%, #acddf2 100%);
 }
 .testimonial {
   background: #fff;

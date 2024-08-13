@@ -414,14 +414,14 @@ const Footer = () => {
                       </div>
 
                       <div className="col-md-6 col-sm-12 text-md-end text-center mt-sm-3 mt-md-0 bg-white rounded-5">
-                        <div className="d-flex flex-column align-items-md-start align-items-center ">
+                        <div className="d-flex flex-column align-items-md-start align-items-center  text-center">
                           <img
                             src="/sisremove.png"
                             alt="sister organization..."
                             className="img-fluid mb-2"
                             style={{ maxWidth: "250px" }}
                           />
-                          <span className="text-light">
+                          <span className="text-dark text-center">
                             Jawlakhel, Lalitpur, Nepal
                             <br />
                             01-5426371

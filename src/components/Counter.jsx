@@ -6,7 +6,7 @@ import "../css/Counter.css";
 const Counter = () => {
   return (
     <>
-      <div className="demo py-5 ">
+      <div className=" py-5 ">
         <div className="container  count py-5 mx-auto">
           <div className="text-center mb-2">
             <h2 className="text-center border-bottom-title w-100 head-color">

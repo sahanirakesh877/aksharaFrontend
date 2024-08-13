@@ -8,7 +8,6 @@ import Testimonial from "../components/Testimonial";
 import Banner from "../components/Banner";
 import Contact from "./Contact";
 import Counter from "../components/Counter";
-// import SisterOrg from "../components/SisterOrg";
 import About from "./About";
 import CreativeWeek from "../components/CreativeWeek";
 import HomeBlog from "../components/HomeBlog";
@@ -27,17 +26,17 @@ const Home = () => {
       <Banner />
       <Mission />
       <Learning />
-      <About />
-      <Counter />
-      <Brand />
-      <Blog />
       <Infochek />
+      <About />
+      <Blog />
+      <Counter />
       <Testimonial />
       <HomeBlog />
       <CreativeWeek />
-      {/* <Pic /> */}
+      <Pic />
       <Contact />
-      {/* <SisterOrg /> */}
+      <Brand />
+    
     </>
   );
 };
