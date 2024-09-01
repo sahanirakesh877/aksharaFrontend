@@ -1,13 +1,13 @@
 .image-stack {
-  height: 45vh;
+  height: 55vh;
 }
 
 .image-container {
   position: absolute;
   top: 0;
   left: 0;
-  width: 270px;
-  height: 220px;
+  width: 250px;
+  height: 200px;
   transition:
     transform 0.6s,
     z-index 0.6s;
@@ -28,15 +28,7 @@
 .image-container:nth-child(2) {
   transform: translateX(20px) translateY(25px);
 }
-.image-container:nth-child(3) {
-  transform: translateX(40px) translateY(45px);
-}
-.image-container:nth-child(4) {
-  transform: translateX(60px) translateY(65px);
-}
-.image-container:nth-child(5) {
-  transform: translateX(80px) translateY(85px);
-}
+
 
 .image-container.hovered {
   /* transform: translateY(-10px);  */

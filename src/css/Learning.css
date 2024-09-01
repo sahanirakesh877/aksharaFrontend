@@ -1,7 +1,5 @@
 .learning {
-  background: linear-gradient(30deg, #005C86, #47f6d6);
- 
-
+  background: linear-gradient(30deg, #005c86, #47f6d6);
 
   cursor: none;
 }
@@ -79,7 +77,8 @@
   padding: 8px 15px;
   font-size: 16px;
   border-radius: 50%;
-  box-shadow: rgba(240, 15, 15, 0.16) 1px 1px 3px,
+  box-shadow:
+    rgba(240, 15, 15, 0.16) 1px 1px 3px,
     rgba(246, 9, 9, 0.23) 0px 3px 3px;
 
   cursor: pointer;
@@ -257,7 +256,7 @@
 
 .contimg {
   width: 100%;
-  height: 265px;
+  height: 255px;
 }
 .contimg img {
   width: 100%;
@@ -268,38 +267,35 @@
 
 .number {
   position: absolute;
-  top: -20%;
-  right: 2%;
-  box-shadow: inset 5px 5px 10px #b5f8fb, inset -5px -5px 10px #dd93ff;
-  padding: 14px 30px;
+  top: -2%;
+  right: -2%;
+  box-shadow:
+    inset 5px 5px 10px #b5f8fb,
+    inset -5px -5px 10px #dd93ff;
+  padding: 10px 20px;
   border-radius: 50%;
 }
 .number1 {
   position: absolute;
-  top: -20%;
+  top: -10%;
   left: 2%;
-  box-shadow: inset 5px 5px 10px #b5f8fb, inset -5px -5px 10px #dd93ff;
-  padding: 14px 30px;
+  box-shadow:
+    inset 5px 5px 10px #b5f8fb,
+    inset -5px -5px 10px #dd93ff;
+    padding: 10px 20px;
   border-radius: 50%;
 }
-/* .bg-lrp{
-  background-color: #b1fcff82 !important;
-} */
-/* .bg-lrp1{
-  background-color: #b4fafa62 !important;
-} */
-/* .bg-lrp2{
-  background-color: #cbfafc7d !important;
-} */
+
 .bg-lrp3 {
   background-color: #defeff89 !important;
 }
-.sanskar{
+.sanskar {
   color: rgb(191, 6, 37);
 }
 .lrpaContainer > div {
   background-color: white;
-  box-shadow: 10px 0 50px -35px black,
+  box-shadow:
+    10px 0 50px -35px black,
     /* Right shadow */ -10px 0 50px -35px black,
     /* Left shadow */ 0 -10px 50px -35px black; /* Top shadow */
   border-radius: 50px 50px 0 0;
@@ -311,5 +307,5 @@
 }
 
 .lrpaContainer > div:hover img {
-  scale: 110%;
+  scale: 104%;
 }

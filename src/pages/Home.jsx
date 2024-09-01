@@ -13,7 +13,7 @@ import CreativeWeek from "../components/CreativeWeek";
 import HomeBlog from "../components/HomeBlog";
 import Mission from "./../components/Mission";
 import Infochek from "../components/Infochek";
-import Pic from "../components/Pic";
+import Pic from "../components/HomePic";
 
 const Home = () => {
   const pathname = useLocation();

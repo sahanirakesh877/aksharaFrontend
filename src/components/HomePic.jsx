@@ -3,7 +3,7 @@ import "../css/pic.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchThreeDPhoto } from "../redux/ThreeDimage/ThreeDslice";
 
-const Pic = () => {
+const HomePic = () => {
 
 
   const dispatch = useDispatch();
@@ -77,4 +77,4 @@ const Pic = () => {
   );
 };
 
-export default Pic;
+export default HomePic;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-
 import Download from "yet-another-react-lightbox/plugins/download";
 import Counter from "yet-another-react-lightbox/plugins/counter";
 import Share from "yet-another-react-lightbox/plugins/share";

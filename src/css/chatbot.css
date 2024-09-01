@@ -1,45 +1,52 @@
 
+.chatbot-container{
+  z-index: 1009;
+}
+/* Floating button positioned on the right */
+.rsc-float-button {
+  right: 30px !important; /* Positioning on the right */
+  left: unset !important; /* Unset left to avoid conflict */
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+}
+
+/* Chat container alignment */
+.rsc-container {
+  right: 10px !important; /* Align container with button */
+  left: unset !important;
   
-  /* Floating button positioned on the left */
+}
+
+
+
+
+
+
+/* Media query for smaller screens (tablets and phones) */
+@media (max-width: 768px) {
   .rsc-float-button {
-    left: 30px !important;
-    right: unset !important;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
+    right: 20px !important; 
+    width: 40px; /* Adjust size */
+    height: 40px; /* Adjust size */
+    bottom: 15px; /* Adjust distance from the bottom */
   }
-  
-  /* Chat container alignment */
+
   .rsc-container {
-    left: 10px !important;
-    right: unset !important;
+    right: 15px !important; /* Align container with button */
   }
-  
-  /* Media query for smaller screens (tablets and phones) */
-  @media (max-width: 768px) {
-    .rsc-float-button {
-      left: 20px !important; /* Adjust positioning on smaller screens */
-      width: 40px; /* Adjust size */
-      height: 40px; /* Adjust size */
-      bottom: 15px; /* Adjust distance from the bottom */
-    }
-  
-    .rsc-container {
-      left: 15px !important; /* Align container with button */
-    }
+}
+
+/* Media query for very small screens (small phones) */
+@media (max-width: 480px) {
+  .rsc-float-button {
+    right: 5px !important; 
+    width: 30px; 
+    height: 30px; 
+    bottom: 10px; 
   }
-  
-  /* Media query for very small screens (small phones) */
-  @media (max-width: 480px) {
-    .rsc-float-button {
-      left: 5px !important;
-      width: 30px; 
-      height: 30px; 
-      bottom: 10px; 
-    }
-  
-    .rsc-container {
-      left: 10px !important; 
-    }
+
+  .rsc-container {
+    right: 10px !important; /* Align container with button */
   }
-  
+}

@@ -4,9 +4,9 @@ import React from "react";
 const TopBar = () => {
   return (
     <>
-      <div className="container-fluid d-none d-lg-block ">
-        <div className="row d-flex  justify-content-center border align-items-center py-2 px-xl-5">
-          <div className="col-md-3">
+      <div className="container mx-auto d-none d-lg-block ">
+        <div className="row d-flex  justify-content-between  align-items-center py-2 ">
+          <div className="col-md-3 ">
             <a href="#" className="text-decoration-none ">
               <img
                 src="./akasharalogo.png"
@@ -16,7 +16,7 @@ const TopBar = () => {
               />
             </a>
           </div>
-          <div className=" col-md-9">
+          <div className=" col-md-9 ">
             <div className="row d-flex align-items-center justify-content-between">
             {/* office location */}
                 <div className="d-flex flex-column align-items-start   mb-lg-0 col-lg-4 ">
@@ -70,9 +70,9 @@ const TopBar = () => {
                   <a href="#" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-instagram   instagram "></i>
                   </a>
-                  <a href="#" className="text-decoration-none head-icons">
+                  {/* <a href="#" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-whatsapp  whatsapp "></i>
-                  </a>
+                  </a> */}
                   <a href="#" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-youtube   youtube"></i>
                   </a>

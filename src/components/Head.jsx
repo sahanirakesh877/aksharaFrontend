@@ -154,15 +154,11 @@
 //                     </ul>
 //                   </li>
 
-              
-
 //                   <li className="nav-item py-2  ">
 //                     <Link className="nav-link" to="/news">
 //                       News & Activities
 //                     </Link>
 //                   </li>
-
-            
 
 //                   <li className="nav-item  py-2  ">
 //                     <Link className="nav-link" to="/contact">
@@ -220,12 +216,12 @@
 //                       >
 //                         Get Started
 //                       </button>
-            
+
 //                       <EnquiryModel />
 //                     </li>
 //                 </ul>
 //               </div>
-// {/* 
+// {/*
 //            <div>
 //            <button
 //                 className="head-btn  rounded-pill animated-button "
@@ -274,9 +270,9 @@ const Head = () => {
 
   return (
     <>
-      <header className=" ">
+      <header className="  ">
         <div className="container mx-auto ">
-          <div className="row d-flex align-items-center  ">
+          <div className="row d-flex align-items-center   ">
             <nav className="navbar navbar-expand-lg navbar-light ">
               <Link
                 className="navbar-brand d-md-block d-sm-block d-lg-none"
@@ -305,9 +301,12 @@ const Head = () => {
 
               {/* <div className="collapse navbar-collapse " id="navbarNav"> */}
               <div
-            className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
-            id="navbarNav">
-                <ul className="navbar-nav mx-auto   ">
+                className={`collapse navbar-collapse ${
+                  isNavOpen ? "show" : ""
+                }`}
+                id="navbarNav"
+              >
+                <ul className="navbar-nav ms-auto   ">
                   <li className="nav-item active   py-2 ">
                     <Link className="nav-link " to="/" onClick={closeNav}>
                       Home
@@ -460,21 +459,13 @@ const Head = () => {
                   </li>
 
                   <li className="nav-item py-2  ">
-                    <Link
-                      className="nav-link"
-                      to="/news"
-                      onClick={closeNav}
-                    >
+                    <Link className="nav-link" to="/news" onClick={closeNav}>
                       News & Activities
                     </Link>
                   </li>
 
                   <li className="nav-item  py-2  ">
-                    <Link
-                      className="nav-link"
-                      to="/contact"
-                      onClick={closeNav}
-                    >
+                    <Link className="nav-link" to="/contact" onClick={closeNav}>
                       Contact
                     </Link>
                   </li>
@@ -497,7 +488,7 @@ const Head = () => {
                       <li>
                         <Link
                           className="dropdown-item"
-                          to="/photos"
+                          to="/gallery"
                           onClick={closeNav}
                         >
                           <i className="fa-solid fa-photo-video me-1"></i>
@@ -538,7 +529,7 @@ const Head = () => {
 
                   <li className="  py-2  ms-md-5">
                     <button
-                      className="head-btn  rounded-pill animated-button "
+                      className="head-btn  rounded-pill animated-button blinking-button"
                       data-bs-toggle="modal"
                       role="button"
                       data-bs-target="#EnquiryModel"

@@ -74,7 +74,7 @@ const App = () => {
         <Route path="/about/lrpa" element={<LRPA />} />
         <Route path="/news" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/photos" element={<Photos />} />
+        <Route path="/gallery" element={<Photos />} />
         <Route path="/photo" element={<Gallery />} />
       </Routes>
       <SideIcon />

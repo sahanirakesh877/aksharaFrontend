@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       {show ? (
-        <div className="mission-color  py-5">
+        <div className="mission-color  ">
           <div className="container">
             <div className="row ">
               <div className="col-12 text-center">
@@ -76,7 +76,7 @@ const About = () => {
               </h2>
             </div>
             <div className="mb-5">
-              <p className="">
+              <p className="mission-p">
                 Established in 2011, Aksharaa School is a co-educational
                 institution offering day school from Kindergarten through 10.
                 The school operates in three earthquake-resistant academic and
@@ -85,7 +85,7 @@ const About = () => {
                 facilities designed to provide a safe, technologically advanced
                 learning environment that meets international standards.
               </p>
-              <p className="">
+              <p className="mission-p">
                 Ranked among internationally accredited schools, Aksharaa is
                 renowned for employing innovative teaching methodologies in
                 technology-enhanced classrooms. Our child-friendly facilities
@@ -102,19 +102,20 @@ const About = () => {
                 Why Choose Aksharaa School?
               </h5>
               <ul className="list-unstyled">
-                <li className="mb-3">
+                <li className="mb-3 d-flex   ">
                   <i className="fas fa-check-square me-2 text-danger" />
-                  <strong>Modern Infrastructure : </strong>Earthquake-resistant
-                  buildings and modern facilities ensure a safe and advanced
-                  learning environment.
+                  <strong>Modern Infrastructure : </strong>
+                  Earthquake-resistant buildings and modern facilities ensure a
+                  safe and advanced learning environment.
                 </li>
-                <li className="mb-3">
+                <li className="mb-3 ">
                   <i className="fas fa-check-square me-2 text-danger" />
                   <strong>Technologically Advanced Classrooms : </strong>
                   Integration of Information Communication Technology (ICT) and
-                  Learning-Reinforcement-Practice-Application (LRPA) to enhance learning.
+                  Learning-Reinforcement-Practice-Application (LRPA) to enhance
+                  learning.
                 </li>
-                <li className="mb-3">
+                <li className="mb-3 ">
                   <i className="fas fa-check-square me-2 text-danger" />
                   <strong>Holistic Development : </strong>Focus on physical,
                   mental, and intellectual growth through our innovative
@@ -135,7 +136,7 @@ const About = () => {
             </div>
 
             <div className="mt-5">
-              <p className="mission-p lead font-italic">
+              <p className="mission-p ">
                 Through the implementation of a
                 Learning-Reinforcement-Practice-Application (LRPA) approach that
                 incorporates creative teaching techniques, ongoing
