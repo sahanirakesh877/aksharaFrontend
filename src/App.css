@@ -188,10 +188,14 @@ a {
   border-radius: 50%;
   margin-right: 15px;
   overflow: hidden;
+  border: 1px solid red;
 }
 .testimonial .pic img {
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+ 
+  
 }
 .testimonial .content {
   display: inline-block;
