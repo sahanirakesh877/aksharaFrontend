@@ -515,15 +515,7 @@ const Head = () => {
                           Online
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to="/career"
-                          onClick={closeNav}
-                        >
-                          <i className="fa-solid fa-briefcase me-1"></i>Career
-                        </Link>
-                      </li>
+                    
                     </ul>
                   </li>
 

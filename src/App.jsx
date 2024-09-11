@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import TopBar from "./components/TopBar";
@@ -28,28 +28,40 @@ import ChatApp from './components/ChatApp';
 import Infrastructure from "./pages/Infrastructure";
 import LatestBlogDetails from "./pages/LatestBlogDetails";
 import CategoryBlogs from "./pages/categoryBlogs";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchNotices } from "./redux/Notice/NoticeSlice";
+
 
 const App = () => {
+
+
+  const dispatch = useDispatch();
+  const { notices} = useSelector((state) => state.notices);
+  console.log("notice image ", notices);
+  useEffect(() => {
+    dispatch(fetchNotices());
+  }, [dispatch]);
+
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [popupVisible, setPopupVisible] = useState(true);
-  const popimg = [
-    "https://aksharaaschool.edu.np/storage/news-events/March2024/xRqFMcDy8P7lYMTjGLjkS.jpg.pagespeed.ic.eYuKu8OBu4.webp",
-    "https://img.freepik.com/free-vector/flat-design-back-school-sales-concept_23-2148612151.jpg?t=st=1720522381~exp=1720525981~hmac=0b926379529b99d0a0f8b16688a8eb23dd8e5edf8df360bb2a1eaf7decc669af&w=826",
-  ];
+
   const handleClose = () => {
-    if (currentImageIndex < popimg.length - 1) {
+    if (currentImageIndex < notices.length - 1) {
       setCurrentImageIndex(currentImageIndex + 1);
     } else {
       setPopupVisible(false);
     }
   };
 
+  console.log(notices, " popups")
+
   return (
     <>
-      {popupVisible && (
+      {popupVisible && notices && notices.length && (
         <div id="popoupContainer">
           <div className="imageContainer">
-            <img src={popimg[currentImageIndex]} alt="" className="popupimg img-fluid" />
+            <img src={`http://localhost:5000/${notices[currentImageIndex].images.replace(/\\/g,"/")}`} alt="" className="popupimg img-fluid" />
             <button className="pop_btn rounded-circle" onClick={handleClose}>
               X
             </button>

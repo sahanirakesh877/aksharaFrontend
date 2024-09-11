@@ -39,9 +39,7 @@ const Learning = () => {
           <div className="row  d-flex align-items-center justify-content-between fuche-sec">
             <div className={`col-md-4 pe-4  ${activeSection ? "d-none" : ""}`}>
               <h5>Aksharaa‘s Guiding Principle</h5>
-              <h2 className="fw-semibold sanskar  ">
-                संस्कारयुक्त शिक्षा
-              </h2>
+              <h2 className="fw-semibold sanskar  ">संस्कारयुक्त शिक्षा</h2>
               <p className="lrpa-text ">
                 Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा"
                 which translates education infused with values. We consider the
@@ -77,7 +75,9 @@ const Learning = () => {
                   Our Senior School program combines rigorous academics with
                   value-based education, ensuring students are well-prepared for
                   higher education and life’s challenges. Counseling and support
-                  services are available to guide students through their.Display of handmade crafts and DIY projects created by our students. Local & natural materials are used for creating these crafts.
+                  services are available to guide students through their.Display
+                  of handmade crafts and DIY projects created by our students.
+                  Local & natural materials are used for creating these crafts.
                 </p>
                 <button
                   className="button-21"
@@ -188,8 +188,6 @@ const Learning = () => {
               </div>
             </div>
 
-
-
             <div className="col-md-2 rotatediv">
               <div
                 className="row d-flex justify-content-between align-items-center position-relative learnimg"
@@ -207,7 +205,6 @@ const Learning = () => {
                 </div>
               </div>
             </div>
-
 
             <div className="col-md-2 rotatediv">
               <div
@@ -227,7 +224,6 @@ const Learning = () => {
               </div>
             </div>
 
-
             <div className="col-md-2 rotatediv">
               <div
                 className="row d-flex justify-content-between align-items-center position-relative learnimg"
@@ -245,7 +241,6 @@ const Learning = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
 

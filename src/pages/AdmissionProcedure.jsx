@@ -1,24 +1,5 @@
 import React from "react";
 import Enquiryform from "./../components/Enquiryform";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-const brandImg = [
-  "https://img.freepik.com/premium-vector/best-creative-school-admission-social-media-post-banner-design-template-yellow-green-color_609667-302.jpg?w=740",
-  "https://img.freepik.com/premium-vector/school-admission-post-template-design_1086880-32.jpg?w=740",
-  "https://img.freepik.com/free-psd/school-admission-social-media-post-instagram-post-template_237398-429.jpg?t=st=1720163238~exp=1720166838~hmac=20989205d917dc2f2bcdda23b33c9c40c93a25291290ebd514148458fa754518&w=740",
-  "https://img.freepik.com/premium-vector/back-school-social-media-post-web-banner-template_649495-15.jpg?w=740",
- 
-];
-const responsive = {
-  0: { items: 1 },
-  568: { items: 1},
-  1024: { items: 1 },
-};
-const items = brandImg.map((img, index) => (
-  <div className="academic-items " key={index}>
-    <img src={img} alt={`Brand ${index + 1}`} className="" />
-  </div>
-));
 
 const AdmissionProcedure = () => {
   return (
@@ -39,7 +20,7 @@ const AdmissionProcedure = () => {
       <div className="bg-light my-md-0">
         <div className="container py-4">
           <div className="row">
-            <div className="col-md-6 ">
+            <div className="col-md-4 ">
               <h3 className="kinder-head mb-md-1">Admission Process :</h3>
               <p className="kinder-text">
                 The Admission Process is as follows:
@@ -85,24 +66,8 @@ const AdmissionProcedure = () => {
               </ul>
             </div>
 
-            <div className="col-md-6 ">
-            <h3 className="kinder-head mb-md-1">Admission Related Notices :</h3>
-            <AliceCarousel
-                mouseTracking
-                items={items}
-                autoPlay={true}
-                infinite={true}
-                responsive={responsive}
-                controlsStrategy="alternate"
-                animationDuration={3000}
-                disableButtonsControls={true}
-                disableDotsControls={true}
-                
-              />
-
-            </div>
-            <div className="col-12">
-              <h3 className="kinder-head my-md-4">
+            <div className="col-md-8 ">
+              <h3 className="kinder-head">
                 {" "}
                 For Admission Enquiry{" "}
                 <span className="text-danger">

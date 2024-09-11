@@ -23,20 +23,19 @@ const Home = () => {
   return (
     <>
       <Helmet titleTemplate="Akashara" />
-      <Banner />
+      {/* <Banner />
       <Mission />
       <Learning />
       <Infochek />
       <About />
-      <Blog /> 
+      <Blog />
       <Counter />
       <Testimonial />
-      <HomeBlog />
+      <HomeBlog /> */}
       <CreativeWeek />
-      <Pic />
+      {/* <Pic />
       <Contact />
-      <Brand />
-    
+      <Brand /> */}
     </>
   );
 };
