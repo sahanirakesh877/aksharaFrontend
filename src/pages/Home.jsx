@@ -28,7 +28,7 @@ const Home = () => {
       <Learning />
       <Infochek />
       <About />
-      <Blog />
+      <Blog /> 
       <Counter />
       <Testimonial />
       <HomeBlog />

@@ -459,7 +459,7 @@ const Head = () => {
                   </li>
 
                   <li className="nav-item py-2  ">
-                    <Link className="nav-link" to="/news" onClick={closeNav}>
+                    <Link className="nav-link" to="/newsactivity" onClick={closeNav}>
                       News & Activities
                     </Link>
                   </li>

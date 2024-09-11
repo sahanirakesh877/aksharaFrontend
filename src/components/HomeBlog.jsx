@@ -76,19 +76,22 @@ import React, { useState, useEffect } from "react";
 import "../css/Honmeblog.css";
 import axios from "axios";
 import SafeHtml from "./../../../Dashboard/src/components/safeHtml";
+import { useNavigate } from "react-router-dom";
 
 const HomeBlog = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const navigate = useNavigate();
+
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:5000/api/v1/blog/");
         if (response.data.success) {
-          console.log('home blogs ',response.data.blogs)
-          const blogsToShow =  response.data.blogs.slice(-4);
+          console.log("home blogs ", response.data.blogs);
+          const blogsToShow = response.data.blogs.slice(-4);
           setData(blogsToShow.reverse());
         } else {
           setError(response.data.message || "Failed to fetch data.");
@@ -127,20 +130,23 @@ const HomeBlog = () => {
                 <div className="card h-100">
                   <div className="card-header p-0">
                     <img
-                      src={
-                        `http://localhost:5000/${item.image.replace(/\\/g, "/")}`
-                      }
+                      src={`http://localhost:5000/${item.image.replace(
+                        /\\/g,
+                        "/"
+                      )}`}
                       alt={item.title}
-                      className="img-fluid w-100"
+                      className="img-fluid w-100  "
                     />
                   </div>
                   <div className="card-body position-relative">
-                    <span className={`tag ${item.tagClass}`}>{item.tag}</span>
                     <h6>{item.title}</h6>
                     <p>
-                      <SafeHtml htmlString={item.description} />
+                      <SafeHtml htmlString={item.description.slice(0, 180)} />
                     </p>
-                    <button className="btn px-3 text-white rounded-pill blog-btn shadow-sm position-absolute end-0 bottom-0 mb-1 mx-3">
+                    <button
+                      className="btn px-3 text-white rounded-pill blog-btn shadow-sm position-absolute end-0 bottom-0 mb-3 mx-3"
+                      onClick={() => navigate(`/blog/${item._id}`)}
+                    >
                       Read More
                     </button>
                   </div>

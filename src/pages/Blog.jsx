@@ -377,7 +377,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import axios from "axios";
@@ -387,6 +387,8 @@ const Blog = () => {
   const { pathname } = useLocation();
   const [filter, setFilter] = useState("Featured News");
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState()
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -560,7 +562,7 @@ const Blog = () => {
   });
 
   const items = data.map((item, index) => (
-    <div className="item" key={index}>
+    <div className="item" key={index} onClick={() => navigate(`/newsactivity/${item._id}`)}>
       <article className="blog-card">
         <div className="blog-card__background">
           <div className="card__background--wrapper">
@@ -599,10 +601,10 @@ const Blog = () => {
         <div className="blog-card__info">
           <h6>{item.title}</h6>
           <p className="card-text  "><SafeHtml htmlString={item.description.slice(0,120)}/></p>
-          <a href="#" className="btn btn--with-icon">
+          <Link to={`/newsactivity/${index}`} className="btn btn--with-icon">
             <i className="btn-icon fa fa-long-arrow-right" />
             READ MORE
-          </a>
+          </Link>
         </div>
       </article>
     </div>

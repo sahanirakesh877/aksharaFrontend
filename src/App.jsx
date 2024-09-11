@@ -26,6 +26,8 @@ import LRPA from "./pages/LRPA";
 // import Qrcode from "./components/Qrcode";
 import ChatApp from './components/ChatApp';
 import Infrastructure from "./pages/Infrastructure";
+import LatestBlogDetails from "./pages/LatestBlogDetails";
+import CategoryBlogs from "./pages/categoryBlogs";
 
 const App = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -72,10 +74,14 @@ const App = () => {
         <Route path="/about/principal" element={<Principalmsg />} />
         <Route path="/about/team" element={<Team />} />
         <Route path="/about/lrpa" element={<LRPA />} />
-        <Route path="/news" element={<Blog />} />
+        <Route path="/newsactivity" element={<Blog />} />
+        <Route path="/newsactivity/:id" element={<LatestBlogDetails news={true}/>} />
+        <Route path="/newsactivitycategory/:categoryId" element={<CategoryBlogs news={true}/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Photos />} />
-        <Route path="/photo" element={<Gallery />} />
+        <Route path="/gallery/:id" element={<Gallery />} />
+        <Route path="/blog/:id" element={<LatestBlogDetails />} />
+        <Route path="/category/:categoryId" element={<CategoryBlogs />} />
       </Routes>
       <SideIcon />
       <ChatApp />
