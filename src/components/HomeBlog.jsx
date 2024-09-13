@@ -113,7 +113,7 @@ const HomeBlog = () => {
         <h2 className="border-bottom-title justify-content-center my-3 head-color d-flex align-items-start">
           <span className="addcolor">Latest&nbsp;</span>Blog
         </h2>
-        <p className="text-center px-md-5">
+        <p className="textjustify px-md-5">
         Welcome to Aksharaa School's most recent blog session, where we offer news, updates, and motivational tales from our active community. Keep checking back as we examine the newest developments in education, highlight the accomplishments of our students, and provide insightful advice for both parents and teachers.
         </p>
 

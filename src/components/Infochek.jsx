@@ -9,7 +9,7 @@ const Infochek = () => {
             <h2 className="text-center border-bottom-title w-100 head-color">
               <span className="addcolor">Our Core</span> Values
             </h2>
-            <p className="px-md-5 ">
+            <p className="px-md-5 textjustify">
             Aksharaa School provides a balanced education that emphasizes both strong values and academic achievement.Through collaboration with parents and stakeholders, we focus on building resilience, leadership skills, and emotional intelligence in every student, ensuring their holistic growth and development. We cultivate critical thinking and a positive attitude, guiding students to embrace new perspectives and take responsible action.             </p>
           </div>
         <figure className="d-flex justify-content-center align-content-center  ">

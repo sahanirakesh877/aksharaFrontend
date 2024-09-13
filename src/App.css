@@ -486,3 +486,8 @@ a {
 .aboutbg{
   background-color: #f6fbff;
 }
+
+
+.textjustify{
+  text-align: justify;
+}

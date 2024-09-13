@@ -15,6 +15,7 @@ import Mission from "./../components/Mission";
 import Infochek from "../components/Infochek";
 import Pic from "../components/HomePicRotate";
 import Mobilecheck from "../components/Mobilecheck";
+import Loader from "../components/Loader";
 
 const Home = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -34,7 +35,8 @@ const Home = () => {
   return (
     <>
       <Helmet titleTemplate="Akashara" />
-      <Banner />
+      <Loader/>
+      {/* <Banner />
       <Mission />
       {isMobile ? <Mobilecheck /> : <Learning />}
       <Infochek />
@@ -46,7 +48,7 @@ const Home = () => {
       <CreativeWeek />
       <Pic />
       <Contact />
-      <Brand />
+      <Brand /> */}
     </>
   );
 };

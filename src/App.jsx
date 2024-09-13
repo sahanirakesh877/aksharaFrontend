@@ -24,7 +24,7 @@ import Principalmsg from "./components/Principalmsg";
 import LRPA from "./pages/LRPA";
 // import ChatBoat from "./components/ChatBoat";
 // import Qrcode from "./components/Qrcode";
-import ChatApp from './components/ChatApp';
+import ChatApp from "./components/ChatApp";
 import Infrastructure from "./pages/Infrastructure";
 import LatestBlogDetails from "./pages/LatestBlogDetails";
 import CategoryBlogs from "./pages/categoryBlogs";
@@ -32,17 +32,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchNotices } from "./redux/Notice/NoticeSlice";
 import Download from "./pages/Download";
 
-
 const App = () => {
-
-
   const dispatch = useDispatch();
-  const { notices} = useSelector((state) => state.notices);
+  const { notices } = useSelector((state) => state.notices);
   console.log("notice image ", notices);
   useEffect(() => {
     dispatch(fetchNotices());
   }, [dispatch]);
-
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [popupVisible, setPopupVisible] = useState(true);
@@ -55,14 +51,20 @@ const App = () => {
     }
   };
 
-  console.log(notices, " popups")
+  console.log(notices, " popups");
 
   return (
     <>
       {popupVisible && notices && notices.length && (
         <div id="popoupContainer">
           <div className="imageContainer">
-            <img src={`http://localhost:5000/${notices[currentImageIndex].images.replace(/\\/g,"/")}`} alt="" className="popupimg img-fluid" />
+            <img
+              src={`http://localhost:5000/${notices[
+                currentImageIndex
+              ].images.replace(/\\/g, "/")}`}
+              alt=""
+              className="popupimg img-fluid"
+            />
             <button className="pop_btn rounded-circle" onClick={handleClose}>
               X
             </button>
@@ -88,8 +90,14 @@ const App = () => {
         <Route path="/about/team" element={<Team />} />
         <Route path="/about/lrpa" element={<LRPA />} />
         <Route path="/newsactivity" element={<Blog />} />
-        <Route path="/newsactivity/:id" element={<LatestBlogDetails news={true}/>} />
-        <Route path="/newsactivitycategory/:categoryId" element={<CategoryBlogs news={true}/>} />
+        <Route
+          path="/newsactivity/:id"
+          element={<LatestBlogDetails news={true} />}
+        />
+        <Route
+          path="/newsactivitycategory/:categoryId"
+          element={<CategoryBlogs news={true} />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Photos />} />
         <Route path="/gallery/:id" element={<Gallery />} />
@@ -99,7 +107,7 @@ const App = () => {
       </Routes>
       <SideIcon />
       <ChatApp />
-     {/* <ChatBoat/> */}
+      {/* <ChatBoat/> */}
       {/* <Qrcode/> */}
       <Footer />
     </>
