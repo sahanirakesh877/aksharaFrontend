@@ -30,6 +30,7 @@ import LatestBlogDetails from "./pages/LatestBlogDetails";
 import CategoryBlogs from "./pages/categoryBlogs";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchNotices } from "./redux/Notice/NoticeSlice";
+import Download from "./pages/Download";
 
 
 const App = () => {
@@ -94,6 +95,7 @@ const App = () => {
         <Route path="/gallery/:id" element={<Gallery />} />
         <Route path="/blog/:id" element={<LatestBlogDetails />} />
         <Route path="/category/:categoryId" element={<CategoryBlogs />} />
+        <Route path="/downloads" element={<Download />} />
       </Routes>
       <SideIcon />
       <ChatApp />

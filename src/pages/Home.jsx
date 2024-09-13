@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import Learning from "../components/Learning";
@@ -14,28 +14,42 @@ import HomeBlog from "../components/HomeBlog";
 import Mission from "./../components/Mission";
 import Infochek from "../components/Infochek";
 import Pic from "../components/HomePicRotate";
+import Mobilecheck from "../components/Mobilecheck";
+import Download from "./Download";
 
 const Home = () => {
+  const [isMobile, setIsMobile] = useState(false);
   const pathname = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <>
       <Helmet titleTemplate="Akashara" />
       {/* <Banner />
-      <Mission />
-      <Learning />
-      <Infochek />
+      <Mission /> */}
+      {/* <Infochek />
       <About />
       <Blog />
       <Counter />
       <Testimonial />
-      <HomeBlog /> */}
+      <HomeBlog />
       <CreativeWeek />
-      {/* <Pic />
+      <Pic />
       <Contact />
       <Brand /> */}
+
+      <Download />
+      {isMobile ? <Mobilecheck /> : <Learning />}
     </>
   );
 };
