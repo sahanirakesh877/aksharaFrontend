@@ -114,9 +114,7 @@ const HomeBlog = () => {
           <span className="addcolor">Latest&nbsp;</span>Blog
         </h2>
         <p className="text-center px-md-5">
-          Stay updated with the latest news, events, and announcements from our
-          school. Our blog provides insights and highlights to keep you informed
-          and engaged.
+        Welcome to Aksharaa School's most recent blog session, where we offer news, updates, and motivational tales from our active community. Keep checking back as we examine the newest developments in education, highlight the accomplishments of our students, and provide insightful advice for both parents and teachers.
         </p>
 
         <div className="row py-5">

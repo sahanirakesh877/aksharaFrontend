@@ -13,7 +13,7 @@ a {
 :root {
   --green1: #035073;
   --green2: #005c86;
-  --red: #d50540;
+  --red: #bc0539;
   --green4: rgb(137, 202, 137);
  
 }
@@ -480,4 +480,9 @@ a {
   font-weight: bolder;
   display: flex;
   align-items: center;
+}
+
+
+.aboutbg{
+  background-color: #f6fbff;
 }

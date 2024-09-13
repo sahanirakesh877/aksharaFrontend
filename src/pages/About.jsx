@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate=useNavigate()
   const [show, setShow] = useState();
   const location = window.location.pathname;
   useEffect(() => {
@@ -13,7 +15,7 @@ const About = () => {
   return (
     <>
       {show ? (
-        <div className="mission-color  ">
+        <div className="mission-color aboutbg py-4">
           <div className="container">
             <div className="row ">
               <div className="col-12 text-center">
@@ -22,7 +24,7 @@ const About = () => {
                 </h2>
               </div>
             </div>
-            <div className="row d-flex align-items-start py-5">
+            <div className="row d-flex align-items-start mt-4">
               <div className="col-lg-6 col-md-12 mb-4">
                 <p className="mission-p">
                   Aksharaa School adopts a student-centered, constructivist
@@ -45,7 +47,7 @@ const About = () => {
                   aiming to nurture well-rounded, globally competent citizens.
                 </p>
                 <div className="ms-3 ">
-                  <button className="button-21" role="button">
+                  <button className="button-21" role="button"  onClick={()=>navigate('/about')}>
                     Know More<i className="fa-solid fa-arrow-right ms-2"></i>
                   </button>
                 </div>

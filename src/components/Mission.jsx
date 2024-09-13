@@ -13,14 +13,15 @@ const missionData = [
     iconClass: "fas fa-eye",
     title: "OUR VISION",
     description:
-      "Nurturing young learners to become lifelong learners globally competent and responsible citizens.",
+      // "Nurturing young learners to become lifelong learners globally competent and responsible citizens.",
+      'We envision Aksharaa School as a premier education center in Kathmandu that equips pupils to prosper in a world that is changing quickly. By embracing innovative teaching methods and cultivating a culture of curiosity and compassion, we aim to shape future leaders who are not only knowledgeable but also empathetic and driven by a lifelong passion for learning.',
     iconColorClass: "about-icon2",
   },
   {
     iconClass: "fas fa-heart",
     title: "OUR VALUES",
     description:
-      "We are committed to excellence, integrity, and inclusivity, fostering innovation and critical thinking. Through collaboration and community, we promote lifelong learning and personal growth. ",
+      "We are committed to fostering excellence, integrity, and inclusivity. We encourage innovation and critical thinking, empowering students to confidently face future challenges. Through collaboration with the community, we promote lifelong learning and personal growth, helping students develop into responsible and well-rounded individuals.",
     iconColorClass: "about-icon3",
   },
 ];

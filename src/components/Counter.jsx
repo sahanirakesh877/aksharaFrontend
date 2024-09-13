@@ -12,10 +12,8 @@ const Counter = () => {
             <h2 className="text-center border-bottom-title w-100 head-color">
               <span className="addcolor">Our</span> Achievement
             </h2>
-            <p className="px-md-5 text-center px-4">
-              We are proud of our milestones and the progress we've made over
-              the years. Here are some key figures that showcase our success and
-              growth.
+            <p className="px-md-5 text-center px-4 ">
+            Our exceptional journey at Aksharaa School is evidenced by a number of noteworthy accomplishments that stand in testament to our steadfast dedication to providing a holistic education. Our students routinely achieve academic success, placing first on numerous competitive tests and honorably representing the school in forums across the country and the world. Our continued success reflects our commitment to academic and personal growth, establishing us among the top schools in Kathmandu. Beyond the classroom, they have excelled in athletics, the arts, and cultural pursuits, winning multiple honors and recognitions.These accomplishments are witness to the commitment of our teachers and the dynamic classroom we provide, where each student is inspired to reach their greatest potential.
             </p>
           </div>
           <div className="row py-5">

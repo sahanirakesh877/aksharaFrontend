@@ -41,17 +41,7 @@ const Learning = () => {
               <h5>Aksharaa‘s Guiding Principle</h5>
               <h2 className="fw-semibold sanskar  ">संस्कारयुक्त शिक्षा</h2>
               <p className="lrpa-text ">
-                Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा"
-                which translates education infused with values. We consider the
-                entire development of a child's character and values to be an
-                integral part of meaningful education, which goes beyond
-                academic achievement. In addition to fostering academic
-                development, our curriculum aims at cultivating values like
-                respect, integrity, compassion, and responsibility. Through the
-                incorporation of these principles into our regular teaching
-                procedures, we aspire to develop full-fledged individuals who
-                are not just knowledgeable but also morally and socially
-                conscious.
+              Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा" which translates education infused with values. We are more of a school with the basic aim not of setting ourselves to the task of providing knowledge from a text book and preparing students for tests, but for producing individuals who are of good character, individuals of moral integrity who will be able to practice those  elements when they find themselves in the outside world. Our Learning-Reinforcement-Practice-Application (LRPA) module enhances cognitive abilities with fun and curiosity, encouraging critical thinking, collaboration, creativity, and problem-solving. We consider the entire development of a child's character and values to be an integral part of meaningful education, which goes beyond academic achievement.  In addition to fostering academic development, our curriculum aims at cultivating values like respect, integrity, compassion, and responsibility. This positions Aksharaa as a top educational institution in Kathmandu, preparing students to become full-fledged individuals who are not just knowledgeable but also morally and socially conscious. 
               </p>
 
               <button
