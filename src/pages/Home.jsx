@@ -35,8 +35,9 @@ const Home = () => {
   return (
     <>
       <Helmet titleTemplate="Akashara" />
-      <Loader/>
-      {/* <Banner />
+      {/* <Loader/> */}
+
+      <Banner />
       <Mission />
       {isMobile ? <Mobilecheck /> : <Learning />}
       <Infochek />
@@ -48,7 +49,7 @@ const Home = () => {
       <CreativeWeek />
       <Pic />
       <Contact />
-      <Brand /> */}
+      <Brand />
     </>
   );
 };

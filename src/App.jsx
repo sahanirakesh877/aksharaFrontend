@@ -31,6 +31,7 @@ import CategoryBlogs from "./pages/categoryBlogs";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchNotices } from "./redux/Notice/NoticeSlice";
 import Download from "./pages/Download";
+import Error from "./components/Error";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -104,6 +105,7 @@ const App = () => {
         <Route path="/blog/:id" element={<LatestBlogDetails />} />
         <Route path="/category/:categoryId" element={<CategoryBlogs />} />
         <Route path="/downloads" element={<Download />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <SideIcon />
       <ChatApp />

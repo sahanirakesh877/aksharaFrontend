@@ -117,7 +117,7 @@ const HomeBlog = () => {
         Welcome to Aksharaa School's most recent blog session, where we offer news, updates, and motivational tales from our active community. Keep checking back as we examine the newest developments in education, highlight the accomplishments of our students, and provide insightful advice for both parents and teachers.
         </p>
 
-        <div className="row py-5">
+        <div className="row py-2">
           {loading && <p>Loading...</p>}
           {error && <p className="text-danger">Error: {error}</p>}
           {!loading &&

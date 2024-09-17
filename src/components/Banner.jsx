@@ -119,16 +119,57 @@ const Banner = () => {
   const dispatch = useDispatch();
   const { herophoto, loading, error } = useSelector((state) => state.herophoto);
 
-
   useEffect(() => {
     dispatch(fetchHeroPhoto());
   }, [dispatch]);
 
   return (
-    <section className="home">
-      <div id="carousel" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-controls">
-          <ol className="carousel-indicators">
+    <>
+      <section className="home">
+        <div id="carousel" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-controls">
+            <ol className="carousel-indicators">
+              {loading && <p>Loading...</p>}
+              {error && <p>Error: {error}</p>}
+              {!loading &&
+                !error &&
+                herophoto.Heros &&
+                herophoto.Heros.length > 0 &&
+                herophoto.Heros.map((item, index) => (
+                  <li
+                    key={item._id}
+                    data-bs-target="#carousel"
+                    data-bs-slide-to={index}
+                    className={index === 0 ? "active" : ""}
+                    style={{
+                      backgroundImage: `url(http://localhost:5000/${item.images.replace(
+                        /\\/g,
+                        "/"
+                      )})`,
+                    }}
+                  />
+                ))}
+            </ol>
+
+            <a
+              className="carousel-control-prev"
+              href="#carousel"
+              role="button"
+              data-bs-slide="prev"
+            >
+              <img src="/left-arrow.svg" alt="Prev" />
+            </a>
+            <a
+              className="carousel-control-next"
+              href="#carousel"
+              role="button"
+              data-bs-slide="next"
+            >
+              <img src="/right-arrow.svg" alt="Next" />
+            </a>
+          </div>
+
+          <div className="carousel-inner">
             {loading && <p>Loading...</p>}
             {error && <p>Error: {error}</p>}
             {!loading &&
@@ -136,61 +177,21 @@ const Banner = () => {
               herophoto.Heros &&
               herophoto.Heros.length > 0 &&
               herophoto.Heros.map((item, index) => (
-                <li
+                <div
                   key={item._id}
-                  data-bs-target="#carousel"
-                  data-bs-slide-to={index}
-                  className={index === 0 ? "active" : ""}
+                  className={`carousel-item im ${index === 0 ? "active" : ""}`}
                   style={{
                     backgroundImage: `url(http://localhost:5000/${item.images.replace(
                       /\\/g,
                       "/"
                     )})`,
                   }}
-                />
+                ></div>
               ))}
-          </ol>
-
-          <a
-            className="carousel-control-prev"
-            href="#carousel"
-            role="button"
-            data-bs-slide="prev"
-          >
-            <img src="/left-arrow.svg" alt="Prev" />
-          </a>
-          <a
-            className="carousel-control-next"
-            href="#carousel"
-            role="button"
-            data-bs-slide="next"
-          >
-            <img src="/right-arrow.svg" alt="Next" />
-          </a>
+          </div>
         </div>
-
-        <div className="carousel-inner">
-          {loading && <p>Loading...</p>}
-          {error && <p>Error: {error}</p>}
-          {!loading &&
-            !error &&
-            herophoto.Heros &&
-            herophoto.Heros.length > 0 &&
-            herophoto.Heros.map((item, index) => (
-              <div
-                key={item._id}
-                className={`carousel-item im ${index === 0 ? "active" : ""}`}
-                style={{
-                  backgroundImage: `url(http://localhost:5000/${item.images.replace(
-                    /\\/g,
-                    "/"
-                  )})`,
-                }}
-              ></div>
-            ))}
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
