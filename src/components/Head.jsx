@@ -360,10 +360,10 @@ const Head = () => {
                           to="/about/chairman"
                           onClick={closeNav}
                         >
-                          Message From Chairman
+                          Message From Executive
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link
                           className="dropdown-item"
                           to="/about/principal"
@@ -371,7 +371,7 @@ const Head = () => {
                         >
                           Message From Principal
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link
                           className="dropdown-item"
@@ -433,7 +433,7 @@ const Head = () => {
                           to="/academics/high"
                           onClick={closeNav}
                         >
-                          Senior School
+                          High School
                         </Link>
                       </li>
 

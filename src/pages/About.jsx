@@ -150,13 +150,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className=" bg-light">
+          {/* <div className=" bg-light">
             <div className="container">
               <figure className="d-flex justify-content-center align-content-center ">
                 <img src="/roadmap.png" alt="" className="img-fluid w-75 " />
               </figure>
             </div>
-          </div>
+          </div> */}
 
           <div className="mission-color  py-5">
             <div className="container">

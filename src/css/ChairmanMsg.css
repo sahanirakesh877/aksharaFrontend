@@ -15,9 +15,9 @@
   padding-bottom: 5px;
   margin-bottom: 10px;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.6rem !important;
   color: #0b8d3d;
-  line-height: 55px;
+  line-height: 50px;
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.3s ease;
 }
@@ -42,8 +42,7 @@
 .fancy-border {
   border: 2px solid transparent;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  /* background: linear-gradient(white, white), linear-gradient(to right, rgb(231, 231, 231),rgb(226, 237, 226)); */
+  box-shadow: rgba(1, 49, 89, 0.24) 0px 3px 8px;
   background-origin: border-box;
   background-clip: content-box, border-box;
   padding: 8px;
@@ -83,4 +82,17 @@
 .chairman-image:hover {
   transform: scale(1.05);
   /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); */
+}
+
+
+@media (min-width: 768px) {
+  .chairman-header {
+    font-size: 2.8rem; /* Slightly larger */
+  }
+}
+
+@media (min-width: 567px) {
+  .chairman-header {
+    font-size: 2rem; /* Slightly larger */
+  }
 }

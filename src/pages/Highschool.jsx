@@ -1,70 +1,51 @@
 import React from "react";
+import AliceCarousel from "react-alice-carousel";
 
+
+const brandImg = [
+  "/school/school2.JPG",
+  "/school/school4.JPG",
+  "/school/school1.JPG",
+  "/school/school3.JPG",
+  "/school/school5.JPG",
+];
+const responsive = {
+  0: { items: 1 },
+  568: { items: 2 },
+  1024: { items: 2 },
+};
+const items = brandImg.map((img, index) => (
+  <div className="academic-itemk" key={index}>
+    <img src={img} alt={`Brand ${index + 1}`} className="img-fluid" />
+  </div>
+));
 const Highschool = () => {
   return (
     <>
-      <div className="kinderbanner my-md-0">
-        <img src="/school/banner5.jpg" alt="High School Banner" />
-        <h3 className="xyz">Senior School &nbsp; (Class 8-10)</h3>
 
-        <div className="breadcrumb-container">
-          <ul className="breadcrumb">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>Senior School (Class 8-10)</li>
-          </ul>
+<div className="container-fluid">
+        <div className="py-2">
+          <AliceCarousel
+            mouseTracking
+            items={items}
+            autoPlay={true}
+            infinite={true}
+            responsive={responsive}
+            controlsStrategy="alternate"
+            animationDuration={3000}
+            disableButtonsControls={true}
+            disableDotsControls={true}
+            paddingLeft={"5px"}
+          />
         </div>
       </div>
 
-      <div className="bg-light py-5">
+      <div className="bg-light py-2">
         <div className="container">
+        <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
+            High School (Class 1-5)
+          </h2>
           <div className="row d-flex  ">
-            {/* <div className="col-md-6">
-              <h2 className="kinder-head mb-md-1">Senior School Program</h2>
-              <p className="kinder-text">
-                The Senior School Program at Aksharaa covers Grades VIII, IX,
-                and X, following the Nepal Government's curriculum. Students
-                take the Secondary Education Examination (SEE) in grade 10.
-              </p>
-
-              <h6 className="kinder-head mb-md-1">Teaching Methods</h6>
-              <p className="kinder-text">
-                Teaching methods include experiments, discussions,
-                presentations, collaborative projects, and experiential
-                learning. We aim to enhance knowledge, skills, and aptitude in a
-                supportive environment.
-              </p>
-
-              <h6 className="kinder-head mb-md-1">Social-Emotional Learning</h6>
-              <p className="kinder-text">
-                We prioritize social-emotional learning, ensuring students feel
-                accepted and valued. Our goal is to achieve the national
-                education objectives through enriched learning activities.
-              </p>
-
-              <h6 className="kinder-head mb-md-1">
-                Extracurricular Activities
-              </h6>
-              <p className="kinder-text">
-                Students engage in various ECA programs like sports, arts, field
-                trips, environmental initiatives, and community service, as well
-                as CCA programs like elocution, creative writing, quizzes, and
-                poem recitation. They can also participate in the Duke of
-                Edinburgh International Award and Aksharaa Model United Nations.
-              </p>
-
-              <h2 className="kinder-head mb-md-1">
-                Cultural and National Education
-              </h2>
-              <p className="kinder-text">
-                Our students learn about Nepal's socio-cultural and ecological
-                aspects, celebrating national festivals and heroes to foster
-                inclusion, respect, and patriotism. We have high expectations
-                and provide a supportive environment for students to excel and
-                become the best version of themselves.
-              </p>
-            </div> */}
             <div className="col-md-12">
               <p className="kinder-text">
                 At Aksharaa, our Senior School program (Classes 8-10) is
@@ -218,6 +199,45 @@ const Highschool = () => {
                 </div>
               </div>
             </div> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="kg-back" id="kg-back1">
+        <div className="container">
+          <div className="row py-4">
+            <div className="col-12">
+              <div className="row">
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school1.JPG"
+                    alt="School 6"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school2.JPG"
+                    alt="School 7"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school3.JPG"
+                    alt="School 8"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school4.JPG"
+                    alt="School 9"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

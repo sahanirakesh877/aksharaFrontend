@@ -37,19 +37,19 @@ const Home = () => {
       <Helmet titleTemplate="Akashara" />
       {/* <Loader/> */}
 
-      <Banner />
-      <Mission />
-      {isMobile ? <Mobilecheck /> : <Learning />}
+      {/* <Banner /> */}
+      {/* <Mission /> */}
+      {/* {isMobile ? <Mobilecheck /> : <Learning />} */}
       <Infochek />
-      <About />
-      <Blog />
+      {/* <About /> */}
+      {/* <Blog /> */}
       <Counter />
-      <Testimonial />
+      {/* <Testimonial />
       <HomeBlog />
       <CreativeWeek />
       <Pic />
-      <Contact />
-      <Brand />
+      <Contact /> */}
+      {/* <Brand /> */}
     </>
   );
 };

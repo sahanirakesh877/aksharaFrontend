@@ -23,19 +23,6 @@ const items = brandImg.map((img, index) => (
 const Elementryschool = () => {
   return (
     <>
-      {/* <div className="kinderbanner my-md-0 ">
-        <img src="/school/banner1.jpg" alt="Kindergarten" />
-        <h3 className="xyz">Elementary School &nbsp; I-VII</h3>
-        <div className="breadcrumb-container">
-          <ul className="breadcrumb">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>Elementary School</li>
-          </ul>
-        </div>
-      </div> */}
-
       <div className="container-fluid">
         <div className="py-2 ">
           <AliceCarousel
@@ -53,15 +40,13 @@ const Elementryschool = () => {
         </div>
       </div>
 
-      <div className=" py-5">
+      <div className=" py-2">
         <div className="container mx-auto ">
           <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
             Elementary School (Class 1-5)
           </h2>
 
           <div className="row d-flex align-items-start py-4 ">
-
-
             <div className="col-md-6 col-12 px-4">
               <p className="kinder-text">
                 Quality education isn't just about passing exams; it encompasses
@@ -85,7 +70,6 @@ const Elementryschool = () => {
                 class but for a fulfilling life ahead.
               </p>
 
-            
               {/* <div className="g pb-3">
                 <div className="gallerys p-4 ">
                   <img src="/a.jpg" alt="a big park inside a modern city" />
@@ -96,7 +80,6 @@ const Elementryschool = () => {
               </div>  */}
             </div>
 
-            
             <div className="col-md-6 col-12 px-4">
               {/* <div className="py-3 px-3">
                 <AliceCarousel
@@ -116,13 +99,34 @@ const Elementryschool = () => {
                 Beyond Academics: Enriching Experiences through Activities
               </h5>
               <ul className="list-unstyled">
-                <li><i className="fas fa-check-square me-2 text-danger" /> Interactive and Thematic Grade-Wise Assemblies</li>
-                <li><i className="fas fa-check-square me-2 text-danger" /> Educational and Fun-Filled Grade-Wise Tours</li>
-                <li><i className="fas fa-check-square me-2 text-danger" /> Experiential Learning through Labs and Field Trips</li>
-                <li><i className="fas fa-check-square me-2 text-danger" /> Empowering Leadership and Community Engagement</li>
-                <li><i className="fas fa-check-square me-2 text-danger" /> Comprehensive Social–Emotional Learning (SEL) Support</li>
-                <li><i className="fas fa-check-square me-2 text-danger" /> Age appropriate ECA and CCA Activities</li>
-                <li><i className="fas fa-check-square me-2 text-danger" /> Parent Involvement Workshops</li>
+                <li>
+                  <i className="fas fa-check-square me-2 text-danger" />{" "}
+                  Interactive and Thematic Grade-Wise Assemblies
+                </li>
+                <li>
+                  <i className="fas fa-check-square me-2 text-danger" />{" "}
+                  Educational and Fun-Filled Grade-Wise Tours
+                </li>
+                <li>
+                  <i className="fas fa-check-square me-2 text-danger" />{" "}
+                  Experiential Learning through Labs and Field Trips
+                </li>
+                <li>
+                  <i className="fas fa-check-square me-2 text-danger" />{" "}
+                  Empowering Leadership and Community Engagement
+                </li>
+                <li>
+                  <i className="fas fa-check-square me-2 text-danger" />{" "}
+                  Comprehensive Social–Emotional Learning (SEL) Support
+                </li>
+                <li>
+                  <i className="fas fa-check-square me-2 text-danger" /> Age
+                  appropriate ECA and CCA Activities
+                </li>
+                <li>
+                  <i className="fas fa-check-square me-2 text-danger" /> Parent
+                  Involvement Workshops
+                </li>
               </ul>
 
               {/* <div className="g pb-3">

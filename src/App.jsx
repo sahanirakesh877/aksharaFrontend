@@ -32,6 +32,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchNotices } from "./redux/Notice/NoticeSlice";
 import Download from "./pages/Download";
 import Error from "./components/Error";
+import InfraDetails from './pages/InfraDetails';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -79,6 +80,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/infrastructure" element={<Infrastructure />} />
+        <Route path="/infrastructure/:id" element={<InfraDetails />} />
         <Route path="/academics/kindergarten" element={<Kindegarten />} />
         <Route path="/academics/elementary" element={<Elementryschool />} />
         <Route path="/academics/middle" element={<Middleschool />} />
@@ -87,7 +89,7 @@ const App = () => {
         <Route path="/admission/procedure" element={<AdmissionProcedure />} />
         <Route path="/apply-online" element={<ApplyOnline />} />
         <Route path="/about/chairman" element={<ChairmanMsg />} />
-        <Route path="/about/principal" element={<Principalmsg />} />
+        {/* <Route path="/about/principal" element={<Principalmsg />} /> */}
         <Route path="/about/team" element={<Team />} />
         <Route path="/about/lrpa" element={<LRPA />} />
         <Route path="/newsactivity" element={<Blog />} />

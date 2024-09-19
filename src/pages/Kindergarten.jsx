@@ -396,7 +396,9 @@ const Kindergarten = () => {
         </div>
       </div>
 
-      <div className="bg-light py-4">
+
+
+      <div className="bg-light py-2">
         <div className="container mx-auto">
           <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
             Kindergarten (PG-KG)
@@ -607,6 +609,7 @@ const Kindergarten = () => {
         </div>
       </div>
 
+
       <div className="kg-back" id="kg-back1">
         <div className="container">
           <div className="row py-4">
@@ -645,6 +648,8 @@ const Kindergarten = () => {
           </div>
         </div>
       </div>
+
+
     </>
   );
 };

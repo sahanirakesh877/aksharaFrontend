@@ -3,48 +3,52 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const brandImg = [
-  "/selected/home.webp",
-  "/selected/home11.webp",
-  "/selected/home3.webp",
-  "/selected/home55.webp",
-  "/selected/home77.webp",
+  "/school/school2.JPG",
+  "/school/school4.JPG",
+  "/school/school1.JPG",
+  "/school/school3.JPG",
+  "/school/school5.JPG",
 ];
-
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
   1024: { items: 2 },
 };
 const items = brandImg.map((img, index) => (
-  <div className="academic-item  " key={index}>
-    <img src={img} alt={`Brand ${index + 1}`} className="" />
+  <div className="academic-itemk" key={index}>
+    <img src={img} alt={`Brand ${index + 1}`} className="img-fluid" />
   </div>
 ));
 
 const Middleschool = () => {
   return (
     <>
-      <div className="kinderbanner my-md-0">
-        <img src="/school/banner4.jpg" alt="Middle School Banner" />
-        <h3 className="xyz">Middle School (Class 6-7)</h3>
+  
 
-        <div className="breadcrumb-container">
-          <ul className="breadcrumb">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>Middle School</li>
-          </ul>
+      <div className="container-fluid">
+        <div className="py-2">
+          <AliceCarousel
+            mouseTracking
+            items={items}
+            autoPlay={true}
+            infinite={true}
+            responsive={responsive}
+            controlsStrategy="alternate"
+            animationDuration={3000}
+            disableButtonsControls={true}
+            disableDotsControls={true}
+            paddingLeft={"5px"}
+          />
         </div>
       </div>
 
-      <div className="bg-light py-5">
+      <div className="bg-light py-2">
         <div className="container mx-auto">
           <div className="row">
             <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
               Middle School (Class 6-7)
             </h2>
-            <div className="col-md-12 col-12 px-4 py-4">
+            <div className="col-md-12 col-12 px-4 py-2">
               <p className="kinder-text">
                 Welcome to the vibrant world of our Middle School, where the
                 journey of discovery and growth continues for students in Class
@@ -75,41 +79,9 @@ const Middleschool = () => {
                 independently.
               </p>
             </div>
-            <div className="col-md-6 col-12 px-4 py-4">
-              {/* <div className="py-3 px-3">
-                <AliceCarousel
-                  mouseTracking
-                  items={items}
-                  autoPlay={true}
-                  infinite={true}
-                  responsive={responsive}
-                  controlsStrategy="alternate"
-                  animationDuration={1500}
-                  disableButtonsControls={true}
-                  disableDotsControls={true}
-                />
-              </div>
-              <div className="g pb-3">
-                <div className="gallerys p-4">
-                  <img
-                    src="/school/school5.JPG"
-                    alt="a big park inside a modern city"
-                  />
-                  <img
-                    src="/school/school4.JPG"
-                    alt="a small street between buildings"
-                  />
-                  <img
-                    src="/school/school1.JPG"
-                    alt="view from the sky of a big city"
-                  />
-                  <img src="/school/school2.JPG" alt="a bridge at night" />
-                </div>
-              </div> */}
-            </div>
           </div>
 
-          <div className="row d-flex  align-items-start justify-content-between my-5 ">
+          <div className="row d-flex  align-items-start justify-content-between my-2">
             <div className="col-md-6">
               <h2 className="kinder-head mb-md-2">
                 Beyond Academics: Building Character and Values :
@@ -258,8 +230,6 @@ const Middleschool = () => {
                 </li>
               </ul>
 
-
-
               <h5 className="kinder-subhead mb-md-2 ">Arts and Creativity</h5>
               <ul className="list-unstyled">
                 <li className="">
@@ -294,6 +264,45 @@ const Middleschool = () => {
                   Collaboration with like-minded peers.
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="kg-back" id="kg-back1">
+        <div className="container">
+          <div className="row py-4">
+            <div className="col-12">
+              <div className="row">
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school1.JPG"
+                    alt="School 6"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school2.JPG"
+                    alt="School 7"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school3.JPG"
+                    alt="School 8"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+                <div className="col-md-3 col-6">
+                  <img
+                    src="/school/school4.JPG"
+                    alt="School 9"
+                    className="img-fluid border border-white border-2"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

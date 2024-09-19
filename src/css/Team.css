@@ -173,10 +173,20 @@
         right: 42.5%;
         transform: rotate(82deg);
     }
+    .team-head {
+        font-weight: 600;
+        color: #1c58a1;
+        font-size: 25px;
+    }
 }
 @media only screen and (max-width: 480px) {
     .our-team .title:before,
     .our-team .title:after {
         top: -83px;
+    }
+    .team-head {
+        font-weight: 600;
+        color: #1c58a1;
+        font-size: 20px;
     }
 }

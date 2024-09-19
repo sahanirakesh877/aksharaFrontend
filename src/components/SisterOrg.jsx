@@ -8,7 +8,7 @@ const SisterOrg = () => {
         <div className="container">
           <div className="row py-4 d-flex align-items-center justify-content-center ">
             <div className="col-md-4 ">
-              <h2 className="text-center border-bottom-title w-100 head-color">
+              <h2 className="text-center border-bottom-title w-75 head-color">
                 <span className="addcolor">Sister</span> Organization
               </h2>
               <div className="poster text-center ">
