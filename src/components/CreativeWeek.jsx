@@ -77,7 +77,7 @@ const CreativeWeek = () => {
 
       return (
         <div
-          className="creative-item card border-0 p-3 m-md-0 p-md-1"
+          className="creative-item card border-0 p-3 m-md-0 p-md-1 "
           key={index}
         >
           <div className="img-container">
@@ -93,7 +93,7 @@ const CreativeWeek = () => {
           <div className="card-body my-md-0  border position-relative">
             <h5 className="text-danger my-md-0 d-inline">{creative.title}</h5>
             <p className="creative-text my-md-0 pb-5">
-              <SafeHtml htmlString={creative.description} />
+              <SafeHtml htmlString={creative.description.slice(0,100)} />
             </p>
             <div className="btn_wraps position-absolute end-0 bottom-0 my-2 me-3">
               <span className="share">

@@ -53,7 +53,7 @@ const LRPA = () => {
       </div>
 
       <div className="container lrpaContainer">
-        <div className="row d-flex align-items-center lrpacont  justify-content-between bg-lrp3">
+        <div className="row d-flex align-items-center lrpacont  justify-content-between ">
           <div className="col-md-4 border px-md-0">
             <div className="contimg ">
               <img src="/banner1.jpg" alt="Continuous Assessment" />

@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const LatestBlogDetails = ({ news }) => {
+  
   const { id } = useParams();
   const navigate = useNavigate();
   const [blog, setBlog] = useState(null);

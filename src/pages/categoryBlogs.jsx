@@ -63,8 +63,9 @@ const CategoryBlogs = ({news}) => {
                   <h5 className="card-title text-primary">{blog.title}</h5>
                   <p
                     className="card-text"
-                    dangerouslySetInnerHTML={{ __html: blog.description }}
+                    dangerouslySetInnerHTML={{ __html: blog.description.slice(0,150)+"..." }}
                   ></p>
+                  
                   <div className=" text-muted">
                     <small>
                       Published on:{" "}

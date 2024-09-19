@@ -18,29 +18,23 @@ const ChatApp = () => {
   const steps = [
     {
       id: "0",
-      message: "Hello! Welcome to Aksharaa School, where education meets excellence.",
+      message: "Hello! Welcome to Aksharaa School",
       trigger: "1",
     },
     {
       id: "1",
-      message: "How can I assist you today? Please select an option below.",
+      message: "How can I assist you?",
       trigger: "options",
     },
     {
       id: "options",
       options: [
-        { value: 1, label: "Learn About Us", trigger: "about_school" },
         { value: 2, label: "Admissions Information", trigger: "admissions" },
         { value: 3, label: "Explore Our Courses", trigger: "courses" },
-        { value: 4, label: "Get in Touch", trigger: "contact_us" },
+        { value: 4, label: "Contact Us", trigger: "contact_us" },
       ],
     },
-    {
-      id: "about_school",
-      message:
-        "Aksharaa School is a leading institution dedicated to nurturing the minds of tomorrow. Our mission is to provide a holistic education that empowers students to excel academically and socially.",
-      trigger: "1",
-    },
+  
     {
       id: "admissions",
       message:
@@ -56,7 +50,7 @@ const ChatApp = () => {
     {
       id: "contact_us",
       message:
-        "We'd love to hear from you! Reach out to us via Phone: +1234567890 or Email: info@aksharaschool.com. We're here to help with any questions you may have.",
+        "Plz Contact via  Phone: +977-01-4993031/32/33 or Email: info@aksharaaschool.edu.np",
       trigger: "1",
     },
   ];

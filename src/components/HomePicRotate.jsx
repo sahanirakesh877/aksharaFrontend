@@ -65,10 +65,6 @@
 // export default HomePicRotate;
 
 
-
-
-
-
 // this is from fully backend code
 import axios from "axios";
 import React, { useEffect, useState } from "react";
@@ -104,7 +100,7 @@ const HomePicRotate = () => {
 
   return (
     <>
-      <div className="container my-5">
+      <div className="container my-5 ">
         <div className="row">
           <h2 className="text-center w-100 border-bottom-title addcolor">
             Explore <span className="head-color">Gallery</span>

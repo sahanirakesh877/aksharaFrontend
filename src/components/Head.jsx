@@ -526,7 +526,7 @@ const Head = () => {
                       role="button"
                       data-bs-target="#EnquiryModel"
                     >
-                      Get Started
+                     Get Enquiry 
                     </button>
 
                     <EnquiryModel />

@@ -28,7 +28,7 @@ const TopBar = () => {
                     Our Office
                   </h6>
                   <small className="top-p">
-                  Kandaghari, Kageshwori Manohara 9, KTM
+                Kageshwori Manohara 9, Kathmandu ,Nepal
                   </small>
                 </div>
 

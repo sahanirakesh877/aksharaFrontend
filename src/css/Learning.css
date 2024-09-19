@@ -5,13 +5,13 @@
 
 .learnimg {
   width: fit-content;
-  height: 72vh;
+  height: 78vh;
   transition: all 0.3s ease-in-out;
 }
 
 .fuche-sec {
   overflow: hidden;
-  height: 100vh;
+  height: 120vh;
 }
 
 .kinder_img {
