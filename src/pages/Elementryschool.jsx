@@ -42,9 +42,12 @@ const Elementryschool = () => {
 
       <div className=" py-2">
         <div className="container mx-auto ">
-          <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
-            Elementary School (Class 1-5)
-          </h2>
+       
+
+
+          <h3 className="w-100 border-bottom-title head-color text-center">
+            <span className="addcolor">Elementary School  </span> (Class 1-5)
+          </h3>
 
           <div className="row d-flex align-items-start py-4 ">
             <div className="col-md-6 col-12 px-4">

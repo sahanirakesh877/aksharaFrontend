@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="row d-flex align-items-start">
               <div className="col-12 col-lg-4 footer-left py-4 py-md-5 py-xxl-8">
                 <div className="row h-100 align-items-end justify-content-center">
-                  <div className="col-12 col-md-11 col-xl-10">
+                  <div className="col-12 col-md-12 col-xl-12">
                     <div
                       className="footer-logo-wrapper 
                     mb-4"
@@ -30,7 +30,7 @@ const Footer = () => {
                           class="fa fa-location-arrow fs-5 me-2 p-2 border rounded-circle text-success bg-white "
                           aria-hidden="true"
                         ></i>{" "}
-                        Kandaghari, Kageshwori Manohara 9, KTM, Nepal
+                        Kageshwori Manohara 9, Kathmandu, Nepal
                       </address>
                       <p className="mb-2 ">
                         <Link
@@ -137,9 +137,9 @@ const Footer = () => {
 
               <div className="col-12 col-lg-8  py-4 py-md-5 py-xxl-8">
                 <div className="row justify-content-center">
-                  <div className="col-12 col-md-11 col-xxl-10">
+                  <div className="col-12 col-md-12 col-xxl-12">
                     <div className="row gy-4 gy-sm-0 ">
-                      <div className="col-6 col-sm-3">
+                      <div className="col-md-4 col-sm-3">
                         <div className="widget">
                           <h4 className="widget-title mb-4 animated-border-header">
                             Useful Links
@@ -181,7 +181,7 @@ const Footer = () => {
                                 Admission
                               </Link>
                             </li>
-                        
+
                             <li className="mb-3">
                               <Link
                                 to="#!"
@@ -209,90 +209,18 @@ const Footer = () => {
                           </ul>
                         </div>
                       </div>
-                      <div className="col-6 col-sm-3">
-                        <div className="widget">
-                          <h4 className="widget-title mb-4 animated-border-header">
-                            Company
-                          </h4>
-                          <ul className="list-unstyled">
-                            <li className="mb-3">
-                              <Link
-                                to="#!"
-                                className="footer-tag text-decoration-none animated-hover"
-                              >
-                                <i
-                                  class="fa fa-angle-right me-1"
-                                  aria-hidden="true"
-                                ></i>{" "}
-                                About
-                              </Link>
-                            </li>
-                            <li className="mb-3">
-                              <Link
-                                to="/contact"
-                                className="footer-tag text-decoration-none animated-hover"
-                              >
-                                <i
-                                  class="fa fa-angle-right me-1"
-                                  aria-hidden="true"
-                                ></i>
-                                Contact
-                              </Link>
-                            </li>
-                            <li className="mb-3">
-                              <Link
-                                to="#!"
-                                className="footer-tag text-decoration-none animated-hover"
-                              >
-                                <i
-                                  class="fa fa-angle-right me-1"
-                                  aria-hidden="true"
-                                ></i>{" "}
-                                Notice
-                              </Link>
-                            </li>
-                            <li className="mb-3">
-                              <Link
-                                to="/newsactivity"
-                                className="footer-tag text-decoration-none animated-hover"
-                              >
-                                <i
-                                  class="fa fa-angle-right me-1"
-                                  aria-hidden="true"
-                                ></i>{" "}
-                                News & Events
-                              </Link>
-                            </li>
 
-                        
-                            <li className="mb-0">
-                              <Link
-                                to="#!"
-                                className="footer-tag text-decoration-none animated-hover"
-                              >
-                                <i
-                                  class="fa fa-angle-right me-1"
-                                  aria-hidden="true"
-                                ></i>{" "}
-                                Privacy Policy
-                              </Link>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-
-                      <div className="col-12 col-sm-6 ">
+                      <div className="col-md-4 col-sm-3  ">
                         <div className="widget ">
                           <h4 className="widget-title mb-4 animated-border-header">
                             Our Newsletter
                           </h4>
                           <p className="mb-4 footer-tag">
-                            Never miss out on our Akshara school's latest news,
-                            updates, and exclusive offers! Subscribe to our
-                            newsletter today
+                            Never miss out on our Akshara school's exclusive
+                            offers! Subscribe to our newsletter today.
                           </p>
                           <form action="#!">
-                            <div className="row gy-4">
+                            <div className="row gy-2">
                               <div className="col-12">
                                 <div className="input-group">
                                   <span
@@ -324,7 +252,7 @@ const Footer = () => {
                               <div className="col-12">
                                 <div className="mb-sm-4">
                                   <button
-                                    class="head-btn  rounded-pill animated-button w-100 py-2"
+                                    class="bg-success border-0  w-100 rounded-1 py-2 text-center text-white"
                                     role="button"
                                   >
                                     {" "}
@@ -336,79 +264,43 @@ const Footer = () => {
                           </form>
                         </div>
                       </div>
-                    </div>
 
-                    {/* last footer  */}
-                    {/* <div className="row  pt-4  border-top  mt-2  border-light-subtle d-flex  align-items-center justify-content-between   ">
-                      <div>
-                        <div className="footer-copyright-wrapper mt-6 text-light">
-                          © 2024. All Rights Reserved.
-                        </div>
-                        <div className="credits text-light mt-2 fs-7">
-                          Built by{" "}
-                          <Link
-                            to="https://technavata.com/"
-                            className="footer-tag text-decoration-none"
-                          >
-                            Navatatech{" "}
-                          </Link>{" "}
-                          with{" "}
-                          <span className="text-danger  ">
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                          </span>
+                      <div className="col-md-4 col-sm-3 ">
+                        <div className="d-flex flex-column align-items-md-start align-items-center  text-center bg-white mb-4 p-2 rounded-1">
+                          <img
+                            src="/sisremove.png"
+                            alt="sister organization..."
+                            className="img-fluid mb-4"
+                          />
+
+                          <h5 className="w-100  head-color text-center">
+                            <span className="addcolor">
+                              {" "}
+                              Jawlakhel, Lalitpur, Nepal{" "}
+                            </span>{" "}
+                            <br />
+                            01-5426371
+                          </h5>
                         </div>
                       </div>
-                      <div className="border text-center ">
-                        <img
-                          src="/sisremove.png"
-                          alt="sister organization..."
-                          className="img-fluid"
-                        />
-                        <span>
-                          Jawlakhel, Lalitpur, Nepal
-                          <br />
-                          01-5426371
-                        </span>
-                      </div>
-                    </div> */}
+                    </div>
 
                     <div className="row pt-4 border-top mt-2 border-light-subtle d-flex align-items-center justify-content-between">
                       <div className="col-md-6 col-sm-12 text-md-start text-center">
                         <div className="footer-copyright-wrapper text-light">
-                          © 2024. All Rights Reserved.
-                        </div>
-                        <div className="credits text-light mt-2 fs-7">
-                          Built by
+                          © 2024. All Rights Reserved. Built by &nbsp;
                           <Link
                             to="https://technavata.com/"
                             className="footer-tag text-decoration-none"
                           >
-                            Navatatech
+                            Navatatech &nbsp;
                           </Link>
-                          with
+                          with &nbsp;
                           <span className="text-danger">
                             <i className="fa fa-heart" aria-hidden="true"></i>
                           </span>
                         </div>
                       </div>
-
-                      <div className="col-md-6 col-sm-12 text-md-end text-center mt-sm-3 mt-md-0 bg-white rounded-5">
-                        <div className="d-flex flex-column align-items-md-start align-items-center  text-center">
-                          <img
-                            src="/sisremove.png"
-                            alt="sister organization..."
-                            className="img-fluid mb-2"
-                            style={{ maxWidth: "250px" }}
-                          />
-                          <span className="text-dark text-center">
-                            Jawlakhel, Lalitpur, Nepal
-                            <br />
-                            01-5426371
-                          </span>
-                        </div>
-                      </div>
-
-                      
                     </div>
                   </div>
                 </div>

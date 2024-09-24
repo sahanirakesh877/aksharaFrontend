@@ -42,9 +42,9 @@ const Highschool = () => {
 
       <div className="bg-light py-2">
         <div className="container">
-        <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
-            High School (Class 1-5)
-          </h2>
+         <h3 className="w-100 border-bottom-title head-color text-center">
+              <span className="addcolor">Middle School </span> (Class 8-10)
+            </h3>
           <div className="row d-flex  ">
             <div className="col-md-12">
               <p className="kinder-text">

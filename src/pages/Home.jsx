@@ -35,21 +35,21 @@ const Home = () => {
   return (
     <>
       <Helmet titleTemplate="Akashara" />
-      {/* <Loader/> */}
+       {/* <Loader/>  */}
 
-      {/* <Banner /> */}
-      {/* <Mission /> */}
-      {/* {isMobile ? <Mobilecheck /> : <Learning />} */}
-      <Infochek />
-      {/* <About /> */}
-      {/* <Blog /> */}
+       {/* <Banner /> 
+       <Mission />  */}
+       {/* {isMobile ? <Mobilecheck /> : <Learning />}  */}
+      {/* <Infochek />
+       <About /> 
+       <Blog /> 
       <Counter />
-      {/* <Testimonial />
+      <Testimonial />
       <HomeBlog />
       <CreativeWeek />
       <Pic />
-      <Contact /> */}
-      {/* <Brand /> */}
+      <Contact /> 
+      <Brand /> */}
     </>
   );
 };

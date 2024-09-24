@@ -23,8 +23,6 @@ const items = brandImg.map((img, index) => (
 const Middleschool = () => {
   return (
     <>
-  
-
       <div className="container-fluid">
         <div className="py-2">
           <AliceCarousel
@@ -45,9 +43,9 @@ const Middleschool = () => {
       <div className="bg-light py-2">
         <div className="container mx-auto">
           <div className="row">
-            <h2 className="border-bottom-title text-center w-100 fw-semibold text-success">
-              Middle School (Class 6-7)
-            </h2>
+            <h3 className="w-100 border-bottom-title head-color text-center">
+              <span className="addcolor">Middle School </span> (Class 6-7)
+            </h3>
             <div className="col-md-12 col-12 px-4 py-2">
               <p className="kinder-text">
                 Welcome to the vibrant world of our Middle School, where the

@@ -20,7 +20,6 @@ import AdmissionProcedure from "./pages/AdmissionProcedure";
 import Photos from "./components/Photos";
 import ApplyOnline from "./pages/ApplyOnline";
 import ChairmanMsg from "./components/ChairmanMsg";
-import Principalmsg from "./components/Principalmsg";
 import LRPA from "./pages/LRPA";
 // import ChatBoat from "./components/ChatBoat";
 // import Qrcode from "./components/Qrcode";

@@ -46,6 +46,9 @@ const Photos = () => {
   return (
     <>
       <div className="container my-3">
+        <h3 className="w-100 border-bottom-title head-color text-center">
+          <span className="addcolor">Galleries</span>
+        </h3>
         <div className="row d-flex justify-content-around align-items-center">
           {currentGalleries.map((gallery, id) => (
             <div className="col-md-3 mb-4" key={id}>
