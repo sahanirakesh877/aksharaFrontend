@@ -59,7 +59,7 @@ const App = () => {
         <div id="popoupContainer">
           <div className="imageContainer">
             <img
-              src={`http://localhost:5000/${notices[
+              src={`${import.meta.env.VITE_SERVERAPI}/${notices[
                 currentImageIndex
               ].images.replace(/\\/g, "/")}`}
               alt=""

@@ -80,7 +80,7 @@ const EnquiryModel = () => {
         aria-labelledby="EnquiryModelLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-lg modal-fullscreen-md-down custom-modal-width modal-dialog-centered">
+        <div className="modal-dialog modal-lg modal-fullscreen-md-down custom-modal-width modal-dialog-centered modal-dialog-scrollable">
           <div className="modal-content">
             <div className="px-2 pb-4">
               <div className="modal-header">

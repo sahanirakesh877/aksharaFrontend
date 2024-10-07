@@ -79,7 +79,7 @@ const HomePicRotate = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/three/getallthreedimg"
+          `${import.meta.env.VITE_SERVERAPI}/api/v1/three/getallthreedimg`
         );
         if (response.data.success) {
           setData(response.data.gallery.slice(0,10));

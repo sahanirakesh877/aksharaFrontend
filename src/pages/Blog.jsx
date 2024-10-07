@@ -574,7 +574,7 @@ if(loading){
             <div
               className="card__background--main"
               style={{
-                backgroundImage: `url(http://localhost:5000/${item.image.replace(
+                backgroundImage: `url(${import.meta.env.VITE_SERVERAPI}/${item.image.replace(
                   /\\/g,
                   "/"
                 )})`,

@@ -10,7 +10,7 @@ const Download = () => {
     const fetchPDF = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/getallpdf"
+          `${import.meta.env.VITE_SERVERAPI}/api/v1/getallpdf`
         );
 
         setPdfs(response.data.pdfs);
@@ -22,7 +22,7 @@ const Download = () => {
   }, []);
   const handleDownload = (filePath) => {
     // Trigger file download
-    window.location.href = `http://localhost:5000/${filePath}`;
+    window.location.href = `${import.meta.env.VITE_SERVERAPI}/${filePath}`;
   };
   return (
     <>

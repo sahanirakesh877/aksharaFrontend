@@ -6,6 +6,7 @@ import "../css/Creative.css";
 import { fetchNotices } from "../redux/Notice/NoticeSlice";
 import axios from "axios";
 import SafeHtml from "../../../Dashboard/src/components/safeHtml";
+import Loader from "./Loader";
 
 const CreativeWeek = () => {
   const dispatch = useDispatch();
@@ -13,7 +14,7 @@ const CreativeWeek = () => {
 
   const [creativesOfWeek, setCreativesOfWeek] = useState();
 
-  console.log("notice image ", notices);
+  
   useEffect(() => {
     dispatch(fetchNotices());
   }, [dispatch]);
@@ -22,7 +23,7 @@ const CreativeWeek = () => {
     async function getCreativesOfWeek() {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/activity/",
+          `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/`,
           {
             params: {
               week: true,
@@ -38,8 +39,7 @@ const CreativeWeek = () => {
         setError("An error occurred while fetching data.");
         console.error("Error fetching data:", error);
       } finally {
-        //  setLoading(false);
-        console.log("operation complete");
+       
       }
     }
 
@@ -82,7 +82,7 @@ const CreativeWeek = () => {
         >
           <div className="img-container">
             <img
-              src={`http://localhost:5000/${creative.image.replace(
+              src={`${import.meta.env.VITE_SERVERAPI}/${creative.image.replace(
                 /\\/g,
                 "/"
               )}`}
@@ -183,11 +183,11 @@ const CreativeWeek = () => {
                 <span className="addcolor">Important </span> Notice
               </h2>
               <div className="creative-items shadow ">
-                {loading && <p>Loading...</p>}
+                {loading && <p><Loader/></p>}
                 {error && <p>Error: {error}</p>}
                 {!loading && !error && notices.length > 0 && (
                   <img
-                    src={`http://localhost:5000/${notices[0].images.replace(
+                    src={`${import.meta.env.VITE_SERVERAPI}/${notices[0].images.replace(
                       /\\/g,
                       "/"
                     )}`}

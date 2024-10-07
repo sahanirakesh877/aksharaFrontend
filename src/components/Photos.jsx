@@ -3,6 +3,7 @@ import "../css/StackImg.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import ReactPaginate from "react-paginate";
+import Loader from "./Loader";
 
 const Photos = () => {
   const [galleries, setGalleries] = useState([]);
@@ -31,7 +32,7 @@ const Photos = () => {
     fetchGalleries();
   }, []);
 
-  if (loading) return <p>Loading galleries...</p>;
+  if (loading) return <p><Loader/></p>;
   if (error) return <p>Error: {error}</p>;
 
   // Slice the galleries array based on the current page
@@ -58,7 +59,7 @@ const Photos = () => {
               <div className="card card-animated w-100 h-100">
                 <div className="card-img-wrapper position-relative">
                   <img
-                    src={`http://localhost:5000/${gallery.images[0].replace(
+                    src={`${import.meta.env.VITE_SERVERAPI}/${gallery.images[0].replace(
                       /\\/g,
                       "/"
                     )}`} // Adjust if necessary

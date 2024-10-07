@@ -11,6 +11,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "../css/StackImg.css";
 import ReactPaginate from "react-paginate";
+import Loader from "../components/Loader";
 
 const Gallery = () => {
   const { id } = useParams(); // Get the gallery ID from URL
@@ -27,7 +28,7 @@ const Gallery = () => {
     const fetchGallery = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/v1/getallgallery/${id}`
+          `${import.meta.env.VITE_SERVERAPI}/api/v1/getallgallery/${id}`
         );
         console.log("dynamic id data", response);
         setGallery(response.data.gallery);
@@ -41,7 +42,7 @@ const Gallery = () => {
     fetchGallery();
   }, [id]);
 
-  if (loading) return <p>Loading gallery...</p>;
+  if (loading) return <p><Loader/></p>;
   if (error) return <p>Error: {error}</p>;
   if (!gallery) return <p>No gallery found!</p>;
 
@@ -73,7 +74,7 @@ const Gallery = () => {
               onClick={() => handleOpen(index + offset)} // Adjust index for lightbox
             >
               <img
-                src={`http://localhost:5000/${image.replace(/\\/g, "/")}`}
+                src={`${import.meta.env.VITE_SERVERAPI}/${image.replace(/\\/g, "/")}`}
                 alt={`Gallery image ${index + 1}`}
                 className="img-fluid rounded shadow"
               />
@@ -83,7 +84,7 @@ const Gallery = () => {
         <Lightbox
           open={open}
           slides={gallery.images.map((img) => ({
-            src: `http://localhost:5000/${img.replace(/\\/g, "/")}`,
+            src: `${import.meta.env.VITE_SERVERAPI}/${img.replace(/\\/g, "/")}`,
           }))}
           currentIndex={currentIndex}
           close={() => setOpen(false)}

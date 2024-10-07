@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
+import Loader from "../components/Loader";
 
 
 const CategoryBlogs = ({news}) => {
@@ -13,7 +14,7 @@ const CategoryBlogs = ({news}) => {
     async function getCategoryBlogs() {
       setLoading(true);
       try {
-        const response = await axios.get(news ? "http://localhost:5000/api/v1/activity/" : "http://localhost:5000/api/v1/blog/", {
+        const response = await axios.get(news ? `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/` : `${import.meta.env.VITE_SERVERAPI}/api/v1/blog/`, {
           params: {
             categoryId,
           },
@@ -34,7 +35,7 @@ const CategoryBlogs = ({news}) => {
     getCategoryBlogs();
   }, [categoryId]);
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) return <div><Loader/></div>;
   if (error) return <div>{error}</div>;
 
   return (
@@ -51,7 +52,7 @@ const CategoryBlogs = ({news}) => {
             >
               <div className="card h-100 shadow-sm rounded-0 ">
                 <img
-                  src={`http://localhost:5000/${blog.image.replace(
+                  src={`${import.meta.env.VITE_SERVERAPI}/${blog.image.replace(
                     /\\/g,
                     "/"
                   )}`}

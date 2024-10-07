@@ -142,7 +142,7 @@ const Banner = () => {
                       data-bs-slide-to={index}
                       className={index === 0 ? "active" : ""}
                       style={{
-                        backgroundImage: `url(http://localhost:5000/${item.images.replace(
+                        backgroundImage: `url(${import.meta.env.VITE_SERVERAPI}/${item.images.replace(
                           /\\/g,
                           "/"
                         )})`,
@@ -182,7 +182,7 @@ const Banner = () => {
                     key={item._id}
                     className={`carousel-item im ${index === 0 ? "active" : ""}`}
                     style={{
-                      backgroundImage: `url(http://localhost:5000/${item.images.replace(
+                      backgroundImage: `url(${import.meta.env.VITE_SERVERAPI}/${item.images.replace(
                         /\\/g,
                         "/"
                       )})`,

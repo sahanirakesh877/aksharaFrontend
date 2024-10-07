@@ -113,7 +113,7 @@ const LatestBlogDetails = ({ news }) => {
                 {/* You can add more details or sections here */}
               </div>
               <img
-                src={`http://localhost:5000/${blog?.image.replace(/\\/g, "/")}`}
+                src={`${import.meta.env.VITE_SERVERAPI}/${blog?.image.replace(/\\/g, "/")}`}
                 alt={blog?.title}
                 className="img-fluid mb-4 border  border-danger"
                 style={{
@@ -168,7 +168,7 @@ const LatestBlogDetails = ({ news }) => {
                       className="list-group-item d-flex justify-content-start align-items-center border-0 rounded-0 border-bottom  "
                     >
                       <img
-                        src={`http://localhost:5000/${post.image.replace(
+                        src={`${import.meta.env.VITE_SERVERAPI}/${post.image.replace(
                           /\\/g,
                           "/"
                         )}`}

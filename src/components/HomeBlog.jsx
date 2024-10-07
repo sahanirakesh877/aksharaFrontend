@@ -140,7 +140,7 @@ const HomeBlog = () => {
                 <div className="card h-100">
                   <div className="card-header p-0">
                     <img
-                      src={`http://localhost:5000/${item.image.replace(
+                      src={`${import.meta.env.VITE_SERVERAPI}/${item.image.replace(
                         /\\/g,
                         "/"
                       )}`}

@@ -273,32 +273,14 @@ const Footer = () => {
                             className="img-fluid mb-4"
                           />
 
-                          <h5 className="w-100  head-color text-center">
+                          <h6 className="w-100  head-color text-center">
                             <span className="addcolor">
                               {" "}
                               Jawlakhel, Lalitpur, Nepal{" "}
                             </span>{" "}
                             <br />
                             01-5426371
-                          </h5>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="row pt-4 border-top mt-2 border-light-subtle d-flex align-items-center justify-content-between">
-                      <div className="col-md-6 col-sm-12 text-md-start text-center">
-                        <div className="footer-copyright-wrapper text-light">
-                          © 2024. All Rights Reserved. Built by &nbsp;
-                          <Link
-                            to="https://technavata.com/"
-                            className="footer-tag text-decoration-none"
-                          >
-                            Navatatech &nbsp;
-                          </Link>
-                          with &nbsp;
-                          <span className="text-danger">
-                            <i className="fa fa-heart" aria-hidden="true"></i>
-                          </span>
+                          </h6>
                         </div>
                       </div>
                     </div>
