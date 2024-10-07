@@ -8,7 +8,7 @@ export const fetchNotices = createAsyncThunk(
       const response = await service.getNotice();
       if (response.data.success) {
 
-        return response.data.notices;
+        return response.data.notices.reverse();
       }
     } catch (error) {
       return rejectWithValue(error.response.data);

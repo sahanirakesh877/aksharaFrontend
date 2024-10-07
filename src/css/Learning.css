@@ -1,19 +1,17 @@
 .learning {
-  background: linear-gradient(30deg, #005c86, #47f6d6);
-
+  background: linear-gradient(30deg, #146990, #35caaf);
   cursor: none;
 }
 
 .learnimg {
   width: fit-content;
-  height: 70vh;
-
+  height: 78vh;
   transition: all 0.3s ease-in-out;
 }
 
 .fuche-sec {
   overflow: hidden;
-  height: 100vh;
+  height: 120vh;
 }
 
 .kinder_img {
@@ -32,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130vh;
+  height: 120vh;
   margin: -200px 0;
   box-shadow: 10px 0 30px -25px;
 }
@@ -282,7 +280,7 @@
   box-shadow:
     inset 5px 5px 10px #b5f8fb,
     inset -5px -5px 10px #dd93ff;
-    padding: 10px 20px;
+  padding: 10px 20px;
   border-radius: 50%;
 }
 

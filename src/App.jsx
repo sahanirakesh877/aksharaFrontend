@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import TopBar from "./components/TopBar";
@@ -20,22 +20,31 @@ import AdmissionProcedure from "./pages/AdmissionProcedure";
 import Photos from "./components/Photos";
 import ApplyOnline from "./pages/ApplyOnline";
 import ChairmanMsg from "./components/ChairmanMsg";
-import Principalmsg from "./components/Principalmsg";
 import LRPA from "./pages/LRPA";
 // import ChatBoat from "./components/ChatBoat";
 // import Qrcode from "./components/Qrcode";
-import ChatApp from './components/ChatApp';
+import ChatApp from "./components/ChatApp";
 import Infrastructure from "./pages/Infrastructure";
+import LatestBlogDetails from "./pages/LatestBlogDetails";
+import CategoryBlogs from "./pages/categoryBlogs";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchNotices } from "./redux/Notice/NoticeSlice";
+import Download from "./pages/Download";
+import Error from "./components/Error";
+import InfraDetails from "./pages/InfraDetails";
 
 const App = () => {
+  const dispatch = useDispatch();
+  const { notices } = useSelector((state) => state.notices);
+  useEffect(() => {
+    dispatch(fetchNotices());
+  }, [dispatch]);
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [popupVisible, setPopupVisible] = useState(true);
-  const popimg = [
-    "https://aksharaaschool.edu.np/storage/news-events/March2024/xRqFMcDy8P7lYMTjGLjkS.jpg.pagespeed.ic.eYuKu8OBu4.webp",
-    "https://img.freepik.com/free-vector/flat-design-back-school-sales-concept_23-2148612151.jpg?t=st=1720522381~exp=1720525981~hmac=0b926379529b99d0a0f8b16688a8eb23dd8e5edf8df360bb2a1eaf7decc669af&w=826",
-  ];
+
   const handleClose = () => {
-    if (currentImageIndex < popimg.length - 1) {
+    if (currentImageIndex < notices.length - 1) {
       setCurrentImageIndex(currentImageIndex + 1);
     } else {
       setPopupVisible(false);
@@ -44,10 +53,18 @@ const App = () => {
 
   return (
     <>
-      {popupVisible && (
+
+    
+      {popupVisible && notices && notices.length && (
         <div id="popoupContainer">
           <div className="imageContainer">
-            <img src={popimg[currentImageIndex]} alt="" className="popupimg img-fluid" />
+            <img
+              src={`${import.meta.env.VITE_SERVERAPI}/${notices[
+                currentImageIndex
+              ].images.replace(/\\/g, "/")}`}
+              alt=""
+              className="popupimg img-fluid"
+            />
             <button className="pop_btn rounded-circle" onClick={handleClose}>
               X
             </button>
@@ -55,12 +72,15 @@ const App = () => {
         </div>
       )}
 
+
+
       <TopBar />
       <Head />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/infrastructure" element={<Infrastructure />} />
+        <Route path="/infrastructure/:id" element={<InfraDetails />} />
         <Route path="/academics/kindergarten" element={<Kindegarten />} />
         <Route path="/academics/elementary" element={<Elementryschool />} />
         <Route path="/academics/middle" element={<Middleschool />} />
@@ -69,17 +89,29 @@ const App = () => {
         <Route path="/admission/procedure" element={<AdmissionProcedure />} />
         <Route path="/apply-online" element={<ApplyOnline />} />
         <Route path="/about/chairman" element={<ChairmanMsg />} />
-        <Route path="/about/principal" element={<Principalmsg />} />
+        {/* <Route path="/about/principal" element={<Principalmsg />} /> */}
         <Route path="/about/team" element={<Team />} />
         <Route path="/about/lrpa" element={<LRPA />} />
-        <Route path="/news" element={<Blog />} />
+        <Route path="/newsactivity" element={<Blog />} />
+        <Route
+          path="/newsactivity/:id"
+          element={<LatestBlogDetails news={true} />}
+        />
+        <Route
+          path="/newsactivitycategory/:categoryId"
+          element={<CategoryBlogs news={true} />}
+        />
         <Route path="/contact" element={<Contact />} />
         <Route path="/gallery" element={<Photos />} />
-        <Route path="/photo" element={<Gallery />} />
+        <Route path="/gallery/:id" element={<Gallery />} />
+        <Route path="/blog/:id" element={<LatestBlogDetails />} />
+        <Route path="/category/:categoryId" element={<CategoryBlogs />} />
+        <Route path="/downloads" element={<Download />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <SideIcon />
       <ChatApp />
-     {/* <ChatBoat/> */}
+      {/* <ChatBoat/> */}
       {/* <Qrcode/> */}
       <Footer />
     </>

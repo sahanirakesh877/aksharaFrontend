@@ -81,9 +81,12 @@ const Enquiryform = () => {
                     <option selected disabled>
                       Select Grade
                     </option>
+                    <option>DayCare</option>
+                    <option>Pre-ECD</option>
+                    <option>ECD-1</option>
+                    <option>ECD-2</option>
+                    <option>ECD-3</option>
                     <option>Grade 1</option>
-                    <option>Grade 2</option>
-                    <option>Grade 3</option>
                   </select>
                 </div>
               </div>

@@ -5,6 +5,7 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 :root {
   --green1: #035073;
   --green2: #005c86;
-  --red: #d50540;
+  --red: #bc0539;
   --green4: rgb(137, 202, 137);
  
 }
@@ -188,10 +189,14 @@ a {
   border-radius: 50%;
   margin-right: 15px;
   overflow: hidden;
+  border: 1px solid red;
 }
 .testimonial .pic img {
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+ 
+  
 }
 .testimonial .content {
   display: inline-block;
@@ -476,4 +481,14 @@ a {
   font-weight: bolder;
   display: flex;
   align-items: center;
+}
+
+
+.aboutbg{
+  background-color: #f6fbff;
+}
+
+
+.textjustify{
+  text-align: justify;
 }

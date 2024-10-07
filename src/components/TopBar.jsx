@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const TopBar = () => {
   return (
     <>
@@ -18,49 +17,43 @@ const TopBar = () => {
           </div>
           <div className=" col-md-9 ">
             <div className="row d-flex align-items-center justify-content-between">
-            {/* office location */}
-                <div className="d-flex flex-column align-items-start   mb-lg-0 col-lg-4 ">
-                  <h6 className="top-head mb-0 ">
-                    <i
-                      className="fas fa-map-marker-alt
+              {/* office location */}
+              <div className="d-flex flex-column align-items-start   mb-lg-0 col-lg-4 ">
+                <h6 className="top-head mb-0 ">
+                  <i
+                    className="fas fa-map-marker-alt
                     top-icon   me-1"
-                    ></i>
-                    Our Office
-                  </h6>
-                  <small className="top-p">
-                  Kandaghari, Kageshwori Manohara 9, KTM
-                  </small>
-                </div>
+                  ></i>
+                  Our Office
+                </h6>
+                <small className="top-p">
+                  Kageshwori Manohara 9, Kathmandu ,Nepal
+                </small>
+              </div>
 
-                 {/* email  */}
+              {/* email  */}
               <div className="d-flex flex-column align-items-start   mb-lg-0 col-lg-3 ">
-                  <h6 className="top-head mb-0 ">
-                    <i
-                      className="fas fa-message
+                <h6 className="top-head mb-0 ">
+                  <i
+                    className="fas fa-message
                     top-icon   me-1"
-                    ></i>
-                    Email Us
-                  </h6>
-                  <small className="top-p">
-                  info@aksharaaschool.edu.np
-                  </small>
-                </div>
+                  ></i>
+                  Email Us
+                </h6>
+                <small className="top-p">info@aksharaaschool.edu.np</small>
+              </div>
 
-
-                  {/* phone  */}
+              {/* phone  */}
               <div className="d-flex flex-column align-items-start   mb-lg-0 col-lg-3 ">
-                  <h6 className="top-head mb-0 ">
-                    <i
-                      className="fas fa-phone
+                <h6 className="top-head mb-0 ">
+                  <i
+                    className="fas fa-phone
                     top-icon   me-1"
-                    ></i>
+                  ></i>
                   Call Us
-                  </h6>
-                  <small className="top-p">
-                  +977-01-4993031/32/33
-                  </small>
-                </div>
-
+                </h6>
+                <small className="top-p">+977-01-4993031/32/33</small>
+              </div>
 
               <div className="mb-lg-0 m-md-0 p-md-0 p-lg-0 p-lg-0 col-lg-2 d-flex align-items-center justify-content-start ">
                 <div className="d-flex justify-content-lg-around   gap-1 m-md-0 p-md-0 p-lg-0 p-lg-0">
