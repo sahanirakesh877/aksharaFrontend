@@ -82,7 +82,7 @@ const HomePicRotate = () => {
           "http://localhost:5000/api/v1/three/getallthreedimg"
         );
         if (response.data.success) {
-          setData(response.data.gallery);
+          setData(response.data.gallery.slice(0,10));
         } else {
           console.error("Failed to fetch data:", response.data.message);
           setError(response.data.message);

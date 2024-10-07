@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/infocheck.css";
 
+import ifograpgh from "/round.jpeg";
+
 const Infochek = () => {
   return (
     <>
@@ -21,10 +23,9 @@ const Infochek = () => {
         </div>
         <figure className="d-flex justify-content-center align-items-center border">
           <img
-            src="/round.jpeg"
+            src={ifograpgh}
             alt=""
-            className="img-fluid w-75 w-sm-100 w-md-50 w-lg-25"
-            style={{ maxWidth: "100%", height: "auto" }}
+           className="img-fluid w-75 w-md-75 w-lg-100 "
           />
         </figure>
       </div>

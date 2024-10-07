@@ -1,4 +1,3 @@
-
 import React from "react";
 import "../css/Kindergarten.css";
 import AliceCarousel from "react-alice-carousel";
@@ -19,13 +18,13 @@ import {
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 
-const brandImg = [
-  "/school/school2.JPG",
-  "/school/school4.JPG",
-  "/school/school1.JPG",
-  "/school/school3.JPG",
-  "/school/school5.JPG",
-];
+import school1 from "/school/school1.jpg";
+import school2 from "/school/school2.jpg";
+import school3 from "/school/school3.jpg";
+import school4 from "/school/school4.jpg";
+import school5 from "/school/school5.jpg";
+
+const brandImg = [school2, school4, school1, school3, school5];
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
@@ -72,7 +71,7 @@ const Kindergarten = () => {
                 Pre-ECD, ECD I, and ECD II programs.
               </p>
 
-              <ul className="list-unstyled">
+              <ul className="list-unstyled ">
                 <li>
                   <strong>Day Care:</strong> For children aged 2-3 years.
                 </li>
@@ -96,8 +95,8 @@ const Kindergarten = () => {
                 activities. Our play-based learning programs focus on:
               </p>
 
-              <ul className="list-unstyled">
-                <li>
+              <ul className="list-unstyled ">
+                <li className="">
                   <FontAwesomeIcon
                     icon={faChild}
                     className="me-2 text-danger"
@@ -144,8 +143,8 @@ const Kindergarten = () => {
                   <h4 className="kinder-head mb-md-2">
                     Extra/ Co-curricular Activities
                   </h4>
-                  <ul className="list-unstyled ms-4">
-                    <li>
+                  <ul className="list-unstyled ms-4 ">
+                    <li className=" ">
                       <FontAwesomeIcon
                         icon={faRunning}
                         className="me-2 text-danger"
@@ -275,28 +274,28 @@ const Kindergarten = () => {
               <div className="row">
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school1.JPG"
+                    src={school1}
                     alt="School 6"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school2.JPG"
+                    src={school2}
                     alt="School 7"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school3.JPG"
+                    src={school3}
                     alt="School 8"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school4.JPG"
+                    src={school4}
                     alt="School 9"
                     className="img-fluid border border-white border-2"
                   />

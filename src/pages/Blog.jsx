@@ -382,6 +382,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import axios from "axios";
 import SafeHtml from './../../../Dashboard/src/components/safeHtml';
+import Loader from "../components/Loader";
 
 const Blog = () => {
   const { pathname } = useLocation();
@@ -399,7 +400,7 @@ const Blog = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/activity/"
+         `${import.meta.env.VITE_SERVERAPI }/api/v1/activity/`
         );
 
         if (response.data.success) {
@@ -419,6 +420,10 @@ const Blog = () => {
 
     fetchData();
   }, []);
+
+if(loading){
+  return <div><Loader/></div>;
+}
 
   const blogData = [
     {

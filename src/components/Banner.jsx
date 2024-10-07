@@ -109,11 +109,11 @@
 // };
 
 // export default Banner;
-
 import React, { useEffect } from "react";
 import "../css/banner.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchHeroPhoto } from "./../redux/Hero/HeroSlice";
+import Loader from "./Loader";
 
 const Banner = () => {
   const dispatch = useDispatch();
@@ -129,26 +129,27 @@ const Banner = () => {
         <div id="carousel" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-controls">
             <ol className="carousel-indicators">
-              {loading && <p>Loading...</p>}
+              {loading && <p><Loader/></p>}
               {error && <p>Error: {error}</p>}
               {!loading &&
                 !error &&
                 herophoto.Heros &&
-                herophoto.Heros.length > 0 &&
-                herophoto.Heros.map((item, index) => (
-                  <li
-                    key={item._id}
-                    data-bs-target="#carousel"
-                    data-bs-slide-to={index}
-                    className={index === 0 ? "active" : ""}
-                    style={{
-                      backgroundImage: `url(http://localhost:5000/${item.images.replace(
-                        /\\/g,
-                        "/"
-                      )})`,
-                    }}
-                  />
-                ))}
+                herophoto.Heros.length > 0 ? (
+                  herophoto.Heros.map((item, index) => (
+                    <li
+                      key={item._id}
+                      data-bs-target="#carousel"
+                      data-bs-slide-to={index}
+                      className={index === 0 ? "active" : ""}
+                      style={{
+                        backgroundImage: `url(http://localhost:5000/${item.images.replace(
+                          /\\/g,
+                          "/"
+                        )})`,
+                      }}
+                    />
+                  ))
+              ) : null}
             </ol>
 
             <a
@@ -175,19 +176,27 @@ const Banner = () => {
             {!loading &&
               !error &&
               herophoto.Heros &&
-              herophoto.Heros.length > 0 &&
-              herophoto.Heros.map((item, index) => (
-                <div
-                  key={item._id}
-                  className={`carousel-item im ${index === 0 ? "active" : ""}`}
-                  style={{
-                    backgroundImage: `url(http://localhost:5000/${item.images.replace(
-                      /\\/g,
-                      "/"
-                    )})`,
-                  }}
-                ></div>
-              ))}
+              herophoto.Heros.length > 0 ? (
+                herophoto.Heros.map((item, index) => (
+                  <div
+                    key={item._id}
+                    className={`carousel-item im ${index === 0 ? "active" : ""}`}
+                    style={{
+                      backgroundImage: `url(http://localhost:5000/${item.images.replace(
+                        /\\/g,
+                        "/"
+                      )})`,
+                    }}
+                  ></div>
+                ))
+            ) : (
+              <div
+                className="carousel-item active" // Adding 'active' to ensure fallback image shows up
+                style={{
+                  backgroundImage: `url('/banner1.jpg')`, // Fixed the missing closing quote here
+                }}
+              ></div>
+            )}
           </div>
         </div>
       </section>

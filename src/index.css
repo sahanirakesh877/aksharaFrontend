@@ -1,16 +1,32 @@
 /* enquiry form design start  */
 .modal-backdrop.show {
-  opacity: 0.6 !important;
-  z-index:20;
+  opacity: 0.7 !important;
+  z-index: 20;
 }
 .custom-modal-width {
-  max-width: 800px; /* Adjust the width as needed */
+  max-width: 800px;
 }
 @media (max-width: 576px) {
   .modal-content {
-    padding: 15px;
+    padding: 5px 0;
   }
+  .custom-modal-width {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .modal-backdrop.show {
+    opacity: 0.2 ;
+    z-index: 20;
+  }
+
+
 }
+
+
+
+
+
 .form-head {
   width: fit-content;
   background-color: transparent;
@@ -18,7 +34,6 @@
   padding: 5px 50px;
   color: white;
 }
-
 
 .paralleogram {
   position: absolute;
@@ -93,10 +108,7 @@
 /* enquiry form design end  */
 
 .contact-bg {
-  background-image: linear-gradient(
-      rgba(169, 162, 162, 0.1),
-      rgba(123, 204, 229, 0.2)
-    ),
+  background-image: linear-gradient(rgba(169, 162, 162, 0.1), rgba(123, 204, 229, 0.2)),
     url("https://img.freepik.com/free-photo/bokeh-lights-greenness_23-2147955988.jpg?t=st=1720503399~exp=1720506999~hmac=d18d50a8ac9e1b66787dffd566644631007289efee9b59986dbb488ce7475dfa&w=826");
   background-size: cover;
   background-position: center;
@@ -104,7 +116,6 @@
 .submit-btn {
   background-color: #019f40;
 }
-
 
 .contact-iconbg {
   background: var(--red);
@@ -155,11 +166,9 @@
   color: white;
 }
 
-
-
 /* ==============================Top Bar Start ===================================*/
 .top-icon {
-  color:#ED1651;
+  color: #ed1651;
   font-size: 16px;
 }
 .top-head {
@@ -200,8 +209,6 @@
 
 /* ==============================Top Bar end ===================================*/
 
-
-
 /* gallery  us section design start */
 .gallery-section {
   background-image: url("/gallery//gallerybg.jpg");
@@ -211,7 +218,6 @@
 
 /* brand logo img  start */
 .brand {
-
   overflow: hidden;
 }
 
@@ -294,7 +300,6 @@
 .card-text {
   font-size: 0.8rem;
   color: #5a5959;
-
 }
 
 /* border-bottom-title effect   of header   */
@@ -302,7 +307,6 @@
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
-  
 }
 .border-bottom-title::after {
   content: "";
@@ -427,7 +431,6 @@
   z-index: 10;
   background: rgb(233, 233, 233);
   padding: 10px 12px;
- 
 }
 .blog-card .blog-card__info h6 {
   transition: 300ms ease-in-out;
@@ -505,15 +508,14 @@ a.icon-link:hover {
   letter-spacing: 0.8px;
 }
 
-
-
 /* -----------mission section start here---------- */
 .animated-icon {
   animation: scaleAnimation 2s infinite;
 }
 
 @keyframes scaleAnimation {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {

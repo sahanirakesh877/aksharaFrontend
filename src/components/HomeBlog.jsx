@@ -77,6 +77,7 @@ import "../css/Honmeblog.css";
 import axios from "axios";
 import SafeHtml from "./../../../Dashboard/src/components/safeHtml";
 import { useNavigate } from "react-router-dom";
+import Loader from "./Loader";
 
 const HomeBlog = () => {
   const [data, setData] = useState([]);
@@ -88,7 +89,10 @@ const HomeBlog = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/v1/blog/");
+        const response = await axios.get(
+          `${import.meta.env.VITE_SERVERAPI}/api/v1/blog`
+        );
+
         if (response.data.success) {
           console.log("home blogs ", response.data.blogs);
           const blogsToShow = response.data.blogs.slice(-4);
@@ -114,11 +118,19 @@ const HomeBlog = () => {
           <span className="addcolor">Latest&nbsp;</span>Blog
         </h2>
         <p className="textjustify px-md-5">
-        Welcome to Aksharaa School's most recent blog session, where we offer news, updates, and motivational tales from our active community. Keep checking back as we examine the newest developments in education, highlight the accomplishments of our students, and provide insightful advice for both parents and teachers.
+          Welcome to Aksharaa School's most recent blog session, where we offer
+          news, updates, and motivational tales from our active community. Keep
+          checking back as we examine the newest developments in education,
+          highlight the accomplishments of our students, and provide insightful
+          advice for both parents and teachers.
         </p>
 
         <div className="row py-2">
-          {loading && <p>Loading...</p>}
+          {loading && (
+            <p>
+              <Loader />
+            </p>
+          )}
           {error && <p className="text-danger">Error: {error}</p>}
           {!loading &&
             !error &&

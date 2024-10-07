@@ -2,12 +2,18 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 
 
+import school1 from '/school/school1.jpg'
+import school2 from '/school/school2.jpg'
+import school3 from '/school/school3.jpg'
+import school4 from '/school/school4.jpg'
+import school5 from '/school/school5.jpg'
+
 const brandImg = [
-  "/school/school2.JPG",
-  "/school/school4.JPG",
-  "/school/school1.JPG",
-  "/school/school3.JPG",
-  "/school/school5.JPG",
+  school2,
+  school4,
+  school1,
+  school3,
+  school5,
 ];
 const responsive = {
   0: { items: 1 },
@@ -210,28 +216,28 @@ const Highschool = () => {
               <div className="row">
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school1.JPG"
+                    src={school1}
                     alt="School 6"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school2.JPG"
+                    src={school2}
                     alt="School 7"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school3.JPG"
+                    src={school3}
                     alt="School 8"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src="/school/school4.JPG"
+                    src={school4}
                     alt="School 9"
                     className="img-fluid border border-white border-2"
                   />

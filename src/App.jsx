@@ -31,12 +31,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchNotices } from "./redux/Notice/NoticeSlice";
 import Download from "./pages/Download";
 import Error from "./components/Error";
-import InfraDetails from './pages/InfraDetails';
+import InfraDetails from "./pages/InfraDetails";
 
 const App = () => {
   const dispatch = useDispatch();
   const { notices } = useSelector((state) => state.notices);
-  console.log("notice image ", notices);
   useEffect(() => {
     dispatch(fetchNotices());
   }, [dispatch]);
@@ -52,10 +51,10 @@ const App = () => {
     }
   };
 
-  console.log(notices, " popups");
-
   return (
     <>
+
+    
       {popupVisible && notices && notices.length && (
         <div id="popoupContainer">
           <div className="imageContainer">
@@ -72,6 +71,8 @@ const App = () => {
           </div>
         </div>
       )}
+
+
 
       <TopBar />
       <Head />

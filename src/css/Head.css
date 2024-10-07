@@ -92,25 +92,7 @@ ul.navbar-nav .nav-item:after {
     background-color 0.5s ease;
 }
 
-/* Button Animation */
-/* .head-btn {
-  border: 0;
-  outline: none;
-  padding: 3px 20px;
-  text-align: center;
-  color: white;
-  background-color: #b00535;
-}
-.animated-button {
-  transition: all 0.3s ease;
-  font-size: 14px;
-  font-weight: 500;
-}
 
-.animated-button:hover {
-  background-color: #8f0260;
-  transform: scale(1.1);
-} */
 
 .blinking-button {
   padding: 0 13px;
@@ -152,4 +134,10 @@ ul.navbar-nav .nav-item:after {
 .navbar-toggler-icons {
   color: rgb(224, 228, 229);
   font-size: 24px;
+}
+
+@media(max-width:567px){
+  .lastlink{
+    margin-left: 15px;
+  }
 }

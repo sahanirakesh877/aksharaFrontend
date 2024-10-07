@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const LatestBlogDetails = ({ news }) => {
-  
   const { id } = useParams();
   const navigate = useNavigate();
   const [blog, setBlog] = useState(null);
@@ -25,17 +24,20 @@ const LatestBlogDetails = ({ news }) => {
       let blogData;
       setLoading(true);
       try {
-        const response = await axios.get(news ? "http://localhost:5000/api/v1/activity/" : "http://localhost:5000/api/v1/blog/", {
-          params: {
-            categoryId,
-          },
-        });
-        blogData = news ? response.data.activities : response.data.blogs
+        const response = await axios.get(
+          news
+            ? `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/`
+            : `${import.meta.env.VITE_SERVERAPI}/api/v1/blog/`,
+          {
+            params: {
+              categoryId,
+            },
+          }
+        );
+        blogData = news ? response.data.activities : response.data.blogs;
         if (response.data.success) {
           setRelatedPosts(
-          blogData.filter(
-              (relatedBlog) => relatedBlog._id !== blog._id
-            )
+            blogData.filter((relatedBlog) => relatedBlog._id !== blog._id)
           );
         } else {
           setError(response.data.message || "Failed to fetch data.");
@@ -49,7 +51,7 @@ const LatestBlogDetails = ({ news }) => {
     }
 
     if (blog) {
-      categoryId = blog.category._id;
+      categoryId = blog.category?._id ? blog.category._id : "";
       getRelatedPosts();
     }
   }, [blog]);
@@ -60,20 +62,17 @@ const LatestBlogDetails = ({ news }) => {
       try {
         const blogResponse = await axios.get(
           news
-            ? `http://localhost:5000/api/v1/activity/${id}`
-            : `http://localhost:5000/api/v1/blog/${id}`
+            ? `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/${id}`
+            : `${import.meta.env.VITE_SERVERAPI}/api/v1/blog/${id}`
         );
 
         console.log("Fetch blogs details", blogResponse.data);
 
         const categoriesResponse = await axios.get(
           news
-            ? "http://localhost:5000/api/v1/activityCategory/"
-            : "http://localhost:5000/api/v1/category"
+            ? `${import.meta.env.VITE_SERVERAPI}/api/v1/activityCategory/`
+            : `${import.meta.env.VITE_SERVERAPI}/api/v1/category`
         );
-
-
-    
 
         setBlog(news ? blogResponse.data.activity : blogResponse.data.blog);
         setCategories(categoriesResponse.data.categories);
@@ -86,6 +85,12 @@ const LatestBlogDetails = ({ news }) => {
 
     fetchBlogDetails();
   }, [id, news]);
+
+  useEffect(() => {
+    if (relatedPosts.length > 3) {
+      setRelatedPosts(relatedPosts.slice(0, 3));
+    }
+  }, [relatedPosts]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
@@ -130,7 +135,13 @@ const LatestBlogDetails = ({ news }) => {
                 {categories.map((category) => (
                   <li
                     key={category._id}
-                    onClick={() => navigate(news ? `/newsactivitycategory/${category._id}` : `/category/${category._id}`)}
+                    onClick={() =>
+                      navigate(
+                        news
+                          ? `/newsactivitycategory/${category._id}`
+                          : `/category/${category._id}`
+                      )
+                    }
                     className="list-group-item d-flex justify-content-start gap-3 align-items-center border-0 rounded-0 border-bottom"
                   >
                     <FontAwesomeIcon
@@ -171,7 +182,11 @@ const LatestBlogDetails = ({ news }) => {
                       />
                       <div>
                         <Link
-                          to={news ? `/newsactivity/${post._id}` : `/blog/${post._id}`}
+                          to={
+                            news
+                              ? `/newsactivity/${post._id}`
+                              : `/blog/${post._id}`
+                          }
                           className="text-decoration-none"
                         >
                           {post.title}

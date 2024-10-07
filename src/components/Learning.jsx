@@ -2,22 +2,22 @@ import React, { useRef, useState } from "react";
 import "../css/Learning.css";
 import { useNavigate } from "react-router-dom";
 
+import seniorImg from "/alternate/senior.png";
+import middleImg from "/alternate/girl1.png";
+import kindergartenImg from "/alternate/girl2.png";
+import elementaryImg from "/alternate/kindergarten.png";
+
 const Learning = () => {
   const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState(null);
-
   const hoverRef = useRef(null);
-
   const [hover, setHover] = useState(false);
-
   const handleImageClick = (section) => {
     setActiveSection(section);
   };
-
   const handleClose = () => {
     setActiveSection(null);
   };
-
   const handleEffect = (e) => {
     if (hoverRef.current && hover) {
       requestAnimationFrame(() => {
@@ -41,7 +41,25 @@ const Learning = () => {
               <h5>Aksharaa‘s Guiding Principle</h5>
               <h2 className="fw-semibold sanskar  ">संस्कारयुक्त शिक्षा</h2>
               <p className="lrpa-text ">
-              Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा" which translates education infused with values. We are more of a school with the basic aim not of setting ourselves to the task of providing knowledge from a text book and preparing students for tests, but for producing individuals who are of good character, individuals of moral integrity who will be able to practice those  elements when they find themselves in the outside world. Our Learning-Reinforcement-Practice-Application (LRPA) module enhances cognitive abilities with fun and curiosity, encouraging critical thinking, collaboration, creativity, and problem-solving. We consider the entire development of a child's character and values to be an integral part of meaningful education, which goes beyond academic achievement.  In addition to fostering academic development, our curriculum aims at cultivating values like respect, integrity, compassion, and responsibility. This positions Aksharaa as a top educational institution in Kathmandu, preparing students to become full-fledged individuals who are not just knowledgeable but also morally and socially conscious. 
+                Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा"
+                which translates education infused with values. We are more of a
+                school with the basic aim not of setting ourselves to the task
+                of providing knowledge from a text book and preparing students
+                for tests, but for producing individuals who are of good
+                character, individuals of moral integrity who will be able to
+                practice those elements when they find themselves in the outside
+                world. Our Learning-Reinforcement-Practice-Application (LRPA)
+                module enhances cognitive abilities with fun and curiosity,
+                encouraging critical thinking, collaboration, creativity, and
+                problem-solving. We consider the entire development of a child's
+                character and values to be an integral part of meaningful
+                education, which goes beyond academic achievement. In addition
+                to fostering academic development, our curriculum aims at
+                cultivating values like respect, integrity, compassion, and
+                responsibility. This positions Aksharaa as a top educational
+                institution in Kathmandu, preparing students to become
+                full-fledged individuals who are not just knowledgeable but also
+                morally and socially conscious.
               </p>
 
               <button
@@ -166,11 +184,7 @@ const Learning = () => {
                 onClick={() => handleImageClick("senior")}
               >
                 <div className="inner-content">
-                  <img
-                    src="/alternate/senior.png"
-                    alt=""
-                    className="img-custom"
-                  />
+                  <img src={seniorImg} alt="" className="img-custom" />
                   <p className="seniors border px-3 rounded-2 py-1 border me-4">
                     High School
                   </p>
@@ -185,7 +199,7 @@ const Learning = () => {
               >
                 <div className="inner-content">
                   <img
-                    src="/alternate/girl1.png"
+                    src={middleImg}
                     alt=""
                     className="img-custom kinder_img2"
                   />
@@ -203,7 +217,7 @@ const Learning = () => {
               >
                 <div className="inner-content">
                   <img
-                    src="/alternate/girl2.png"
+                    src={elementaryImg}
                     alt=""
                     className="img-custom kinder_img1"
                   />
@@ -221,7 +235,7 @@ const Learning = () => {
               >
                 <div className="inner-content">
                   <img
-                    src="/alternate/kindergarten.png"
+                    src={kindergartenImg}
                     alt=""
                     className="img-custom kinder_img"
                   />

@@ -8,7 +8,6 @@ const missionData = [
     title: "OUR VISION",
     description:
        "Nurturing young learners to become lifelong learners globally competent and responsible citizens.",
-      // 'We envision Aksharaa School as a premier education center in Kathmandu that equips pupils to prosper in a world that is changing quickly. By embracing innovative teaching methods and cultivating a culture of curiosity and compassion, we aim to shape future leaders who are not only knowledgeable but also empathetic and driven by a lifelong passion for learning.',
     iconColorClass: "about-icon2",
   },
   {

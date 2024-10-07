@@ -1,5 +1,7 @@
 import React from "react";
 
+import breadImg from '/school/banner1.jpg'
+
 const Admissionpolicy = () => {
   const admissionCriteria = [
     "Aksharaa Kindergarten graduates",
@@ -11,7 +13,7 @@ const Admissionpolicy = () => {
   return (
     <>
       <div className="kinderbanner my-md-0">
-        <img src="/school/banner1.jpg" alt="Kindergarten" />
+        <img src={breadImg} alt="Kindergarten" />
         <h3 className="xyz">Admission Rules & Regulation</h3>
         <div className="breadcrumb-container">
           <ul className="breadcrumb">

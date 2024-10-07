@@ -17,7 +17,7 @@ const Photos = () => {
     const fetchGalleries = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/v1/getallgallery"
+        `${import.meta.env.VITE_SERVERAPI }/api/v1/getallgallery`
         );
         console.log("response all galleries", response.data.gallery);
         setGalleries(response.data.gallery);

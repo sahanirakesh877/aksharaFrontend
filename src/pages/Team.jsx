@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import "../css/Team.css";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
+import GroupImg from "/group.jpg";
+import sabinamam from "/sabinamam2.jpg";
 
 const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
   <div className="col-md-3 col-sm-6 ">
@@ -47,118 +49,113 @@ const TeamSection = ({ title, imgSrc, members }) => (
     )}
   </div>
 );
+// Data for team sections
+const teamSections = [
+  {
+    title: "Our Executive Team",
+    imgSrc: GroupImg,
+  },
+  {
+    title: "Team High School",
+    imgSrc: GroupImg,
+  },
+  {
+    title: "Team Middle School",
+    imgSrc: GroupImg,
+  },
+  {
+    title: "Team Kindergarten School",
+    imgSrc: GroupImg,
+  },
+  {
+    title: "Administration & Operations",
+    members: [
+      {
+        imgSrc:
+          "https://aksharaaschool.edu.np/storage/members/January2023/jx5H9QzLfYRjMzDTjetA.jpg",
+        name: "Rashmila Thapa",
+        position: "Accountant",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+      {
+        imgSrc:
+          "https://aksharaaschool.edu.np/storage/members/October2019/lNwTEleOknIKHophNWjE.png",
+        name: "Kaushila Pokharel",
+        position: "Financial Manager",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+      {
+        imgSrc:
+          "https://aksharaaschool.edu.np/storage/members/April2022/YfzsZUdflAn4ZS657EfW.jpg",
+        name: "Ram Kumar Adhikari",
+        position: "IT Incharge",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+      {
+        imgSrc:
+          "https://aksharaaschool.edu.np/storage/members/February2022/GybhzCk3WloVI8Eqe3UO.JPG",
+        name: "Bimal Bhattarai",
+        position: "Admin cum Transportation Incharge",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+      {
+        imgSrc:
+          "https://aksharaaschool.edu.np/storage/members/February2022/PTp8lyBO7oCeIyYgJ14A.jpg",
+        name: "Sabin Nepal",
+        position: "Operation Incharge",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+      {
+        imgSrc: sabinamam,
+        name: "Sabina Karanjeet",
+        position: "Front Desk Officer",
+        socialLinks: [
+          { href: "#", icon: "facebook" },
+          { href: "#", icon: "instagram" },
+          { href: "#", icon: "viber" },
+          { href: "#", icon: "linkedin" },
+          { href: "#", icon: "whatsapp" },
+        ],
+      },
+    ],
+  },
+];
 
 const Team = () => {
   const location = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location]);
-
-  // Data for team sections
-  const teamSections = [
-    {
-      title: "Our Executive Team",
-      imgSrc:
-        "https://aksharaaschool.edu.np/storage/team-photos/February2024/V8Cu3yB1s8QBsGvARF3Z.jpg",
-    },
-    {
-      title: "Team High School",
-      imgSrc:
-        "https://aksharaaschool.edu.np/storage/team-photos/February2024/V8Cu3yB1s8QBsGvARF3Z.jpg",
-    },
-    {
-      title: "Team Middle School",
-      imgSrc:
-        "https://aksharaaschool.edu.np/storage/team-photos/February2024/V8Cu3yB1s8QBsGvARF3Z.jpg",
-    },
-    {
-      title: "Team Kindergarten School",
-      imgSrc:
-        "https://aksharaaschool.edu.np/storage/team-photos/February2024/V8Cu3yB1s8QBsGvARF3Z.jpg",
-    },
-    {
-      title: "Administration & Operations",
-      members: [
-        {
-          imgSrc:
-            "https://aksharaaschool.edu.np/storage/members/January2023/jx5H9QzLfYRjMzDTjetA.jpg",
-          name: "Rashmila Thapa",
-          position: "Accountant",
-          socialLinks: [
-            { href: "#", icon: "facebook" },
-            { href: "#", icon: "instagram" },
-            { href: "#", icon: "viber" },
-            { href: "#", icon: "linkedin" },
-            { href: "#", icon: "whatsapp" },
-          ],
-        },
-        {
-          imgSrc:
-            "https://aksharaaschool.edu.np/storage/members/October2019/lNwTEleOknIKHophNWjE.png",
-          name: "Kaushila Pokharel",
-          position: "Financial Manager",
-          socialLinks: [
-            { href: "#", icon: "facebook" },
-            { href: "#", icon: "instagram" },
-            { href: "#", icon: "viber" },
-            { href: "#", icon: "linkedin" },
-            { href: "#", icon: "whatsapp" },
-          ],
-        },
-        {
-          imgSrc:
-            "https://aksharaaschool.edu.np/storage/members/April2022/YfzsZUdflAn4ZS657EfW.jpg",
-          name: "Ram Kumar Adhikari",
-          position: "IT Incharge",
-          socialLinks: [
-            { href: "#", icon: "facebook" },
-            { href: "#", icon: "instagram" },
-            { href: "#", icon: "viber" },
-            { href: "#", icon: "linkedin" },
-            { href: "#", icon: "whatsapp" },
-          ],
-        },
-        {
-          imgSrc:
-            "https://aksharaaschool.edu.np/storage/members/February2022/GybhzCk3WloVI8Eqe3UO.JPG",
-          name: "Bimal Bhattarai",
-          position: "Admin cum Transportation Incharge",
-          socialLinks: [
-            { href: "#", icon: "facebook" },
-            { href: "#", icon: "instagram" },
-            { href: "#", icon: "viber" },
-            { href: "#", icon: "linkedin" },
-            { href: "#", icon: "whatsapp" },
-          ],
-        },
-        {
-          imgSrc:
-            "https://aksharaaschool.edu.np/storage/members/February2022/PTp8lyBO7oCeIyYgJ14A.jpg",
-          name: "Sabin Nepal",
-          position: "Operation Incharge",
-          socialLinks: [
-            { href: "#", icon: "facebook" },
-            { href: "#", icon: "instagram" },
-            { href: "#", icon: "viber" },
-            { href: "#", icon: "linkedin" },
-            { href: "#", icon: "whatsapp" },
-          ],
-        },
-        {
-          imgSrc: "/sabinamam2.jpg",
-          name: "Sabina Karanjeet",
-          position: "Front Desk Officer",
-          socialLinks: [
-            { href: "#", icon: "facebook" },
-            { href: "#", icon: "instagram" },
-            { href: "#", icon: "viber" },
-            { href: "#", icon: "linkedin" },
-            { href: "#", icon: "whatsapp" },
-          ],
-        },
-      ],
-    },
-  ];
 
   return (
     <>

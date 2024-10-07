@@ -519,7 +519,7 @@ const Head = () => {
                     </ul>
                   </li>
 
-                  <li className="  py-2  ms-md-5">
+                  <li className="  py-2  ms-lg-5  ms-md-5  lastlink ">
                     <button
                       className="head-btn  rounded-pill animated-button blinking-button"
                       data-bs-toggle="modal"

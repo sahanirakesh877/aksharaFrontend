@@ -1,12 +1,15 @@
 import React from "react";
 import Enquiryform from "../components/Enquiryform";
 
+import BreadImg from "/school/banner2.jpg"
+import roadmap from "/roadmap.png"
+
 const AdmissionProcedure = () => {
   return (
     <>
       {/* Admission Banner Section */}
       <section className="kinderbanner my-md-0">
-        <img src="/school/banner2.jpg" alt="Kindergarten" />
+        <img src={BreadImg} alt="Kindergarten" />
         <h3 className="xyz">Admission Process</h3>
         <nav className="breadcrumb-container">
           <ul className="breadcrumb">
@@ -70,7 +73,7 @@ const AdmissionProcedure = () => {
         {/* Roadmap Image */}
         <div className="bg-light">
           <figure className="d-flex justify-content-center align-items-center">
-            <img src="/roadmap.png" alt="Roadmap" className="img-fluid w-75" />
+            <img src={roadmap} alt="Roadmap" className="img-fluid w-75" />
           </figure>
         </div>
       </section>
