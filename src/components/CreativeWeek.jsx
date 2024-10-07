@@ -5,7 +5,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import "../css/Creative.css";
 import { fetchNotices } from "../redux/Notice/NoticeSlice";
 import axios from "axios";
-import SafeHtml from "../../../Dashboard/src/components/safeHtml";
+import SafeHtml from "../components/safeHtml";
 import Loader from "./Loader";
 
 const CreativeWeek = () => {

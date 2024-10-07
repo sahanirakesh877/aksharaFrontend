@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import "../css/Team.css";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import GroupImg from "/group.jpg";
-import sabinamam from "/sabinamam2.jpg";
+import GroupImg from "./group.jpg";
+import sabinamam from "./sabinamam2.jpg";
 
 const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
   <div className="col-md-3 col-sm-6 ">

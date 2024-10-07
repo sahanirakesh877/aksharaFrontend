@@ -18,11 +18,11 @@ import {
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 
-import school1 from "/school/school1.jpg";
-import school2 from "/school/school2.jpg";
-import school3 from "/school/school3.jpg";
-import school4 from "/school/school4.jpg";
-import school5 from "/school/school5.jpg";
+import school1 from "./school/school1.jpg";
+import school2 from "./school/school2.jpg";
+import school3 from "./school/school3.jpg";
+import school4 from "./school/school4.jpg";
+import school5 from "./school/school5.jpg";
 
 const brandImg = [school2, school4, school1, school3, school5];
 const responsive = {

@@ -4,7 +4,7 @@ import axios from "axios";
 
 import { Link } from "react-router-dom";
 
-import SafeHtml from "../../../Dashboard/src/components/safeHtml";
+import SafeHtml from "../components/safeHtml";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 

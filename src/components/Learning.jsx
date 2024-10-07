@@ -2,10 +2,10 @@ import React, { useRef, useState } from "react";
 import "../css/Learning.css";
 import { useNavigate } from "react-router-dom";
 
-import seniorImg from "/alternate/senior.png";
-import middleImg from "/alternate/girl1.png";
-import kindergartenImg from "/alternate/girl2.png";
-import elementaryImg from "/alternate/kindergarten.png";
+import seniorImg from "./alternate/senior.png";
+import middleImg from "./alternate/girl1.png";
+import kindergartenImg from "./alternate/girl2.png";
+import elementaryImg from "./alternate/kindergarten.png";
 
 const Learning = () => {
   const navigate = useNavigate();

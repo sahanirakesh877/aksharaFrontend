@@ -3,11 +3,11 @@ import "../css/Learning.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import a from "/a.jpg";
-import b from "/b.jpg";
-import c from "/c.jpg";
-import d from "/d.jpg";
-import e from "/e.jpg";
+import a from "./a.jpg";
+import b from "./b.jpg";
+import c from "./c.jpg";
+import d from "./d.jpg";
+import e from "./e.jpg";
 
 import topPic1 from "/banner1.jpg";
 import topPic2 from "/banner2.jpg";
