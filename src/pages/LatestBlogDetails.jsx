@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-
 import { Link } from "react-router-dom";
-
-import SafeHtml from "../components/safeHtml";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import SafeHTML from "../components/SafeHTML";
 
 const LatestBlogDetails = ({ news }) => {
   const { id } = useParams();
@@ -108,12 +106,15 @@ const LatestBlogDetails = ({ news }) => {
               </p>
               <div className="blog-content">
                 <p>
-                  <SafeHtml htmlString={blog?.description} />
+                  <SafeHTML htmlString={blog?.description} />
                 </p>
                 {/* You can add more details or sections here */}
               </div>
               <img
-                src={`${import.meta.env.VITE_SERVERAPI}/${blog?.image.replace(/\\/g, "/")}`}
+                src={`${import.meta.env.VITE_SERVERAPI}/${blog?.image.replace(
+                  /\\/g,
+                  "/"
+                )}`}
                 alt={blog?.title}
                 className="img-fluid mb-4 border  border-danger"
                 style={{
@@ -168,10 +169,9 @@ const LatestBlogDetails = ({ news }) => {
                       className="list-group-item d-flex justify-content-start align-items-center border-0 rounded-0 border-bottom  "
                     >
                       <img
-                        src={`${import.meta.env.VITE_SERVERAPI}/${post.image.replace(
-                          /\\/g,
-                          "/"
-                        )}`}
+                        src={`${
+                          import.meta.env.VITE_SERVERAPI
+                        }/${post.image.replace(/\\/g, "/")}`}
                         alt={post.title}
                         className=" me-3"
                         style={{

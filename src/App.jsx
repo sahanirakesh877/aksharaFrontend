@@ -53,8 +53,6 @@ const App = () => {
 
   return (
     <>
-
-    
       {popupVisible && notices && notices.length && (
         <div id="popoupContainer">
           <div className="imageContainer">
@@ -71,8 +69,6 @@ const App = () => {
           </div>
         </div>
       )}
-
-
 
       <TopBar />
       <Head />

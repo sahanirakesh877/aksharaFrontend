@@ -1,8 +1,8 @@
 import React from "react";
 import Enquiryform from "../components/Enquiryform";
 
-import BreadImg from "./school/banner2.jpg"
-import roadmap from "./roadmap.png"
+import BreadImg from "/school/banner2.jpg"
+import roadmap from "/roadmap.png"
 
 const AdmissionProcedure = () => {
   return (

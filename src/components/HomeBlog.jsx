@@ -1,11 +1,9 @@
-
-
 import React, { useState, useEffect } from "react";
 import "../css/Honmeblog.css";
 import axios from "axios";
-import SafeHtml from "./../../../Dashboard/src/components/safeHtml";
 import { useNavigate } from "react-router-dom";
 import Loader from "./Loader";
+import SafeHTML from "../components/SafeHTML";
 
 const HomeBlog = () => {
   const [data, setData] = useState([]);
@@ -68,10 +66,9 @@ const HomeBlog = () => {
                 <div className="card h-100">
                   <div className="card-header p-0">
                     <img
-                      src={`${import.meta.env.VITE_SERVERAPI}/${item.image.replace(
-                        /\\/g,
-                        "/"
-                      )}`}
+                      src={`${
+                        import.meta.env.VITE_SERVERAPI
+                      }/${item.image.replace(/\\/g, "/")}`}
                       alt={item.title}
                       className="img-fluid w-100  "
                     />
@@ -79,7 +76,7 @@ const HomeBlog = () => {
                   <div className="card-body position-relative">
                     <h6>{item.title}</h6>
                     <p>
-                      <SafeHtml htmlString={item.description.slice(0, 180)} />
+                      <SafeHTML htmlString={item.description.slice(0, 180)} />
                     </p>
                     <button
                       className="btn px-3 text-white rounded-pill blog-btn shadow-sm position-absolute end-0 bottom-0 mb-3 mx-3"

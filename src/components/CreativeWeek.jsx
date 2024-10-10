@@ -5,8 +5,11 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import "../css/Creative.css";
 import { fetchNotices } from "../redux/Notice/NoticeSlice";
 import axios from "axios";
-import SafeHtml from "../components/safeHtml";
 import Loader from "./Loader";
+import SafeHTML from "../components/SafeHTML";
+
+
+
 
 const CreativeWeek = () => {
   const dispatch = useDispatch();
@@ -93,7 +96,7 @@ const CreativeWeek = () => {
           <div className="card-body my-md-0  border position-relative">
             <h5 className="text-danger my-md-0 d-inline">{creative.title}</h5>
             <p className="creative-text my-md-0 pb-5">
-              <SafeHtml htmlString={creative.description.slice(0,100)} />
+              <SafeHTML htmlString={creative.description.slice(0,100)} />
             </p>
             <div className="btn_wraps position-absolute end-0 bottom-0 my-2 me-3">
               <span className="share">

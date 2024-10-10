@@ -1,13 +1,11 @@
-
-
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import axios from "axios";
-import SafeHtml from '../components/safeHtml';
 import Loader from "../components/Loader";
+import SafeHTML from "../components/SafeHTML";
 
 const Blog = () => {
   const { pathname } = useLocation();
@@ -230,7 +228,7 @@ if(loading){
 
         <div className="blog-card__info">
           <h6>{item.title}</h6>
-          <p className="card-text  "><SafeHtml htmlString={item.description.slice(0,120)}/></p>
+          <p className="card-text  "><SafeHTML htmlString={item.description.slice(0,120)}/></p>
           <Link to={`/newsactivity/${index}`} className="btn btn--with-icon">
             <i className="btn-icon fa fa-long-arrow-right" />
             READ MORE
