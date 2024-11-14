@@ -49,7 +49,7 @@ const Highschool = () => {
       <div className="bg-light py-2">
         <div className="container">
          <h3 className="w-100 border-bottom-title head-color text-center">
-              <span className="addcolor">Middle School </span> (Class 8-10)
+              <span className="addcolor">Senior  School </span> (Class 8-10)
             </h3>
           <div className="row d-flex  ">
             <div className="col-md-12">
@@ -65,12 +65,7 @@ const Highschool = () => {
               </p>
 
               <p className="kinder-text">
-                We focus on delivering a challenging and well-rounded education
-                that equips students with the knowledge, skills, and confidence
-                necessary for higher education and beyond. Our holistic approach
-                ensures that each student is not only prepared for exams but
-                also developed as a responsible, creative, and engaged
-                individual.
+              We focus on delivering a challenging and well-rounded education that equips students with the knowledge, skills, and confidence necessary for higher education and beyond. Our holistic approach ensures that each student is not only prepared for exams but also developed as versatile individuals embedded in them the skills required for the present world.
               </p>
             </div>
 
@@ -80,22 +75,18 @@ const Highschool = () => {
                   Preparing for the Future :
                 </h2>
                 <p className="kinder-text">
-                  Senior School is a stepping stone to high school and beyond.
-                  We equip our students with the knowledge, skills, and values
-                  they need to succeed in the future.
+                Senior School is a stepping stone to high school and beyond. We strive to equip our students with the comprehensive knowledge, essential skills, and core values required to excel and thrive in their future endeavors.
                 </p>
 
                 <h5 className="kinder-subhead mb-md-2">Career Guidance</h5>
                 <ul className="list-unstyled">
                   <li>
                     <i className="fas fa-check-square me-2 text-danger" />
-                    Exploration of diverse career options and informed
-                    decision-making.
+                    Exploration of diverse career options coupled with the ability to make a well informed and strategic decision.
                   </li>
                   <li>
                     <i className="fas fa-check-square me-2 text-danger" />{" "}
-                    Workshops, seminars, and professional interactions providing
-                    field insights.
+                    Workshops, seminars, and professional interactions that offer in depth insights of different fields.
                   </li>
                   <li>
                     {" "}
@@ -108,8 +99,7 @@ const Highschool = () => {
                 <ul className="list-unstyled">
                   <li>
                     <i className="fas fa-check-square me-2 text-danger" />
-                    Emphasis on essential life skills: communication,
-                    collaboration, critical thinking, creativity.
+                    Emphasis on essential life skills: communication, collaboration, critical thinking, information literacy, analytical reasoning, perseverance and many more.
                   </li>
                   <li>
                     <i className="fas fa-check-square me-2 text-danger" />{" "}
@@ -150,10 +140,7 @@ const Highschool = () => {
                   Celebrating Achievements :
                 </h2>
                 <p className="kinder-text">
-                  At our Senior School, we celebrate the achievements and
-                  successes of our students, both big and small. We believe in
-                  recognizing and rewarding their efforts, which motivates them
-                  to strive for excellence.
+                At our Senior School, we celebrate every achievement and successes of our students. We are committed to recognizing and rewarding their efforts, as this serves as a powerful motivator inspiring them to pursue success. 
                 </p>
                 <h5 className="kinder-subhead mb-md-2">Academic Awards</h5>
                 <ul className="list-unstyled">
@@ -173,7 +160,7 @@ const Highschool = () => {
                   </li>
                 </ul>
                 <h5 className="kinder-subhead mb-md-2 ">
-                  Talent Shows and Competitions
+                ECA/CCA Achievements
                 </h5>
                 <ul className="list-unstyled">
                   <li>
@@ -183,8 +170,7 @@ const Highschool = () => {
                   </li>
                   <li>
                     <i className="fas fa-check-square me-2 text-danger" />
-                    Includes events such as science fairs, debating
-                    competitions, and talent shows.
+                    Includes events such as educational fairs, debating competitions, national and international exposure 
                   </li>
                   <li>
                     <i className="fas fa-check-square me-2 text-danger" />

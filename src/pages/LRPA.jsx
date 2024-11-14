@@ -30,20 +30,14 @@ const LRPA = () => {
   const lrpaSections = [
     {
       title: "Continuous Assessment",
-      text: `Continuous Assessment is integral to our educational strategy, 
-      allowing for ongoing evaluation of students' performance throughout their learning journey. 
-      This approach provides regular feedback and supports personalized learning by identifying 
-      areas for improvement and adapting instruction to meet individual needs.`,
+      text: `allows ongoing evaluation of students' performance throughout their learning journey. This approach provides regular feedback and supports personalized learning by identifying areas for improvement and adapting strategies to meet individual needs. By monitoring progress continuously, we help students build confidence, stay motivated and engaged, promote a growth mindset, raise personal standards and push the boundaries of their progress`,
       image: topPic1,
       numberClass: "number",
       number: "1",
     },
     {
       title: "Active Observation and Recording",
-      text: `Active Observation and Recording involve educators closely monitoring students 
-      during their activities and lessons. This hands-on approach enables teachers to gain valuable 
-      insights into students' engagement, behaviors, and learning styles. Detailed records from these 
-      observations inform instructional decisions.`,
+      text: `Teachers diligently observe and document students' activities, allowing them to gain a thorough understanding of each student's engagement, behavior, and unique learning style. This focused approach enables teachers to tailor their instructional methods to meet the individual needs and preferences of each student, fostering a more effective and personalized learning experience.`,
       image: topPic2,
       numberClass: "number1",
       number: "2",
@@ -51,18 +45,14 @@ const LRPA = () => {
     },
     {
       title: "Assignment",
-      text: `Assignments play a crucial role in applying classroom learning to real-world scenarios. 
-      They help students develop essential skills such as critical thinking, research, and independent problem-solving. 
-      By providing meaningful and practical tasks, assignments reinforce knowledge and offer opportunities for growth.`,
+      text: ` that we provide play a vital role in children's learning and development. The assignment not only enhances their academic knowledge but also provides practical insights that reinforce a deeper understanding of the subject matter, catering to their individual levels. These assignments are designed to foster essential skills, such as critical thinking, research capabilities, and independent problem-solving, thereby equipping students with the tools necessary for their academic and personal growth.`,
       image: topPic3,
       numberClass: "number",
       number: "3",
     },
     {
       title: "Time Bound Written Assessment",
-      text: `Time-Bound Written Assessments are designed to evaluate students' knowledge and problem-solving 
-      abilities under timed conditions. These assessments simulate real-world pressures and help students develop 
-      effective time management skills, offering a comprehensive view of students' understanding and readiness.`,
+      text: `serve not only as a means to evaluate our students' current knowledge and skills but also stand as a key strategy in cultivating effective time management abilities. This type of assessment represents an initial step for students to familiarize themselves with the examination format they will encounter in the future, fostering preparedness and resilience. Moreover, it provides an in-depth insight into each student's academic comprehension and understanding, offering a well-rounded perspective on their learning journey and progress. Through such assessments, we aim to enhance students’ readiness for future examinations while equipping them with essential skills for academic and personal growth`,
       image: topPic1,
       numberClass: "number1",
       number: "4",
@@ -91,17 +81,13 @@ const LRPA = () => {
 
       <div className="container">
         <div className="row">
-          <h2 className="text-center border-bottom-title pt-5 addcolor">
-            Learn Through <span className="head-color">LRPA Approach</span>
+          <h2 className="text-center border-bottom-title  pt-5 addcolor">
+            Learn Through LRPA <span className="head-color">: A Comprehensive Approach to Education </span>
           </h2>
           <p className="lrpa-p-text py-2">
-            At Aksharaa, we believe that education is a dynamic and evolving
-            process. To ensure that our students not only grasp knowledge but
-            also apply it effectively, we have implemented the Learn Through
-            LRPA (Learning, Recording, Practice, and Assessment) approach. This
-            innovative framework integrates Continuous Assessment, Active
-            Observation and Recording, Assignments, and Time-Bound Written
-            Assessments to create a holistic and engaging learning environment.
+            
+The LRPA (Learning, Reinforcement, Practice, and Application) model implemented at Aksharaa represents a distinctive approach to education, seamlessly blending traditional classroom instruction with hands-on, real-world application. In this innovative learning environment, students not only grasp theoretical concepts but also achieve mastery through repeated practical engagement. The educational emphasis lies in identifying and nurturing each student's individual strengths and addressing their challenges, fostering an environment where exploration is encouraged. The overarching goal is to empower students to apply their acquired knowledge and skills in practical, real-life scenarios. The adoption of this approach serves as a guiding principle, facilitating learning through the practical application of knowledge, thereby preparing children for the challenges and complexities of the contemporary world.
+
           </p>
         </div>
       </div>

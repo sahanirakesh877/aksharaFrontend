@@ -87,58 +87,73 @@ const Kindergarten = () => {
               </ul>
 
               <p className="kinder-text">
-                At Aksharaa Kindergarten, we recognize each child's uniqueness
-                and encourage their holistic development through our Balanced
-                Education System and LRPA module, which promotes cognitive,
-                physical, emotional, and social development. We offer a vibrant,
-                kid-centered setting where learning is infused into play
-                activities. Our play-based learning programs focus on:
+              Aksharaa Kindergarten provides a joyful and safe environment where children can explore, play and learn confidently. We cater to student's holistic development using child-friendly teaching-learning methodologies which makes them enjoy school and feel at home. At Aksharaa Kindergarten, we instill value-based and culture-driven education in every child, fostering mutual respect, gratitude, ethos, and compassion through integrated subjects and activities, including character education and “Sanskar Yukta Sikshya (संस्कारयुक्त शिक्षा).”
+              </p>
+              <p className="kinder-text">
+              At Aksharaa Kindergarten, we adopt a thematic and integrated approach, where multiple subject areas are combined under a single theme. This approach enables children to connect new knowledge with their personal experiences and relate it to their communities and families. Our learning centers are designed to accommodate various learning styles, incorporating hands-on activities, sensory play, inquiry-based learning, and real-world connections
+              </p>
+              <p className="kinder-text">
+              These centers foster holistic and enjoyable learning experiences, engaging and motivating students through small-group and project-based activities. Students have the opportunity to develop new skills and learn independence, all while being guided by the facilitator.
+              </p>
+              <p className="kinder-text">
+              Here, we recognize each child's uniqueness and encourage their holistic development through our Balanced Education System and LRPA module, which promotes cognitive, physical, emotional, and social development. We offer a vibrant, kid-centered setting where learning is infused into play activities. Our play-based learning programs focus on:
               </p>
 
-              <ul className="list-unstyled ">
+              <ol className=" ">
                 <li className="">
-                  <FontAwesomeIcon
-                    icon={faChild}
-                    className="me-2 text-danger"
-                  />
+                
                   Stimulating a child's natural curiosity
                 </li>
                 <li>
-                  <FontAwesomeIcon
-                    icon={faPaintBrush}
-                    className="me-2 text-danger"
-                  />
+                 
                   Cultivating creativity and problem-solving
                 </li>
                 <li>
-                  <FontAwesomeIcon
-                    icon={faUserFriends}
-                    className="me-2 text-danger"
-                  />
+                  
                   Enhancing emotional and social development
                 </li>
                 <li>
-                  <FontAwesomeIcon
-                    icon={faChalkboardTeacher}
-                    className="me-2 text-danger"
-                  />
+                 
                   Encouraging independent thinking and decision-making
                 </li>
-              </ul>
+              </ol>
+
 
               <p className="kinder-text">
-                Our Touch-Explore-Learn-Enjoy process fosters curiosity,
-                motivates exploration, and instills a lifelong love of learning.
-                We also offer specialized learning centers where students can
-                cultivate new skills independently and with the guidance of our
-                dedicated facilitators.
+              Our Touch-Explore-Learn-Enjoy process fosters curiosity, motivates exploration, and instills a lifelong love for learning. These centers are meticulously designed to accommodate diverse learning styles, incorporating a range of activities such as hands-on projects, sensory play, inquiry-based learning, and real-world applications. 
               </p>
             </div>
 
             <div className="col-md-7 col-12 px-4 py-4">
               <img src="/kgpng.png" alt="" className="img-fluid" />
 
-              <div className="mt-5 d-flex justify-content-between">
+              <div className="mt-5 d-flex justify-content-between flex-column">
+              <div>
+                  <h4 className="kinder-head mb-md-2">Learning Centers </h4>
+                  <p>
+                    Learning centers are designed to cater to differentiated
+                    learning where students practice and learn new skills
+                    independently and under the guidance of the facilitators.
+                    The learning centers provide enough learning opportunities
+                    in small groups.
+                  </p>
+                  <ul className="list-unstyled ms-4">
+                    <li>1. Art center </li>
+                    <li>2. Phonic Center</li>
+                    <li>3. Exploration and investigation center </li>
+                    <li>4. Pre-writing center </li>
+                    <li>5. Dramatic Center </li>
+                    <li>6. Literacy center </li>
+                    <li>7. Science and Nature Center </li>
+                    <li>8. Math Center </li>
+                    <li>9.	Sensory Center</li>
+                  </ul>
+                </div>
+
+
+
+
+
                 <div>
                   <h4 className="kinder-head mb-md-2">
                     Extra/ Co-curricular Activities
@@ -261,6 +276,9 @@ const Kindergarten = () => {
                     </li>
                   </ul>
                 </div>
+             
+
+              
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ const TopBar = () => {
                     className="fas fa-map-marker-alt
                     top-icon   me-1"
                   ></i>
-                  Our Office
+                  Our School
                 </h6>
                 <small className="top-p">
                   Kageshwori Manohara 9, Kathmandu ,Nepal

@@ -41,25 +41,7 @@ const Learning = () => {
               <h5>Aksharaa‘s Guiding Principle</h5>
               <h2 className="fw-semibold sanskar  ">संस्कारयुक्त शिक्षा</h2>
               <p className="lrpa-text ">
-                Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा"
-                which translates education infused with values. We are more of a
-                school with the basic aim not of setting ourselves to the task
-                of providing knowledge from a text book and preparing students
-                for tests, but for producing individuals who are of good
-                character, individuals of moral integrity who will be able to
-                practice those elements when they find themselves in the outside
-                world. Our Learning-Reinforcement-Practice-Application (LRPA)
-                module enhances cognitive abilities with fun and curiosity,
-                encouraging critical thinking, collaboration, creativity, and
-                problem-solving. We consider the entire development of a child's
-                character and values to be an integral part of meaningful
-                education, which goes beyond academic achievement. In addition
-                to fostering academic development, our curriculum aims at
-                cultivating values like respect, integrity, compassion, and
-                responsibility. This positions Aksharaa as a top educational
-                institution in Kathmandu, preparing students to become
-                full-fledged individuals who are not just knowledgeable but also
-                morally and socially conscious.
+              Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा" which translates education infused with values. Our commitment lies in shaping individuals of exemplary character. Placing greater emphasis on instilling and nurturing the value of integrity rather than solely focusing on textbook knowledge or examination preparation, empowering students to navigate the world beyond the classroom with confidence and moral clarity. Our Learning-Reinforcement-Practice-Application (LRPA) module enhances cognitive abilities with fun and curiosity, encouraging critical thinking, collaboration, creativity, and problem-solving. We believe the entire development of a child's character and values to be an integral part of meaningful education, which goes beyond academic achievement. In addition to fostering academic development, our curriculum aims to cultivate values like respect, compassion, responsibility and many more. This positions Aksharaa as a top educational institution in Kathmandu, preparing students to become well rounded individuals who are both intellectually enriched and conscious of their moral and social responsibilities. 
               </p>
 
               <button
@@ -80,12 +62,7 @@ const Learning = () => {
                   Senior School (Class 8-10)
                 </h3>
                 <p className="lrpa-text px-2">
-                  Our Senior School program combines rigorous academics with
-                  value-based education, ensuring students are well-prepared for
-                  higher education and life’s challenges. Counseling and support
-                  services are available to guide students through their.Display
-                  of handmade crafts and DIY projects created by our students.
-                  Local & natural materials are used for creating these crafts.
+                Our Senior School program combines rigorous academics with value-based education, ensuring students are well-prepared for higher education and real-life challenges. Counseling and support services are available to guide students through their academic and personal decisions. Our graduates leave with a strong academic foundation, leadership qualities, critical thinking skills, problem-solving skills and a deep sense of social responsibility..
                 </p>
                 <button
                   className="button-21"
@@ -106,13 +83,7 @@ const Learning = () => {
                   Middle School (Class 6-7)
                 </h3>
                 <p className="lrpa-text px-2">
-                  Middle School education at Aksharaa encourages independent
-                  learning and ethical reasoning, equipping students with the
-                  skills and values necessary for future success. Students learn
-                  to manage their time effectively and take responsibility for
-                  their own learning. Our advisory programs provide additional
-                  support and mentorship, helping students navigate this
-                  critical stage.
+                Middle School education at Aksharaa encourages independent ethical learning and reasoning, equipping students with the skills and values necessary for future success. Students learn to manage their time effectively taking responsibility for their own learning. Our advisory programs provide exposure, additional support and mentorship, helping students navigate this critical stage.
                 </p>
                 <button
                   className="button-21"
@@ -130,16 +101,10 @@ const Learning = () => {
                   <i className="fa-solid fa-xmark"></i>
                 </button>
                 <h3 className="border-bottom-title w-100 text-center">
-                  Elementary School (Class 1-5)
+                  Elementary School (Class1-5)
                 </h3>
                 <p className="lrpa-text px-2">
-                  Aksharaa’s Elementary School nurtures intellectual growth and
-                  character development, ensuring students excel academically
-                  while embodying ethical principles. Through collaborative
-                  projects and individual assignments, students learn the value
-                  of hard work and integrity. Our goal is to develop confident,
-                  well-rounded individuals who are prepared for middle school
-                  and beyond.
+                Aksharaa’s Elementary School nurtures intellectual growth and character development, ensuring students excel academically while embodying ethical principles. Through collaborative, long-term, individual assignments and projects students learn the value of hard work and integrity. Our goal is to develop confident, well-rounded individuals who are prepared for middle school and beyond.
                 </p>
                 <button
                   className="button-21"
@@ -160,12 +125,7 @@ const Learning = () => {
                   Kindergarten (PG-KG)
                 </h3>
                 <p className="lrpa-text px-2">
-                  In our Kindergarten classes, children learn through playful
-                  experiences while instilling values like kindness, honesty,
-                  and respect, creating a strong educational foundation.
-                  Activities are carefully crafted to be fun and educational,
-                  promoting holistic growth. We believe in teaching children the
-                  importance of empathy and cooperation from an early age.
+                In our Kindergarten classes, children learn through playful experiences while instilling values like kindness, honesty, and respect, creating a strong educational foundation. Activities are carefully crafted to be fun and educational, promoting holistic growth. We believe in teaching children the importance of empathy and cooperation from an early age.
              
 </p>
                 <button

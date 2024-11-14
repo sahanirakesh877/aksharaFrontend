@@ -50,37 +50,18 @@ const Middleschool = () => {
         <div className="container mx-auto">
           <div className="row">
             <h3 className="w-100 border-bottom-title head-color text-center">
-              <span className="addcolor">Middle School </span> (Class 6-7)
+              <span className="addcolor">Middle School </span> (Grades  6-7)
             </h3>
             <div className="col-md-12 col-12 px-4 py-2">
               <p className="kinder-text">
-                Welcome to the vibrant world of our Middle School, where the
-                journey of discovery and growth continues for students in Class
-                6-7. At our school, we believe that education is not just about
-                imparting knowledge but also about shaping character and
-                nurturing values. Our commitment to providing quality academic
-                education, coupled with a strong focus on ethics and moral
-                education, sets us apart and makes our middle school experience
-                truly extraordinary.
+              Welcome to the vibrant world of our Middle School, where the journey of discovery and growth continues for students in grades 6-7 as they experience academic and social  development. At our school, we believe that education is not just about imparting knowledge but also about shaping character and nurturing values. Our commitment to providing quality academic education, coupled with a strong focus on ethics and moral education, sets us apart and makes our middle school experience truly extraordinary
               </p>
               <p className="kinder-text">
-                In Middle School, we recognize that students are at a critical
-                stage of their development. They are curious, energetic, and
-                eager to explore the world around them. Our dynamic learning
-                environment is designed to cater to their evolving needs,
-                fostering a love for learning and encouraging intellectual
-                curiosity.
+              In Middle School, we recognize that students are at a critical stage of their development. They are curious, energetic, and eager to explore the world around them. Our dynamic learning environment is designed to cater to their evolving needs, fostering a love for learning and encouraging intellectual curiosity.
               </p>
 
               <p className="kinder-text">
-                Gone are the days of monotonous lectures and passive learning.
-                Our classrooms are interactive spaces where students engage in
-                discussions, group activities, and hands-on projects. This
-                approach not only enhances their understanding of concepts but
-                also hones their critical thinking and problem-solving skills.
-                Our teachers act as facilitators, guiding students on their
-                learning journey and encouraging them to ask questions and think
-                independently.
+              Gone are the days of monotonous lectures and passive learning. Our classrooms are interactive spaces where students engage in discussions, group activities, and hands-on projects. This approach not only enhances their understanding of concepts but also hones their critical thinking and problem-solving skills. Our teachers act as facilitators, guiding students on their learning journey and encouraging them to ask questions and think independently.
               </p>
             </div>
           </div>
@@ -91,10 +72,7 @@ const Middleschool = () => {
                 Beyond Academics: Building Character and Values :
               </h2>
               <p className="kinder-text">
-                At our Middle School, we understand that education is incomplete
-                without a strong foundation of ethics and values. We believe
-                that instilling moral principles in our students is essential
-                for their overall development and success in life.
+              At our Middle School, we understand that education is incomplete without a strong foundation of ethics and values. We believe that instilling moral principles in our students is essential for their overall development and success in life.
               </p>
 
               <h5 className="kinder-subhead mb-md-2">

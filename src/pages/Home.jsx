@@ -33,7 +33,7 @@ const Home = () => {
   }, []);
   return (
     <>
-      <Helmet titleTemplate="Akashara" />
+      <Helmet titleTemplate="Aksharaa School | The Best School in Kathmandu " />
       <Banner />
       <Mission />
       {isMobile ? <Mobilecheck /> : <Learning />}

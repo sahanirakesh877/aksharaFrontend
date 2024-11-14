@@ -5,17 +5,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 // Extracted static data for AboutContent
 const aboutData = {
   introText: [
-    `Established in 2011, Aksharaa School is a co-educational institution 
-    offering day school from Kindergarten through 10. The school operates 
-    in three earthquake-resistant academic and administrative blocks 
-    spread over 23 ropanis of land. Our advanced infrastructure includes 
-    modern classrooms and facilities designed to provide a safe, 
-    technologically advanced learning environment that meets international 
-    standards.`,
-    `Ranked among internationally accredited schools, Aksharaa is renowned 
-    for employing innovative teaching methodologies in technology-enhanced 
-    classrooms. Our child-friendly facilities create sophisticated learning 
-    environments, encouraging students to engage deeply during their study hours.`,
+    `Established in 2011, Aksharaa School is a co-education institute offering day school from Kindergarten through grade 10. The school operates in three earthquake-resistant academic and administrative blocks spread over 23 ropanis of land. Our advanced infrastructure includes modern classrooms and facilities designed to provide a safe, technologically advanced learning environment that meets international standards.`,
+    `Ranked among internationally accredited schools, Aksharaa is renowned for employing innovative teaching methodologies in technology-enhanced classrooms. Our child-friendly facilities create sophisticated learning environments, encouraging students to engage deeply during their study hours. We are committed to fostering a physically, mentally, and intellectually stimulating environment that promotes the holistic development of young children`,
   ],
   whyChooseUs: [
     {
@@ -26,9 +17,9 @@ const aboutData = {
     },
     {
       iconClass: "fas fa-check-square me-2 text-danger",
-      title: "Technologically Classrooms: ",
+      title: "Technologically Advanced  Classrooms: ",
       description:
-        "Integration of Information Communication Technology (ICT) and Learning-Reinforcement-Practice-Application (LRPA) to enhance learning.",
+        "Integration of Information Communication Technology (ICT) and Learning Management Systems (LMS) to enhance learning.",
     },
     {
       iconClass: "fas fa-check-square me-2 text-danger",
@@ -97,11 +88,11 @@ const PhilosophySection = memo(({ navigate }) => (
 ));
 
 const AboutContent = memo(() => (
-  <div className="container py-2">
-    <div className="text-center mb-4">
-      <h2 className="w-100 border-bottom-title head-color">
-        <span className="addcolor">Introduction</span>
-      </h2>
+  <div className="container py-4">
+    <div className="text-center ">
+      <h4 className=" border-bottom-title head-color">
+        <span className="">INTRODUCTION / The Best School in Kathmandu</span>
+      </h4>
     </div>
     <div className="mb-5">
       {aboutData.introText.map((text, index) => (
@@ -125,8 +116,7 @@ const AboutContent = memo(() => (
     </div>
     <div className="mt-5">
       <p className="mission-p">
-        Through the implementation of a Learning-Reinforcement-Practice-Application (LRPA) approach,
-        Aksharaa strives to achieve integrated child development.
+      Through the implementation of a Learning-Reinforcement-Practice-Application (LRPA) approach that incorporates creative teaching techniques, ongoing reinforcement, practical experience, and real-world application, Aksharaa strives to achieve integrated child development. Our institutional setup, combined with modern technologies, ensures a comprehensive educational experience that supports and enhances student learning.
       </p>
     </div>
   </div>
@@ -145,6 +135,16 @@ const About = () => {
     <PhilosophySection navigate={navigate} />
   ) : (
     <>
+    <div className="container">
+    <h2 className="w-100 border-bottom-title head-color text-center py-2 mb-2">
+        <span className="addcolor">About Us</span>
+      </h2>
+      <p className="mission-p" >Aksharaa School provides an enriching educational experience with its blend of modern facilities and innovative teaching methods. Our expansive premises feature spacious buildings and full-sized playgrounds, offering a holistic learning environment that extends beyond traditional classroom settings.</p>
+      <p className="mission-p" >At Aksharaa School, we are committed to integrating cutting-edge technology into our curriculum. Our classrooms are equipped with computers, laptops, projectors, and other advanced tools, facilitating interactive and project-based learning. This technology supports students in conducting research, creating multimedia presentations, and collaborating effectively on group projects.</p>
+      <p className="mission-p" >We pride ourselves on fostering critical thinking and problem-solving skills through hands-on experiences. Our students engage in a variety of enriching activities, including educational field trips, guest lectures, and international tours. These experiences are designed to broaden their perspectives and apply classroom knowledge to real-world situations.</p>
+      <p className="mission-p" >Our approach to education combines intellectual mentoring with practical application. Students are encouraged to explore, discuss, and apply their knowledge through diverse methods such as role plays, group work, and virtual learning. This integration of theory and practice not only strengthens their understanding but also prepares them for future challenges with confidence and adaptability.</p>
+      <p className="mission-p" >At Aksharaa School, we believe in nurturing well-rounded individuals who are ready to make meaningful contributions to society. Our focus on holistic development ensures that students leave us not only with academic excellence but also with the skills and experiences needed to succeed in an ever-evolving world.</p>
+    </div>
       <AboutContent />
       <PhilosophySection navigate={navigate} />
     </>

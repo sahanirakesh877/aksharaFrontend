@@ -2,26 +2,28 @@ import React from "react";
 import "../css/mission.css";
 
 const missionData = [
+  {
+    iconClass: "fas fa-bullseye",
+    title: "OUR MISSION",
+    description:
+'Aksharaa School inculcates value-based education with academic excellence through collaboration with parents and other stakeholders to instill resilience, leadership skill and emotional intelligence in each learner.Our focus on these areas positions us among the leading schools in Kathmandu Valley, ensuring our students receive the best educational facilities in Kathmandu.' ,
+   iconColorClass: "about-icon1",
+  },  
 
   {
     iconClass: "fas fa-eye",
     title: "OUR VISION",
     description:
-       "Nurturing young learners to become lifelong learners globally competent and responsible citizens.",
+       `We envision Aksharaa School as  a premier education center in Kathmandu  that equips pupils to prosper in a world that is changing quickly. Nurturing young learners to become lifelong learners, globally competent and responsible citizens`,
+ 
     iconColorClass: "about-icon2",
   },
-  {
-    iconClass: "fas fa-bullseye",
-    title: "OUR MISSION",
-    description:
-'Aksharaa School inculcates value-based education with academic excellence through collaboration with parents and other stakeholders to instill resilience, leadership skills and emotional intelligence in each learner.' ,
-   iconColorClass: "about-icon1",
-  },    
+   
   {
     iconClass: "fas fa-heart",
     title: "OUR VALUES",
     description:
-    "We promote innovation and critical thinking while upholding excellence, honesty, and inclusion. Through community engagement, we foster lifelong learning and personal growth in our students, equipping them with the confidence to take on future challenges and developing into responsible, well-rounded persons.",
+    "We are committed to fostering excellence, integrity, and inclusivity. We encourage positivity, empathy, effective communication, reliability, innovation, and critical thinking, empowering students to face future challenges confidently. Through collaboration with the community, we promote lifelong learning and personal growth, helping students develop into responsible and well-rounded individuals.",
     iconColorClass: "about-icon3",
   },
 ];
