@@ -6,14 +6,14 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import axios from "axios";
 import Loader from "../components/Loader";
 import SafeHTML from "../components/SafeHTML";
+import longtermProjectsdata from "../Data/ProjectData";
 
 const Blog = () => {
   const { pathname } = useLocation();
   const [filter, setFilter] = useState("Featured News");
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState()
+  const [loading, setLoading] = useState();
   const navigate = useNavigate();
-
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,7 +23,7 @@ const Blog = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-         `${import.meta.env.VITE_SERVERAPI }/api/v1/activity/`
+          `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/`
         );
 
         if (response.data.success) {
@@ -44,9 +44,13 @@ const Blog = () => {
     fetchData();
   }, []);
 
-if(loading){
-  return <div><Loader/></div>;
-}
+  if (loading) {
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
+  }
 
   const blogData = [
     {
@@ -98,6 +102,7 @@ if(loading){
       des: "Year 6 pupils are invited to join us for a Taster Day.",
     },
   ];
+
   const scheduleData = [
     {
       date: "Shrawan 2081 (July- August 2024)",
@@ -190,17 +195,20 @@ if(loading){
   });
 
   const items = data.map((item, index) => (
-    <div className="item" key={index} onClick={() => navigate(`/newsactivity/${item._id}`)}>
+    <div
+      className="item"
+      key={index}
+      onClick={() => navigate(`/newsactivity/${item._id}`)}
+    >
       <article className="blog-card">
         <div className="blog-card__background">
           <div className="card__background--wrapper">
             <div
               className="card__background--main"
               style={{
-                backgroundImage: `url(${import.meta.env.VITE_SERVERAPI}/${item.image.replace(
-                  /\\/g,
-                  "/"
-                )})`,
+                backgroundImage: `url(${
+                  import.meta.env.VITE_SERVERAPI
+                }/${item.image.replace(/\\/g, "/")})`,
               }}
             >
               <div className="card__background--layer" />
@@ -228,7 +236,9 @@ if(loading){
 
         <div className="blog-card__info">
           <h6>{item.title}</h6>
-          <p className="card-text  "><SafeHTML htmlString={item.description.slice(0,120)}/></p>
+          <p className="card-text  ">
+            <SafeHTML htmlString={item.description.slice(0, 120)} />
+          </p>
           <Link to={`/newsactivity/${index}`} className="btn btn--with-icon">
             <i className="btn-icon fa fa-long-arrow-right" />
             READ MORE
@@ -276,6 +286,7 @@ if(loading){
             >
               Upcoming Events
             </h6>
+
             <h6
               className={`border rounded-pill px-4 py-1 border-info flex-wrap d-flex text-center fw-semibold ${
                 filter === "Calendar" ? "text-danger" : "text-dark"
@@ -283,6 +294,16 @@ if(loading){
               onClick={() => setFilter("Calendar")}
             >
               Calendar
+            </h6>
+
+            {/* Akshara Highlights */}
+            <h6
+              className={`border rounded-pill px-4 py-1 border-info flex-wrap d-flex text-center fw-semibold ${
+                filter === "longtermProject" ? "text-danger" : "text-dark"
+              } fs-6 fs-md-5 fs-lg-4`}
+              onClick={() => setFilter("longtermProject")}
+            >
+              Our LongTerm Projects
             </h6>
           </div>
         </div>
@@ -358,6 +379,43 @@ if(loading){
                     </div>
                   </div>
                 ))}
+              </div>
+            </div>
+          )}
+
+          {/* Akshara Highlights */}
+          {filter === "longtermProject" && (
+            <div className="container py-4">
+              <div className="row py-4">
+                <h4 className="text-center my-4 border-bottom-title">
+                  Our Long Term Project
+                </h4>
+
+                <div className="row">
+                  {longtermProjectsdata.map((project, id) => (
+                    <div className="col-md-3" key={project.id}>
+                      <Link to={`longterm-project/${id + 1}`}>
+                        <div className="card shadow-lg rounded border-0 h-100">
+                          <img
+                            src={project.image[0]}
+                            className="card-img-top"
+                            alt={project.title}
+                            style={{ height: "200px", objectFit: "cover" }}
+                          />
+                          <div className="card-body">
+                            <h5 className="card-title text-dark text-center">
+                              {project.title}
+                            </h5>
+                            <p className="card-text">
+                              {project.description.slice(0, 120)}
+                            </p>
+                            <button className="border-0 ">View More</button>
+                          </div>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           )}

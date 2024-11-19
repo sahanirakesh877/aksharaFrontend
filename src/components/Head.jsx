@@ -134,6 +134,15 @@ const Head = () => {
                           Team
                         </Link>
                       </li>
+                      <li>
+                        <Link
+                          className="dropdown-item"
+                          to="/akshara-mun"
+                          onClick={closeNav}
+                        >
+                         Akshara MUN
+                        </Link>
+                      </li>
                     </ul>
                   </li>
 

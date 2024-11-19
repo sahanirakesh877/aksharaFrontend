@@ -30,9 +30,13 @@ const CreativeWeek = () => {
           {
             params: {
               week: true,
+              filter:'all'
             },
           }
         );
+        console.log("Activities fetched:", response.data);
+        console.log("Total length:", response.data.activities.length);
+        
         if (response.data.success) {
           setCreativesOfWeek(response.data.activities);
         } else {
@@ -180,6 +184,9 @@ const CreativeWeek = () => {
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
               </button>
             </div>
+
+
+            
             {/*  important  notices  */}
             <div className="col-lg-6 col-md-12 mb-4">
               <h2 className="text-center border-bottom-title w-100 head-color mb-5">

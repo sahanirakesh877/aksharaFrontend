@@ -32,6 +32,8 @@ import { fetchNotices } from "./redux/Notice/NoticeSlice";
 import Download from "./pages/Download";
 import Error from "./components/Error";
 import InfraDetails from "./pages/InfraDetails";
+import AksharaMUN from "./pages/AksharaMUN";
+import LongTermProject from "./pages/LongTermProject";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -75,6 +77,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/akshara-mun" element={<AksharaMUN/>} />
         <Route path="/infrastructure" element={<Infrastructure />} />
         <Route path="/infrastructure/:id" element={<InfraDetails />} />
         <Route path="/academics/kindergarten" element={<Kindegarten />} />
@@ -89,6 +92,7 @@ const App = () => {
         <Route path="/about/team" element={<Team />} />
         <Route path="/about/lrpa" element={<LRPA />} />
         <Route path="/newsactivity" element={<Blog />} />
+        <Route path="/newsactivity/longterm-project/:id" element={<LongTermProject />} />
         <Route
           path="/newsactivity/:id"
           element={<LatestBlogDetails news={true} />}
