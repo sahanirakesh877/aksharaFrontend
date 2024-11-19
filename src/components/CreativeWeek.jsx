@@ -8,16 +8,12 @@ import axios from "axios";
 import Loader from "./Loader";
 import SafeHTML from "../components/SafeHTML";
 
-
-
-
 const CreativeWeek = () => {
   const dispatch = useDispatch();
   const { notices, loading, error } = useSelector((state) => state.notices);
 
   const [creativesOfWeek, setCreativesOfWeek] = useState();
 
-  
   useEffect(() => {
     dispatch(fetchNotices());
   }, [dispatch]);
@@ -30,13 +26,11 @@ const CreativeWeek = () => {
           {
             params: {
               week: true,
-              filter:'all'
+            
             },
           }
         );
-        console.log("Activities fetched:", response.data);
-        console.log("Total length:", response.data.activities.length);
-        
+
         if (response.data.success) {
           setCreativesOfWeek(response.data.activities);
         } else {
@@ -46,7 +40,6 @@ const CreativeWeek = () => {
         setError("An error occurred while fetching data.");
         console.error("Error fetching data:", error);
       } finally {
-       
       }
     }
 
@@ -100,7 +93,7 @@ const CreativeWeek = () => {
           <div className="card-body my-md-0  border position-relative">
             <h5 className="text-danger my-md-0 d-inline">{creative.title}</h5>
             <p className="creative-text my-md-0 pb-5">
-              <SafeHTML htmlString={creative.description.slice(0,100)} />
+              <SafeHTML htmlString={creative.description.slice(0, 100)} />
             </p>
             <div className="btn_wraps position-absolute end-0 bottom-0 my-2 me-3">
               <span className="share">
@@ -143,9 +136,6 @@ const CreativeWeek = () => {
     });
   }
 
-
-  
-
   return (
     <>
       <div className="demo">
@@ -185,22 +175,23 @@ const CreativeWeek = () => {
               </button>
             </div>
 
-
-            
             {/*  important  notices  */}
             <div className="col-lg-6 col-md-12 mb-4">
               <h2 className="text-center border-bottom-title w-100 head-color mb-5">
                 <span className="addcolor">Important </span> Notice
               </h2>
               <div className="creative-items shadow ">
-                {loading && <p><Loader/></p>}
+                {loading && (
+                  <p>
+                    <Loader />
+                  </p>
+                )}
                 {error && <p>Error: {error}</p>}
                 {!loading && !error && notices.length > 0 && (
                   <img
-                    src={`${import.meta.env.VITE_SERVERAPI}/${notices[0].images.replace(
-                      /\\/g,
-                      "/"
-                    )}`}
+                    src={`${
+                      import.meta.env.VITE_SERVERAPI
+                    }/${notices[0].images.replace(/\\/g, "/")}`}
                     alt="Important Notice"
                     className="img-fluid "
                   />
