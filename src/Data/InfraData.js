@@ -1,9 +1,9 @@
-import  comLab from '/cafe/comLab.jpeg'
-import cafeteria from '/cafe/cafeteria.jpeg';
-import library from '/cafe/library.jpeg';
-import transportation from '/cafe/transportation.jpg';
-import sciencelab from '/cafe/sciencelab.jpeg';
-import infirmary from '/cafe/infirmary.jpg';
+import  comLab from '../../src/assets/cafe/comLab.jpeg'
+import cafeteria from '../../src/assets/cafe/cafeteria.jpeg';
+import library from '../../src/assets/cafe/library.jpeg';
+import transportation from '../../src/assets/cafe/transportation.jpg';
+import sciencelab from '../../src/assets/cafe/sciencelab.jpeg';
+import infirmary from '../../src/assets/cafe/infirmary.jpg';
 
 const infrastructureData = [
   {

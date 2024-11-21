@@ -2,11 +2,12 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import school1 from '/school/school1.jpg'
-import school2 from '/school/school2.jpg'
-import school3 from '/school/school3.jpg'
-import school4 from '/school/school4.jpg'
-import school5 from '/school/school5.jpg'
+import school1 from '../../src/assets/school/school1.jpg'
+import school2 from '../../src/assets/school/school2.jpg'
+import school3 from '../../src/assets/school/school3.jpg'
+import school4 from '../../src/assets/school/school4.jpg'
+import school5 from '../../src/assets/school/school5.jpg'
+
 
 const brandImg = [
   school2,

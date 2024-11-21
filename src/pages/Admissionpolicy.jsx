@@ -1,6 +1,7 @@
 import React from "react";
 
-import breadImg from '/school/banner1.jpg'
+import breadImg from '../assets/school/banner1.jpg'
+
 
 const Admissionpolicy = () => {
   const admissionCriteria = [

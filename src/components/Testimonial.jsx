@@ -8,7 +8,7 @@ const testimonialData = [
     title: "Excellent Education",
     description:
       "The teachers at Akshara School are fantastic! They have provided my child with the support and encouragement needed to excel academically .",
-    image: "team_1.jpg",
+    image: "/team_1.jpg",
     name: "John Doe",
     post: "Parent",
     rating: 5,
@@ -18,7 +18,7 @@ const testimonialData = [
     title: "Caring Environment",
     description:
       "Akshara School offers a nurturing and safe environment. My daughter loves going to school every day, and as a parent, I couldn't be happier.",
-    image: "team_2.jpg",
+    image: "/team_2.jpg",
     name: "Jane Smith",
     post: "Parent",
     rating: 5,
@@ -28,7 +28,7 @@ const testimonialData = [
     title: "Holistic Development",
     description:
       "Akshara School focuses on holistic development. My son is not only excelling in academics but also in extracurricular activities, thanks to the wonderful .",
-    image: "team_3.jpg",
+    image: "/team_3.jpg",
     name: "Emily Johnson",
     post: "Parent",
     rating: 5,
@@ -38,7 +38,7 @@ const testimonialData = [
     title: "Supportive Community",
     description:
       "The school community is very supportive. The teachers and staff are always willing to help and provide the necessary resources for my child's success.",
-    image: "team_1.jpg",
+    image: "/team_1.jpg",
     name: "Michael Brown",
     post: "Parent",
     rating: 5,

@@ -3,12 +3,12 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const brandImg = [
-  "./brand/brand1.jpg",
-  "./brand/brand3.jpg",
-  "./brand/brand4.jpg",
-  "./brand/brand1.jpg",
-  "./brand/brand5.jpg",
-  "./brand/brand6.jpg",
+  "/brand/brand1.jpg",
+  "/brand/brand3.jpg",
+  "/brand/brand4.jpg",
+  "/brand/brand1.jpg",
+  "/brand/brand5.jpg",
+  "/brand/brand6.jpg",
 ];
 
 const responsive = {
