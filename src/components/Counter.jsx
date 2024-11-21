@@ -38,17 +38,18 @@ const Counter = () => {
                   <div className="counter-icon">
                     <i className={count.icon} />
                   </div>
+
+                  <span className="counter-value ">
+                    <CountUp
+                      end={count.counterNo}
+                      duration={3}
+                      enableScrollSpy={true}
+                      scrollSpyOnce={true}
+                    />
+                    +
+                  </span>
                   <h3>{count.name}</h3>
                 </div>
-                <span className="counter-value ">
-                  <CountUp
-                    end={count.counterNo}
-                    duration={3}
-                    enableScrollSpy={true}
-                    scrollSpyOnce={true}
-                  />
-                  +
-                </span>
               </div>
             ))}
         </div>

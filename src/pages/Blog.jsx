@@ -394,7 +394,7 @@ const Blog = () => {
                 <div className="row">
                   {longtermProjectsdata.map((project, id) => (
                     <div className="col-md-3" key={project.id}>
-                      <Link to={`longterm-project/${id + 1}`}>
+                      <Link to={`/newsactivity/longterm-project/${id + 1}`}>
                         <div className="card shadow-lg rounded border-0 h-100">
                           <img
                             src={project.image[0]}

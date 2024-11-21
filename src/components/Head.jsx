@@ -134,15 +134,7 @@ const Head = () => {
                           Team
                         </Link>
                       </li>
-                      <li>
-                        <Link
-                          className="dropdown-item"
-                          to="/akshara-mun"
-                          onClick={closeNav}
-                        >
-                         Akshara MUN
-                        </Link>
-                      </li>
+                     
                     </ul>
                   </li>
 
@@ -227,6 +219,12 @@ const Head = () => {
                       onClick={closeNav}
                     >
                       News & Activities
+                    </Link>
+                  </li>
+
+                  <li className="nav-item  py-2  ">
+                    <Link className="nav-link" to="/akshara-mun" onClick={closeNav}>
+                      Akashara MUN
                     </Link>
                   </li>
 

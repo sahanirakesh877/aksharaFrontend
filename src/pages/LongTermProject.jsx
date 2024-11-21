@@ -5,7 +5,8 @@ import longtermProjectsdata from "./../Data/ProjectData";
 
 const LongTermProject = () => {
   const { id } = useParams();
-  const project = longtermProjectsdata.find((item) => item.id === parseInt(id)); // Find project data
+  const project = longtermProjectsdata.find((item) => item.id === parseInt(id)); 
+  console.log("projects fetched", project)
 
   if (!project) {
     return <p>Project not found!</p>; // Handle invalid ID
