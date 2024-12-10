@@ -8,7 +8,7 @@ import axios from "axios";
 import Loader from "./Loader";
 import SafeHTML from "../components/SafeHTML";
 
-const CreativeWeek = () => {
+const CreativeWeek = () =>{
   const dispatch = useDispatch();
   const { notices, loading, error } = useSelector((state) => state.notices);
 
@@ -19,19 +19,23 @@ const CreativeWeek = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    async function getCreativesOfWeek() {
+    async function getCreativesOfWeek(){
       try {
         const response = await axios.get(
           `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/`,
-          {
-            params: {
-              week: true,
-            
-            },
-          }
+          // {
+          //   params: {
+          //     week: "true", 
+          //   },
+          // }
         );
 
+        console.log("Creative week response:", response.data);
+
         if (response.data.success) {
+          if (response.data.activities.length === 0) {
+            console.warn("No activities found for the creative week.");
+          }
           setCreativesOfWeek(response.data.activities);
         } else {
           setError(response.data.message || "Failed to fetch data.");
@@ -39,7 +43,6 @@ const CreativeWeek = () => {
       } catch (error) {
         setError("An error occurred while fetching data.");
         console.error("Error fetching data:", error);
-      } finally {
       }
     }
 

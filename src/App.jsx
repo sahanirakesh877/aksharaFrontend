@@ -34,6 +34,7 @@ import Error from "./components/Error";
 import InfraDetails from "./pages/InfraDetails";
 import AksharaMUN from "./pages/AksharaMUN";
 import LongTermProject from "./pages/LongTermProject";
+import EnquiryModel from "./components/EnquiryModel";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -90,6 +91,7 @@ const App = () => {
         <Route path="/about/chairman" element={<ChairmanMsg />} />
         {/* <Route path="/about/principal" element={<Principalmsg />} /> */}
         <Route path="/about/team" element={<Team />} />
+        <Route path="/getinquiry" element={<EnquiryModel />} />
         <Route path="/about/lrpa" element={<LRPA />} />
         <Route path="/newsactivity" element={<Blog />} />
         <Route

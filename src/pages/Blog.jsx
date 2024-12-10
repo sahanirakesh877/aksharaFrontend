@@ -25,6 +25,7 @@ const Blog = () => {
         const response = await axios.get(
           `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/`
         );
+        console.log('creative week activity',response.data) 
 
         if (response.data.success) {
           setData(response.data.activities);

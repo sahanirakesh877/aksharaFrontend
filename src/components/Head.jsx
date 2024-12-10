@@ -283,7 +283,7 @@ const Head = () => {
                   </li>
 
                   <li className="  py-2  ms-lg-5  ms-md-5  lastlink ">
-                    <button
+                    <Link to={'/getinquiry'}><button
                       className="head-btn  rounded-pill animated-button blinking-button"
                       data-bs-toggle="modal"
                       role="button"
@@ -291,8 +291,9 @@ const Head = () => {
                     >
                       Get Enquiry
                     </button>
+                    </Link>
 
-                    <EnquiryModel />
+                    {/* <EnquiryModel /> */}
                   </li>
                 </ul>
               </div>
