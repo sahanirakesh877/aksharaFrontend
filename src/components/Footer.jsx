@@ -64,7 +64,8 @@ const Footer = () => {
                         <li className="nav-item me-3">
                           <Link
                             className="nav-link link-primary p-2 bg-light rounded"
-                            to="#!"
+                            to="https://www.facebook.com/AksharaaSchool/"
+                            target="blank"
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +82,8 @@ const Footer = () => {
                         <li className="nav-item me-3">
                           <Link
                             className="nav-link link-primary p-2 bg-light rounded"
-                            to="#!"
+                            to="https://www.youtube.com/@aksharaaschool6713"
+                            target="blank"
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +117,8 @@ const Footer = () => {
                         <li className="nav-item">
                           <Link
                             className="nav-link link-primary p-2 bg-light rounded"
-                            to="#!"
+                            to="https://www.instagram.com/aksharaa_school_np/?hl=en"
+                            target="blank"
                           >
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +162,7 @@ const Footer = () => {
                             </li>
                             <li className="mb-3">
                               <Link
-                                to="#!"
+                                to="/about/lrpa"
                                 className="footer-tag text-decoration-none animated-hover"
                               >
                                 <i
@@ -171,7 +174,7 @@ const Footer = () => {
                             </li>
                             <li className="mb-3">
                               <Link
-                                to="/apply-online"
+                                to="/admission/procedure"
                                 className="footer-tag text-decoration-none animated-hover"
                               >
                                 <i
@@ -184,7 +187,7 @@ const Footer = () => {
 
                             <li className="mb-3">
                               <Link
-                                to="#!"
+                                to="/apply-online"
                                 className="footer-tag text-decoration-none animated-hover"
                               >
                                 <i
@@ -194,18 +197,7 @@ const Footer = () => {
                                 Apply Online
                               </Link>
                             </li>
-                            <li className="mb-3">
-                              <Link
-                                to="#!"
-                                className="footer-tag text-decoration-none animated-hover"
-                              >
-                                <i
-                                  class="fa fa-angle-right me-1"
-                                  aria-hidden="true"
-                                ></i>{" "}
-                                Admission
-                              </Link>
-                            </li>
+                            
                           </ul>
                         </div>
                       </div>

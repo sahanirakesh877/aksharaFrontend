@@ -2,7 +2,10 @@ import React, { useEffect } from "react";
 import "../css/Team.css";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import GroupImg from "/group.jpg";
+import team1 from "../../src/assets/Teammember/GP4A8349.jpg";
+import team2 from "../../src/assets/Teammember/GP4A8352.jpg";
+import team3 from "../../src/assets/Teammember/GP4A8358.jpg";
+import team4 from "../../src/assets/Teammember/GP4A8364.jpg";
 import sabinamam from "/sabinamam2.jpg";
 
 const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
@@ -53,19 +56,19 @@ const TeamSection = ({ title, imgSrc, members }) => (
 const teamSections = [
   {
     title: "Our Executive Team",
-    imgSrc: GroupImg,
+    imgSrc: team1,
   },
   {
     title: "Team High School",
-    imgSrc: GroupImg,
+    imgSrc: team4,
   },
   {
     title: "Team Middle School",
-    imgSrc: GroupImg,
+    imgSrc: team2,
   },
   {
     title: "Team Kindergarten School",
-    imgSrc: GroupImg,
+    imgSrc: team3,
   },
   {
     title: "Administration & Operations",

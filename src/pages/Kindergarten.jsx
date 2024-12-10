@@ -18,11 +18,15 @@ import {
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 
-import school1 from "../../src/assets/school/school1.jpg";
-import school2 from "../../src/assets/school/school2.jpg";
-import school3 from "../../src/assets/school/school3.jpg";
-import school4 from "../../src/assets/school/school4.jpg";
-import school5 from "../../src/assets/school/school5.jpg";
+import school1 from '../../src/assets/kinder/GP4A7400.jpg'
+import school2 from '../../src/assets/kinder/GP4A7422.jpg'
+import school3 from '../../src/assets/kinder/GP4A7437.jpg'
+import school4 from '../../src/assets/kinder/GP4A7607.jpg'
+import school5 from '../../src/assets/kinder/GP4A7615.jpg'
+import school6 from '../../src/assets/kinder/GP4A7640.jpg'
+import school7 from '../../src/assets/kinder/GP4A7642.jpg'
+import school8 from '../../src/assets/kinder/GP4A7650.jpg'
+import school9 from '../../src/assets/kinder/GP4A7702.jpg'
 
 const brandImg = [school2, school4, school1, school3, school5];
 const responsive = {
@@ -292,28 +296,28 @@ const Kindergarten = () => {
               <div className="row">
                 <div className="col-md-3 col-6">
                   <img
-                    src={school1}
+                    src={school6}
                     alt="School 6"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src={school2}
+                    src={school7}
                     alt="School 7"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src={school3}
+                    src={school8}
                     alt="School 8"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src={school4}
+                    src={school9}
                     alt="School 9"
                     className="img-fluid border border-white border-2"
                   />

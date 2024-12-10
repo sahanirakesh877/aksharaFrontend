@@ -1,6 +1,6 @@
 /* banner us section design start */
 .home .carousel-item {
-  min-height: 81vh;
+  min-height:90vh;
   background-position: top;
   background-size: cover;
   position: relative;
@@ -55,7 +55,7 @@
 .home .carousel-controls {
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 70px;
   z-index: 10;
   transform: translateX(-50%);
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import Enquiryform from "../components/Enquiryform";
 
-import BreadImg from "../../src/assets/school/banner2.jpg"
+import BreadImg from "../../src/assets/middle/GP4A8041.jpg"
 import roadmap from "/roadmap.png"
 
 const AdmissionProcedure = () => {

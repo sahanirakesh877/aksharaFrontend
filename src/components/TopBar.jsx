@@ -57,19 +57,17 @@ const TopBar = () => {
 
               <div className="mb-lg-0 m-md-0 p-md-0 p-lg-0 p-lg-0 col-lg-2 d-flex align-items-center justify-content-start ">
                 <div className="d-flex justify-content-lg-around   gap-1 m-md-0 p-md-0 p-lg-0 p-lg-0">
-                  <a href="#" className="text-decoration-none head-icons">
+                  <a href="https://www.facebook.com/AksharaaSchool/" target="blank" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-facebook    facebook "></i>
                   </a>
-                  <a href="#" className="text-decoration-none head-icons">
+                  <a href="https://www.instagram.com/aksharaa_school_np/?hl=en" target="blank" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-instagram   instagram "></i>
                   </a>
-                  {/* <a href="#" className="text-decoration-none head-icons">
-                    <i className="fa-brands fa-whatsapp  whatsapp "></i>
-                  </a> */}
-                  <a href="#" className="text-decoration-none head-icons">
+                  
+                  <a href="https://www.youtube.com/@aksharaaschool6713" target="blank" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-youtube   youtube"></i>
                   </a>
-                  <a href="#" className="text-decoration-none head-icons">
+                  <a href="https://www.linkedin.com/company/aksharaa-school/?originalSubdomain=np" target="blank" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-linkedin  facebook "></i>
                   </a>
                 </div>

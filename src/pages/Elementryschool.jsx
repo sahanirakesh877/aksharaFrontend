@@ -3,11 +3,16 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 // import school1 from '/school/school1.jpg'
-import school1 from '../../src/assets/school/school1.jpg';
-import school2 from '../../src/assets/school/school2.jpg'
-import school3 from '../../src/assets/school/school3.jpg'
-import school4 from '../../src/assets/school/school4.jpg'
-import school5 from '../../src/assets/school/school5.jpg'
+import school1 from '../../src/assets/elementarty/GP4A7575.jpg'
+import school2 from '../../src/assets/elementarty/GP4A7740.jpg'
+import school3 from '../../src/assets/elementarty/GP4A7748.jpg'
+import school4 from '../../src/assets/elementarty/GP4A7765.jpg'
+import school5 from '../../src/assets/elementarty/GP4A7847.jpg'
+import school6 from '../../src/assets/elementarty/GP4A7970.jpg'
+import school7 from '../../src/assets/elementarty/GP4A8072.jpg'
+import school8 from '../../src/assets/elementarty/GP4A8141.jpg'
+import school9 from '../../src/assets/elementarty/GP4A8150.jpg'
+
 
 const brandImg = [
   school2,
@@ -144,28 +149,28 @@ const Elementryschool = () => {
               <div className="row">
                 <div className="col-md-3 col-6">
                   <img
-                       src={school1}
+                       src={school6}
                     alt="School 6"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                      src={school2}
+                      src={school7}
                     alt="School 7"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                      src={school3}
+                      src={school8}
                     alt="School 8"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                     src={school4}
+                     src={school9}
                     alt="School 9"
                     className="img-fluid border border-white border-2"
                   />

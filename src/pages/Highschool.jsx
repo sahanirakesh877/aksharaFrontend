@@ -2,11 +2,14 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 
 
-import school1 from '../../src/assets/school/school1.jpg'
-import school2 from '../../src/assets/school/school2.jpg'
-import school3 from '../../src/assets/school/school3.jpg'
-import school4 from '../../src/assets/school/school4.jpg'
-import school5 from '../../src/assets/school/school5.jpg'
+import school1 from '../../src/assets/senior/GP4A8126.jpg'
+import school2 from '../../src/assets/senior/GP4A8177.jpg'
+import school3 from '../../src/assets/senior/GP4A8190.jpg'
+import school4 from '../../src/assets/senior/GP4A8244.jpg'
+import school5 from '../../src/assets/senior/GP4A8279.jpg'
+import school6 from '../../src/assets/senior/GP4A8291.jpg'
+import school7 from '../../src/assets/senior/GP4A8369.jpg'
+import school8 from '../../src/assets/senior/GP4A8378.jpg'
 
 const brandImg = [
   school2,
@@ -202,21 +205,21 @@ const Highschool = () => {
               <div className="row">
                 <div className="col-md-3 col-6">
                   <img
-                    src={school1}
+                    src={school6}
                     alt="School 6"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src={school2}
+                    src={school7}
                     alt="School 7"
                     className="img-fluid border border-white border-2"
                   />
                 </div>
                 <div className="col-md-3 col-6">
                   <img
-                    src={school3}
+                    src={school8}
                     alt="School 8"
                     className="img-fluid border border-white border-2"
                   />
