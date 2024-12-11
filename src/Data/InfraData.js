@@ -35,6 +35,11 @@ import visitoelounge2 from '../../src/assets/infrastructure/visitorlounge/GP4A79
 import visitoelounge3 from '../../src/assets/infrastructure/visitorlounge/GP4A8373.jpg';
 
 
+import outdoor1 from '../../src/assets/infrastructure/outdoor/GP4A7705.jpg';
+import outdoor2 from '../../src/assets/infrastructure/outdoor/GP4A8183.jpg';
+import outdoor3 from '../../src/assets/infrastructure/outdoor/GP4A8190.jpg';
+
+
 const infrastructureData = [
   {
     id: 1,
@@ -116,7 +121,7 @@ const infrastructureData = [
     title: "Outdoor Learning Spaces",
     iconClass: "fas fa-seedling text-warning",
     description: `Our outdoor learning spaces include a dedicated garden and an open-air classroom designed to facilitate experiential learning. These areas enable students to immerse themselves in nature, conduct environmental science experiments, and partake in a variety of outdoor educational activities. They provide a revitalizing change from conventional indoor classrooms.`,
-    images: [comLab1, comLab1, comLab3],
+    images: [outdoor1, outdoor2, outdoor3],
   },
 
 

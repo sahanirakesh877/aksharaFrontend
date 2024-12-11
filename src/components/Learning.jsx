@@ -145,7 +145,7 @@ const Learning = () => {
                 onClick={() => handleImageClick("senior")}
               >
                 <div className="inner-content">
-                  <img src={seniorImg} alt="" className="img-custom" />
+                  <img src={seniorImg} alt="" className="img-custom" loading="lazy"/>
                   <p className="seniors border px-3 rounded-2 py-1 border me-4">
                     High School
                   </p>
@@ -163,6 +163,7 @@ const Learning = () => {
                     src={middleImg}
                     alt=""
                     className="img-custom kinder_img2"
+                    loading="lazy"
                   />
                   <p className="seniors px-3 rounded-2 py-1 border me-4">
                     Middle School
@@ -180,6 +181,7 @@ const Learning = () => {
                   <img
                     src={elementaryImg}
                     alt=""
+                    loading="lazy"
                     className="img-custom kinder_img1"
                   />
                   <p className="seniors   rounded-2 py-1 border me-5 px-1 text-nowrap">
@@ -198,6 +200,7 @@ const Learning = () => {
                   <img
                     src={kindergartenImg}
                     alt=""
+                    loading="lazy"
                     className="img-custom kinder_img"
                   />
                   <p className="seniors px-3 rounded-2 py-1 border me-5">

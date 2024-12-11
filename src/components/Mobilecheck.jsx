@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/Mobilecheck.css";
 import { useNavigate } from "react-router-dom";
-// import seniorImg from "./alternate/senior.png";
 import seniorImg from "../../src/assets/children/High School final.png";
 import middleImg from "../../src/assets/children/Middle school_png.png";
 import kindergartenImg from "../../src/assets/children/Kindergarten _final.png";

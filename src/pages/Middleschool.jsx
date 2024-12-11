@@ -2,14 +2,14 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import school1 from '../../src/assets/middle/GP4A7749.jpg'
-import school2 from '../../src/assets/middle/GP4A7765.jpg'
-import school3 from '../../src/assets/middle/GP4A7788.jpg'
-import school4 from '../../src/assets/middle/GP4A7809.jpg'
-import school5 from '../../src/assets/middle/GP4A7876.jpg'
-import school6 from '../../src/assets/middle/GP4A7926.jpg'
-import school7 from '../../src/assets/middle/GP4A7946.jpg'
-import school8 from '../../src/assets/middle/GP4A8041.jpg'
+import school1 from '../../src/assets/middle/GP4A7655.jpg'
+import school2 from '../../src/assets/middle/GP4A7788.jpg'
+import school3 from '../../src/assets/middle/GP4A7810.jpg'
+import school4 from '../../src/assets/middle/GP4A7812.jpg'
+import school5 from '../../src/assets/middle/GP4A7926.jpg'
+import school6 from '../../src/assets/middle/GP4A7946.jpg'
+import school7 from '../../src/assets/middle/GP4A8041.jpg'
+import school8 from '../../src/assets/middle/GP4A8094.jpg'
 
 
 const brandImg = [
@@ -25,9 +25,13 @@ const responsive = {
   1024: { items: 2 },
 };
 const items = brandImg.map((img, index) => (
-  <div className="academic-itemk" key={index}>
-    <img src={img} alt={`Brand ${index + 1}`} className="img-fluid" />
-  </div>
+  <div className="academic-itemk" key={index}  >
+  <img src={img} alt={`Brand ${index + 1}`} className="img-fluid object-fit " style={{
+  width: '100%',
+  height: 'auto',
+  objectFit: 'cover', 
+}} />
+</div>
 ));
 
 const Middleschool = () => {

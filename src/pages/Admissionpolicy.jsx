@@ -1,6 +1,7 @@
 import React from "react";
 
-import breadImg from '../assets/elementarty/GP4A7765.jpg'
+import breadImg from '../../src/assets/elementarty/GP4A7700.jpg'
+
 
 
 const Admissionpolicy = () => {
@@ -14,7 +15,7 @@ const Admissionpolicy = () => {
   return (
     <>
       <div className="kinderbanner my-md-0">
-        <img src={breadImg} alt="Kindergarten" />
+        <img src={breadImg} alt="Kindergarten"  />
         <h3 className="xyz">Admission Rules & Regulation</h3>
         <div className="breadcrumb-container">
           <ul className="breadcrumb">

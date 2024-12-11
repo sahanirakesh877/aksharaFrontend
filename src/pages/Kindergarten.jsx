@@ -18,15 +18,15 @@ import {
   faUserFriends,
 } from "@fortawesome/free-solid-svg-icons";
 
-import school1 from '../../src/assets/kinder/GP4A7400.jpg'
-import school2 from '../../src/assets/kinder/GP4A7422.jpg'
-import school3 from '../../src/assets/kinder/GP4A7437.jpg'
-import school4 from '../../src/assets/kinder/GP4A7607.jpg'
-import school5 from '../../src/assets/kinder/GP4A7615.jpg'
-import school6 from '../../src/assets/kinder/GP4A7640.jpg'
-import school7 from '../../src/assets/kinder/GP4A7642.jpg'
-import school8 from '../../src/assets/kinder/GP4A7650.jpg'
-import school9 from '../../src/assets/kinder/GP4A7702.jpg'
+import school1 from '../../src/assets/kinder/GP4A7402.jpg'
+import school2 from '../../src/assets/kinder/GP4A7423.jpg'
+import school3 from '../../src/assets/kinder/GP4A7429.jpg'
+import school4 from '../../src/assets/kinder/GP4A7438.jpg'
+import school5 from '../../src/assets/kinder/GP4A7451.jpg'
+import school6 from '../../src/assets/kinder/GP4A7490.jpg'
+import school7 from '../../src/assets/kinder/GP4A7507.jpg'
+import school8 from '../../src/assets/kinder/GP4A7607.jpg'
+import school9 from '../../src/assets/kinder/GP4A7544.jpg'
 
 const brandImg = [school2, school4, school1, school3, school5];
 const responsive = {
@@ -35,9 +35,13 @@ const responsive = {
   1024: { items: 2 },
 };
 const items = brandImg.map((img, index) => (
-  <div className="academic-itemk" key={index}>
-    <img src={img} alt={`Brand ${index + 1}`} className="img-fluid" />
-  </div>
+  <div className="academic-itemk" key={index}  >
+      <img src={img} alt={`Brand ${index + 1}`} className="img-fluid object-fit " style={{
+      width: '100%',
+      height: 'auto',
+      objectFit: 'cover', 
+    }} />
+    </div>
 ));
 
 const Kindergarten = () => {

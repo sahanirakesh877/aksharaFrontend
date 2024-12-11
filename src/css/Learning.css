@@ -5,8 +5,9 @@
 
 .learnimg {
   width: fit-content;
-  height: 78vh;
+  height: 85vh;
   transition: all 0.3s ease-in-out;
+  
 }
 
 .fuche-sec {
@@ -18,11 +19,13 @@
   padding-top: 160px;
 }
 .kinder_img1 {
-  padding-top: 125px;
+  padding-top: 100px;
 }
 .kinder_img2 {
-  padding-top: 10px;
+  padding-top: 45px;
 }
+
+
 
 .rotatediv {
   transform: rotate(8deg);

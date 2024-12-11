@@ -2,16 +2,16 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-// import school1 from '/school/school1.jpg'
-import school1 from '../../src/assets/elementarty/GP4A7575.jpg'
-import school2 from '../../src/assets/elementarty/GP4A7740.jpg'
-import school3 from '../../src/assets/elementarty/GP4A7748.jpg'
-import school4 from '../../src/assets/elementarty/GP4A7765.jpg'
-import school5 from '../../src/assets/elementarty/GP4A7847.jpg'
-import school6 from '../../src/assets/elementarty/GP4A7970.jpg'
-import school7 from '../../src/assets/elementarty/GP4A8072.jpg'
-import school8 from '../../src/assets/elementarty/GP4A8141.jpg'
-import school9 from '../../src/assets/elementarty/GP4A8150.jpg'
+
+import school1 from '../../src/assets/elementarty/GP4A7685.jpg'
+import school2 from '../../src/assets/elementarty/GP4A7700.jpg'
+import school3 from '../../src/assets/elementarty/GP4A7702.jpg'
+import school4 from '../../src/assets/elementarty/GP4A7704.jpg'
+import school5 from '../../src/assets/elementarty/GP4A7708.jpg'
+import school6 from '../../src/assets/elementarty/GP4A7848.jpg'
+import school7 from '../../src/assets/elementarty/GP4A7859.jpg'
+import school8 from '../../src/assets/elementarty/GP4A7964.jpg'
+import school9 from '../../src/assets/elementarty/GP4A7969.jpg'
 
 
 const brandImg = [
@@ -27,9 +27,13 @@ const responsive = {
   1024: { items: 2 },
 };
 const items = brandImg.map((img, index) => (
-  <div className="academic-itemk" key={index}>
-    <img src={img} alt={`Brand ${index + 1}`} className="" />
-  </div>
+  <div className="academic-itemk" key={index}  >
+      <img src={img} alt={`Brand ${index + 1}`} className="img-fluid object-fit " style={{
+      width: '100%',
+      height: 'auto',
+      objectFit: 'cover', 
+    }} />
+    </div>
 ));
 
 const Elementryschool = () => {

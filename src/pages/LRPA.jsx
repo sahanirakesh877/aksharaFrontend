@@ -3,18 +3,16 @@ import "../css/Learning.css";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-import a from "/a.jpg";
-import b from "/b.jpg";
-import c from "/c.jpg";
-import d from "/d.jpg";
-import e from "/e.jpg";
+import Assignment from "../../src/assets/LRPA/Assignment/GP4A7794.jpg";
+import Observation from "../../src/assets/LRPA/Active Observation/GP4A7847.jpg";
+import Continous from "../../src/assets/LRPA/Continous Assestment/GP4A7977.jpg";
+import Time from "../../src/assets/LRPA/Time Bound/GP4A7970.jpg";
 
-import topPic1 from "/banner1.jpg";
-import topPic2 from "/banner2.jpg";
-import topPic3 from "/banner3.jpg";
+
+
 
 const LRPA = () => {
-  const brandImg = [a, b, c, d, e];
+  const brandImg = [Assignment,Observation,Continous,Time];
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
@@ -22,8 +20,12 @@ const LRPA = () => {
   };
 
   const carouselItems = brandImg.map((img, index) => (
-    <div className="academic-itemk" key={index}>
-      <img src={img} alt={`Brand ${index + 1}`} className="" />
+    <div className="academic-itemk" key={index}  >
+      <img src={img} alt={`Brand ${index + 1}`} className="img-fluid object-fit " style={{
+      width: '100%',
+      height: 'auto',
+      objectFit: 'cover', 
+    }} />
     </div>
   ));
 
@@ -31,14 +33,14 @@ const LRPA = () => {
     {
       title: "Continuous Assessment",
       text: `allows ongoing evaluation of students' performance throughout their learning journey. This approach provides regular feedback and supports personalized learning by identifying areas for improvement and adapting strategies to meet individual needs. By monitoring progress continuously, we help students build confidence, stay motivated and engaged, promote a growth mindset, raise personal standards and push the boundaries of their progress`,
-      image: topPic1,
+      image: Continous,
       numberClass: "number",
       number: "1",
     },
     {
       title: "Active Observation and Recording",
       text: `Teachers diligently observe and document students' activities, allowing them to gain a thorough understanding of each student's engagement, behavior, and unique learning style. This focused approach enables teachers to tailor their instructional methods to meet the individual needs and preferences of each student, fostering a more effective and personalized learning experience.`,
-      image: topPic2,
+      image: Observation,
       numberClass: "number1",
       number: "2",
       reverse: true,
@@ -46,14 +48,14 @@ const LRPA = () => {
     {
       title: "Assignment",
       text: ` that we provide play a vital role in children's learning and development. The assignment not only enhances their academic knowledge but also provides practical insights that reinforce a deeper understanding of the subject matter, catering to their individual levels. These assignments are designed to foster essential skills, such as critical thinking, research capabilities, and independent problem-solving, thereby equipping students with the tools necessary for their academic and personal growth.`,
-      image: topPic3,
+      image: Assignment,
       numberClass: "number",
       number: "3",
     },
     {
       title: "Time Bound Written Assessment",
       text: `serve not only as a means to evaluate our students' current knowledge and skills but also stand as a key strategy in cultivating effective time management abilities. This type of assessment represents an initial step for students to familiarize themselves with the examination format they will encounter in the future, fostering preparedness and resilience. Moreover, it provides an in-depth insight into each student's academic comprehension and understanding, offering a well-rounded perspective on their learning journey and progress. Through such assessments, we aim to enhance students’ readiness for future examinations while equipping them with essential skills for academic and personal growth`,
-      image: topPic1,
+      image: Time,
       numberClass: "number1",
       number: "4",
       reverse: true,

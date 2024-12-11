@@ -24,9 +24,13 @@ const responsive = {
   1024: { items: 2 },
 };
 const items = brandImg.map((img, index) => (
-  <div className="academic-itemk" key={index}>
-    <img src={img} alt={`Brand ${index + 1}`} className="img-fluid" />
-  </div>
+  <div className="academic-itemk" key={index}  >
+      <img src={img} alt={`Brand ${index + 1}`} className="img-fluid object-fit " style={{
+      width: '100%',
+      height: 'auto',
+      objectFit: 'cover', 
+    }} />
+    </div>
 ));
 const Highschool = () => {
   return (

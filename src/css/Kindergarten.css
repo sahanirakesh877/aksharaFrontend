@@ -1,7 +1,7 @@
 /* breadcrum start */
 .kinderbanner {
     width: 100%;
-    height: 250px; 
+    height: 300px; 
     position: relative;
     overflow: hidden;
     margin-bottom: 20px; 
@@ -263,12 +263,11 @@
 
 
    /* kinder top caraousel */
-   .academic-itemk{
+   /* .academic-itemk{
     width: 100%;
-    height: 45vh;
-  
+    height: 100%;
+  } */
 
-  }
   .kg-back{
     background: rgb(232, 250, 232)
   }

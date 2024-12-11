@@ -1,12 +1,14 @@
 /* banner us section design start */
 .home .carousel-item {
-  min-height:90vh;
-  background-position: top;
-  background-size: cover;
-  position: relative;
-  background-repeat: no-repeat;
-  z-index: 1;
+  min-height: 90vh; 
+  width: 100vw; /* Full screen width */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Prevent tiling */
+  position: relative; /* Maintain relative positioning */
+  z-index: 1; /* Ensure proper stacking context */
 }
+
 
 .home .carousel-item:before {
   content: "";
@@ -55,7 +57,7 @@
 .home .carousel-controls {
   position: absolute;
   left: 50%;
-  bottom: 70px;
+  bottom: 50px;
   z-index: 10;
   transform: translateX(-50%);
 }

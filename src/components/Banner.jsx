@@ -76,14 +76,19 @@ const Banner = () => {
                         /\\/g,
                         "/"
                       )})`,
+                      backgroundSize: "cover",
+    backgroundPosition: "center", // Adjust for centering the image
+    backgroundRepeat: "no-repeat",
+    minHeight: "100vh", // Ensures the div spans the full viewport height
+    width: "100vw",
                     }}
                   ></div>
                 ))
             ) : (
               <div
-                className="carousel-item active" // Adding 'active' to ensure fallback image shows up
+                className="carousel-item active" 
                 style={{
-                  backgroundImage: `url('/banner1.jpg')`, // Fixed the missing closing quote here
+                  backgroundImage: `url('/statichome.jpg')`, 
                 }}
               ></div>
             )}
