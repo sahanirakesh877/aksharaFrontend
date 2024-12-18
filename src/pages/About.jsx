@@ -1,6 +1,6 @@
-
 import React, { useEffect, useState, memo } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import School2 from '../../src/assets/School2.jpg'
 
 // Extracted static data for AboutContent
 const aboutData = {
@@ -55,19 +55,22 @@ const PhilosophySection = memo(({ navigate }) => (
       <div className="row d-flex align-items-start mt-4">
         <div className="col-lg-6 col-md-12 mb-4">
           <p className="mission-p">
-            Aksharaa School adopts a student-centered, constructivist philosophy, fostering
-            autonomous learning and emphasizing awareness, autonomy, and authenticity. We cater
-            to diverse intelligences, promoting holistic growth through a balanced education system.
+            Aksharaa School adopts a student-centered, constructivist
+            philosophy, fostering autonomous learning and emphasizing awareness,
+            autonomy, and authenticity. We cater to diverse intelligences,
+            promoting holistic growth through a balanced education system.
           </p>
           <p className="mission-p">
-            Our Learning-Reinforcement-Practice-Application (LRPA) module enhances cognitive abilities
-            with fun and curiosity, encouraging critical thinking, collaboration, creativity, and
-            problem-solving. This prepares students to be global citizens.
+            Our Learning-Reinforcement-Practice-Application (LRPA) module
+            enhances cognitive abilities with fun and curiosity, encouraging
+            critical thinking, collaboration, creativity, and problem-solving.
+            This prepares students to be global citizens.
           </p>
           <p className="mission-p">
-            We value respect and diversity, blending traditional values with modern technology. Through
-            national festivals and educational trips, we instill patriotism and global awareness, aiming
-            to nurture well-rounded, globally competent citizens.
+            We value respect and diversity, blending traditional values with
+            modern technology. Through national festivals and educational trips,
+            we instill patriotism and global awareness, aiming to nurture
+            well-rounded, globally competent citizens.
           </p>
           <button className="button-21" onClick={() => navigate("/about")}>
             Know More<i className="fa-solid fa-arrow-right ms-2"></i>
@@ -106,17 +109,28 @@ const AboutContent = memo(() => (
         Why Choose Aksharaa School?
       </h5>
       <ul className="list-unstyled">
-        {aboutData.whyChooseUs.map(({ iconClass, title, description }, index) => (
-          <li className="mb-3 d-flex align-items-center flex-wrap" key={index}>
-            <i className={iconClass} />
-            <strong>{title}</strong> {description}
-          </li>
-        ))}
+        {aboutData.whyChooseUs.map(
+          ({ iconClass, title, description }, index) => (
+            <li
+              className="mb-3 d-flex align-items-center flex-wrap"
+              key={index}
+            >
+              <i className={iconClass} />
+              <strong>{title}</strong> {description}
+            </li>
+          )
+        )}
       </ul>
     </div>
     <div className="mt-5">
       <p className="mission-p">
-      Through the implementation of a Learning-Reinforcement-Practice-Application (LRPA) approach that incorporates creative teaching techniques, ongoing reinforcement, practical experience, and real-world application, Aksharaa strives to achieve integrated child development. Our institutional setup, combined with modern technologies, ensures a comprehensive educational experience that supports and enhances student learning.
+        Through the implementation of a
+        Learning-Reinforcement-Practice-Application (LRPA) approach that
+        incorporates creative teaching techniques, ongoing reinforcement,
+        practical experience, and real-world application, Aksharaa strives to
+        achieve integrated child development. Our institutional setup, combined
+        with modern technologies, ensures a comprehensive educational experience
+        that supports and enhances student learning.
       </p>
     </div>
   </div>
@@ -135,16 +149,53 @@ const About = () => {
     <PhilosophySection navigate={navigate} />
   ) : (
     <>
-    <div className="container">
-    <h2 className="w-100 border-bottom-title head-color text-center py-2 mb-2">
-        <span className="addcolor">About Us</span>
-      </h2>
-      <p className="mission-p" >Aksharaa School provides an enriching educational experience with its blend of modern facilities and innovative teaching methods. Our expansive premises feature spacious buildings and full-sized playgrounds, offering a holistic learning environment that extends beyond traditional classroom settings.</p>
-      <p className="mission-p" >At Aksharaa School, we are committed to integrating cutting-edge technology into our curriculum. Our classrooms are equipped with computers, laptops, projectors, and other advanced tools, facilitating interactive and project-based learning. This technology supports students in conducting research, creating multimedia presentations, and collaborating effectively on group projects.</p>
-      <p className="mission-p" >We pride ourselves on fostering critical thinking and problem-solving skills through hands-on experiences. Our students engage in a variety of enriching activities, including educational field trips, guest lectures, and international tours. These experiences are designed to broaden their perspectives and apply classroom knowledge to real-world situations.</p>
-      <p className="mission-p" >Our approach to education combines intellectual mentoring with practical application. Students are encouraged to explore, discuss, and apply their knowledge through diverse methods such as role plays, group work, and virtual learning. This integration of theory and practice not only strengthens their understanding but also prepares them for future challenges with confidence and adaptability.</p>
-      <p className="mission-p" >At Aksharaa School, we believe in nurturing well-rounded individuals who are ready to make meaningful contributions to society. Our focus on holistic development ensures that students leave us not only with academic excellence but also with the skills and experiences needed to succeed in an ever-evolving world.</p>
+    <div >
+    <img src={School2} alt="School Background" className="img-fluid" style={{ width: "100%", height: "auto" }} />
+
     </div>
+      <div className="container">
+        <h2 className="w-100 border-bottom-title head-color text-center py-2 mb-2">
+          <span className="addcolor">About Us</span>
+        </h2>
+        <p className="mission-p">
+          Aksharaa School provides an enriching educational experience with its
+          blend of modern facilities and innovative teaching methods. Our
+          expansive premises feature spacious buildings and full-sized
+          playgrounds, offering a holistic learning environment that extends
+          beyond traditional classroom settings.
+        </p>
+        <p className="mission-p">
+          At Aksharaa School, we are committed to integrating cutting-edge
+          technology into our curriculum. Our classrooms are equipped with
+          computers, laptops, projectors, and other advanced tools, facilitating
+          interactive and project-based learning. This technology supports
+          students in conducting research, creating multimedia presentations,
+          and collaborating effectively on group projects.
+        </p>
+        <p className="mission-p">
+          We pride ourselves on fostering critical thinking and problem-solving
+          skills through hands-on experiences. Our students engage in a variety
+          of enriching activities, including educational field trips, guest
+          lectures, and international tours. These experiences are designed to
+          broaden their perspectives and apply classroom knowledge to real-world
+          situations.
+        </p>
+        <p className="mission-p">
+          Our approach to education combines intellectual mentoring with
+          practical application. Students are encouraged to explore, discuss,
+          and apply their knowledge through diverse methods such as role plays,
+          group work, and virtual learning. This integration of theory and
+          practice not only strengthens their understanding but also prepares
+          them for future challenges with confidence and adaptability.
+        </p>
+        <p className="mission-p">
+          At Aksharaa School, we believe in nurturing well-rounded individuals
+          who are ready to make meaningful contributions to society. Our focus
+          on holistic development ensures that students leave us not only with
+          academic excellence but also with the skills and experiences needed to
+          succeed in an ever-evolving world.
+        </p>
+      </div>
       <AboutContent />
       <PhilosophySection navigate={navigate} />
     </>
@@ -152,4 +203,3 @@ const About = () => {
 };
 
 export default About;
-

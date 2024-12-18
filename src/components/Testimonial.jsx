@@ -13,36 +13,7 @@ const testimonialData = [
     post: "Parent",
     rating: 5,
   },
-  {
-    id: 2,
-    title: "Caring Environment",
-    description:
-      "Akshara School offers a nurturing and safe environment. My daughter loves going to school every day, and as a parent, I couldn't be happier.",
-    image: "/team_2.jpg",
-    name: "Jane Smith",
-    post: "Parent",
-    rating: 5,
-  },
-  {
-    id: 3,
-    title: "Holistic Development",
-    description:
-      "Akshara School focuses on holistic development. My son is not only excelling in academics but also in extracurricular activities, thanks to the wonderful .",
-    image: "/team_3.jpg",
-    name: "Emily Johnson",
-    post: "Parent",
-    rating: 5,
-  },
-  {
-    id: 4,
-    title: "Supportive Community",
-    description:
-      "The school community is very supportive. The teachers and staff are always willing to help and provide the necessary resources for my child's success.",
-    image: "/team_1.jpg",
-    name: "Michael Brown",
-    post: "Parent",
-    rating: 5,
-  },
+
   // Add more testimonials here
 ];
 
@@ -83,7 +54,7 @@ const Testimonial = () => {
       <div className="demo py-4">
         <div className="container">
           <h2 className="border-bottom-title w-100 text-center  head-color">
-          <span className="addcolor">  Testimo</span>nial
+            <span className="addcolor"> Testimo</span>nial
           </h2>
           <div className="row d-flex justify-content-between align-items-center py-4">
             <AliceCarousel
@@ -106,11 +77,7 @@ const Testimonial = () => {
 
 export default Testimonial;
 
-
-
-
-// this is from backend fetch code ...done 
-
+// this is from backend fetch code ...done
 
 // import axios from "axios";
 // import React, { useEffect, useState } from "react";
@@ -161,7 +128,7 @@ export default Testimonial;
 //             <img
 //               src={`${import.meta.env.VITE_SERVERAPI}/${testimonial.image.replace(/\\/g, "/")}`}
 //               alt={testimonial.parentname}
-           
+
 //             />
 //           </div>
 //           <div className="content">
@@ -210,4 +177,3 @@ export default Testimonial;
 // };
 
 // export default Testimonial;
-

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../css/Head.css";
 import { Link, useLocation } from "react-router-dom";
-import EnquiryModel from "./EnquiryModel";
+import WhiteLogo from '../assets/Aksharaa School Logo_white.png'
+
 
 const Head = () => {
   const location = useLocation();
@@ -33,9 +34,9 @@ const Head = () => {
                 to="/"
               >
                 <img
-                  src="/white-logo.png"
+                  src={WhiteLogo}
                   alt="Akshara Logo"
-                  className="img-fluid navbar-logo"
+                  className="img-fluid navbar-logo  ms-1"
                 />
               </Link>
               <button

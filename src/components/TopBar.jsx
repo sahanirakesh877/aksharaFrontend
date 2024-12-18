@@ -1,17 +1,19 @@
 import React from "react";
+import Mainlogo from '../assets/Aksharaa School Logo.png'
 
 const TopBar = () => {
   return (
     <>
       <div className="container mx-auto d-none d-lg-block ">
-        <div className="row d-flex  justify-content-between  align-items-center py-2 ">
+        <div className="row d-flex  justify-content-between  align-items-center  ">
           <div className="col-md-3 ">
             <a href="#" className="text-decoration-none ">
               <img
-                src="./akasharalogo.png"
+                src={Mainlogo}
                 alt="Akshara School"
+                loading="lazy"
                 className=""
-                style={{ maxWidth: "160px", maxHeight: "100px" }}
+                style={{ maxWidth: "180px", maxHeight: "120px" }}
               />
             </a>
           </div>
@@ -60,7 +62,7 @@ const TopBar = () => {
                   <a href="https://www.facebook.com/AksharaaSchool/" target="blank" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-facebook    facebook "></i>
                   </a>
-                  <a href="https://www.instagram.com/aksharaa_school_np/?hl=en" target="blank" className="text-decoration-none head-icons">
+                  <a href="https://www.instagram.com/aksharaa_school_/" target="blank" className="text-decoration-none head-icons">
                     <i className="fa-brands fa-instagram   instagram "></i>
                   </a>
                   

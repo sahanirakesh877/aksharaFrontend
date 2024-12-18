@@ -105,14 +105,56 @@ const Blog = () => {
   ];
 
   const scheduleData = [
+
+    {
+      date: "Baisakh 2081 (April-May 2024)",
+      event: [
+        "1st:Happy New Year",
+        "4th:Chait Dashain",
+        "10th:School Reopens",
+        "11th:Loktantra Diwas",
+        "26th:Mothers Day", 
+        "4-7th,9th,23rd,30th:Continue Professional Development(CPD) ",
+      ],
+    },
+    {
+      date: "Jestha 2081 (May-Jun 2024)",
+      event: [
+        "10th:Buddha Jyanti",
+        "14th:School Election",
+        "15th:Gantantra Diwas",
+        "23rd:World Environment Day", 
+        "13rd & 27th: CPD",
+      ],
+    },
+    {
+      date: "Asar 2081 (Jun-July 2024)",
+      event: [
+        "5th:Elocution(G8-G10)","6th:Elocution(G4-G7)",
+        "7th:Elocution(G1-G3)& Yog Diwas",
+        "15th: Dhaan Diwas ",
+        "19th: Parent-Teacher Meeting",
+        "25th: Naag Panchami",
+        "26th:Bhanu Jyanti Celebration (G1-G3 & Pre-School)",
+        "27th:Bhanu Jyanti Celebration (G4-G7 & World Population Days)",
+        "26th:Bhanu Jyanti Celebration (G8-G10 )",
+
+        "29th: Bhanu Jyanti",
+        "9th,23rd & 30th: CPD",
+      ],
+    },
+
     {
       date: "Shrawan 2081 (July- August 2024)",
       event: [
-        "10th: Mid-Term Exams End",
-        "14th: Maha Shivaratri (No School)",
-        "20th: Result Day and Parent-Teacher Conference",
-        "29th: Holi Festival (No School)",
-        "	6th: Teachers Day",
+        "6th:Guru Purnima",
+        "7th-10th:1st Diagnostic test (Grade 5-10",
+        "15th: School Re-opens",
+        "19th: Parent-Teacher Meeting",
+        "25th: Naag Panchami",
+        "30th:Quiz Contest (G8-G10)",
+        "31th:Quiz Contest (G4-G5 & G6-G7)",
+        "24th-27th:Quiz CPD",
       ],
     },
     {
@@ -120,29 +162,50 @@ const Blog = () => {
       event: [
         "	3rd : Janai Purnima (No School)",
         "	4th: Gaai Jatra",
+        "7th-9th:Aksharaa Model United Nations(AMUN)",
         "	10th: krishna Janmashtami Day Celebration",
         "	17th: Father’s Day",
         "	21st: Teej Festival (No School)",
+        "	23rd: ShreePanchami  ",
+        "	29th: Baal Diwas",
+        "	9th & 30th: CPD",
       ],
     },
 
     {
       date: "Asoj 2081 (Sep - Oct 2024)",
       event: [
-        "5th: Parent-Teacher Meeting",
-        "17th - 30th: Dashain Break (No School)",
+
+        "1st: Bishwokarma Pooja",
+        "3rd: sambidhan Diwas",
+        "7th-15th: Half Yearly Exam (G 5-10)",
+        "9th: Jitiya Parwa",
+        "13th: CPD",
+        "17th: Dashain Vacation begins (No School)",
       ],
     },
     {
       date: "Kartik 2081 (Oct - Nov 2024)",
-      event: ["15th - 19th: Tihar Break (No School)", "22nd: Chhath Puja"],
+      event: ["5th:School Reopens ", "10th: Parent Teacher meeting", 
+        "14th:Kaag Tihar",
+        "15th:Tihar Holidays Begins", 
+        "16th:Gaai Tihar",
+        "17th:Mah:puja",
+        "18th:Bhai Tikawa",
+        "19th:Tihar Holiday",
+        "20th:School Reopens",
+        "22nd:Chhath Parwa",
+        "4th & 25th:CPD"
+      ],
     },
     {
       date: "Mangsir 2081 (Nov - Dec 2024)",
       event: [
-        "18th: International Disable Day",
-        "20th: Result Day and Parent-Teacher Conference",
-        "25th: Winter Cultural Program",
+        "15th: Bala Chaturthi",
+
+        "24th: ICT Conference(Grade 5-7)",
+        "30th: Yomari Punhi",
+        "9th,23rd & 30th: CPD",
       ],
     },
     {
@@ -150,32 +213,45 @@ const Blog = () => {
       event: [
         "1st: Winter Break Begins (No School)",
         "10th: Christmas Day",
-        "15th: Winter Break Ends, School Resumes",
-        "25th: Saraswati Puja Celebration",
+        "13th: Parent Teacher Meetings(PTM)",
+        "15th: Winter Vacation Starts,Tamu Lhosar",
+        "17th: New Year(English Date)/ Topi Diwas",
+        "27th:Prithivi Jyanti"
       ],
     },
 
     {
       date: "Magh 2081 (Jan - Febr 2025)",
       event: [
-        "5th: Educational Tour",
-        "15th: Sports Competition",
+        "1st:Maghe Sankranti",
+        "7st:School Reopens",
+
+        "16th:Rastriya Sahid Diwas",
+        "17th: Sonam Lhosar",
         "21st: Saraswati Puja",
-        "28th: Martyrs' Day (No School)",
+        "26th: Final Sports Day (G1 - G5)",
+        "2nd-6th & 20th:CPD"
       ],
     },
     {
       date: "Falgun 2081 (Feb - Mar 2025)",
-      event: ["1st: Mid-Term Exams Start"],
+      event: ["7st: Prajatantra Diwas", 
+        "14th: Mahashivaratri",
+        "16th:Gyalpo Lhoshar",
+        "24th :World Woman's Day",
+        "29th :Falgu Purnima",
+        "11th & 25th: CPD"
+
+      ],
     },
     {
       date: "Chaitra 2081 (Mar - Apr 2025)",
       event: [
-        "5th: Annual Day Rehearsal",
-        "8th: Annual Day Celebration",
+        "1th: Tarai Holi",
+        "8th-18th: Annual examination (G 5,6,7 & 9)",
         "16th: Ghodey Jatra",
-        "20th: Final Exams Start",
-        "30th: Final Exams End",
+        "23th: Parent Teacher Meeting (PTM)",
+        "10th ,25th & 26th: CPD",
       ],
     },
   ];

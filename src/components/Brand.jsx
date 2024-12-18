@@ -3,12 +3,13 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 const brandImg = [
-  "/brand/brand1.jpg",
-  "/brand/brand3.jpg",
-  "/brand/brand4.jpg",
-  "/brand/brand1.jpg",
-  "/brand/brand5.jpg",
-  "/brand/brand6.jpg",
+  "/brand/LeaderinMe.png",
+  "/brand/FC_EdLogoLockup_rgb-300dpi.png",
+
+  "/brand/logo.png",
+  "/brand/logo partners.png",
+
+ 
 ];
 
 const responsive = {
@@ -20,9 +21,17 @@ const responsive = {
 };
 
 const items = brandImg.map((img, index) => (
-  <div className="item py-2" key={index}>
-    <img src={img} alt={`Brand ${index + 1}`} className="brand-image border border-info img-fluid" />
+<div className="item py-2 d-flex justify-content-center align-items-center" key={index}>
+  <div className=" rounded overflow-hidden" style={{ width: '150px', height: 'auto' }}>
+    <img 
+      src={img} 
+      alt={`Brand ${index + 1}`} 
+      className="img-fluid object-fit-cover w-100 h-100"
+    />
   </div>
+</div>
+
+
 ));
 
 const Brand = () => {

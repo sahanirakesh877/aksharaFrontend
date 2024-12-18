@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+ import footerLogo from '../assets/Aksharaa School Logo_white.png'
 
 const Footer = () => {
   return (
@@ -17,7 +18,8 @@ const Footer = () => {
                     >
                       <Link to="/">
                         <img
-                          src="/white-logo.png"
+                          src={footerLogo}
+                          loading="lazy"
                           alt="BootstrapBrain Logo"
                           className="img-fluid "
                         />
@@ -117,7 +119,7 @@ const Footer = () => {
                         <li className="nav-item">
                           <Link
                             className="nav-link link-primary p-2 bg-light rounded"
-                            to="https://www.instagram.com/aksharaa_school_np/?hl=en"
+                            to="https://www.instagram.com/aksharaa_school_/"
                             target="blank"
                           >
                             <svg
@@ -258,11 +260,11 @@ const Footer = () => {
                       </div>
 
                       <div className="col-md-4 col-sm-3 ">
-                        <div className="d-flex flex-column align-items-md-start align-items-center  text-center bg-white mb-4 p-2 rounded-1">
+                        <div className="d-flex flex-column align-items-md-start align-items-center  text-center bg-white mb-2 p-2 rounded-1">
                           <img
                             src="/sisremove.png"
                             alt="sister organization..."
-                            className="img-fluid mb-4"
+                            className="img-fluid "
                           />
 
                           <h6 className="w-100  head-color text-center">
@@ -273,10 +275,12 @@ const Footer = () => {
                             <br />
                             01-5426371
                           </h6>
+                         
                         </div>
+                      <h4 className="text-center  text-white">Sister Organization</h4> 
                       </div>
                     </div>
-                  </div>
+                  </div> 
                 </div>
               </div>
             </div>

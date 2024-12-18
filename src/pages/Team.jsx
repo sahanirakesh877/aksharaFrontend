@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import "../css/Team.css";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
-import team1 from "../../src/assets/Teammember/GP4A8349.jpg";
+import team1 from "../../src/assets/Teammember/GP4A7953 copy.jpg";
 import team2 from "../../src/assets/Teammember/GP4A8352.jpg";
 import team3 from "../../src/assets/Teammember/GP4A8358.jpg";
-import team4 from "../../src/assets/Teammember/GP4A8364.jpg";
+
 import sabinamam from "/sabinamam2.jpg";
 
 const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
-  <div className="col-md-3 col-sm-6 ">
+  <div className="col-md-3 col-sm-6  ">
     <div className="our-team">
       <div className="img-container">
         <img src={imgSrc} alt={name} className="img-fluid team-image" />
@@ -32,19 +32,22 @@ const TeamMember = ({ imgSrc, name, position, socialLinks }) => (
 );
 
 const TeamSection = ({ title, imgSrc, members }) => (
-  <div className="container pb-4">
-    <h3 className="team-head text-center  border-bottom-title w-100">
-      {title}
-    </h3>
+  <div className=" mb-2">
+    
     {imgSrc && (
       <div className="row align-items-center">
-        <div className="col-md-12 border">
+        <div className="col-md-12 ">
           <img src={imgSrc} alt={title} className="img-fluid" />
         </div>
       </div>
     )}
+    <h3 className="team-head text-center  border-bottom-title w-100"  style={{ marginTop: "1rem" }}>
+      {title}
+    </h3>
+
+
     {members && (
-      <div className="row mb-4">
+      <div className="row">
         {members.map((member, index) => (
           <TeamMember key={index} {...member} />
         ))}
@@ -54,20 +57,25 @@ const TeamSection = ({ title, imgSrc, members }) => (
 );
 // Data for team sections
 const teamSections = [
-  {
-    title: "Our Executive Team",
-    imgSrc: team1,
-  },
+  // {
+  //   title: "Our Executive Team",
+  //   imgSrc: team1,
+  // },
   {
     title: "Team High School",
-    imgSrc: team4,
+    imgSrc: team2,
+   
   },
   {
     title: "Team Middle School",
-    imgSrc: team2,
+    imgSrc: team1,
   },
   {
     title: "Team Kindergarten School",
+    imgSrc: team1,
+  },
+  {
+    title: "Team Elementary School",
     imgSrc: team3,
   },
   {
@@ -174,7 +182,7 @@ const Team = () => {
         />
       </Helmet>
 
-      <div className="container my-4">
+      <div className="container ">
         {teamSections.map((section, index) => (
           <TeamSection key={index} {...section} />
         ))}
