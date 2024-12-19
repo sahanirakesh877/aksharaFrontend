@@ -1,8 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
- import footerLogo from '../assets/Aksharaa School Logo_white.png'
+import footerLogo from "../assets/Aksharaa School Logo_white.png";
+import axios from "axios";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const [feedback, setFeedback] = useState({ message: "", success: null });
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setFeedback({
+        message: "Please enter a valid email address.",
+        success: false,
+      });
+      return;
+    }
+
+    try {
+      // Send email data to the backend
+      const response = await axios.post(
+        `${import.meta.env.VITE_SERVERAPI}/api/v1/subscribe`,
+        { email }
+      );
+
+      if (response.data.success) {
+        setFeedback({ message: "Thank you for subscribing!", success: true });
+        setEmail(""); // Clear the input field
+      } else {
+        setFeedback({
+          message: response.data.message || "Subscription failed.",
+          success: false,
+        });
+      }
+    } catch (error) {
+      console.error("Error subscribing:", error);
+      setFeedback({
+        message: "Subscription failed. Please try again later.",
+        success: false,
+      });
+    }
+  };
   return (
     <>
       <footer className="footer">
@@ -199,13 +241,12 @@ const Footer = () => {
                                 Apply Online
                               </Link>
                             </li>
-                            
                           </ul>
                         </div>
                       </div>
 
                       <div className="col-md-4 col-sm-3  ">
-                        <div className="widget ">
+                        {/* <div className="widget ">
                           <h4 className="widget-title mb-4 animated-border-header">
                             Our Newsletter
                           </h4>
@@ -256,6 +297,70 @@ const Footer = () => {
                               </div>
                             </div>
                           </form>
+                        </div> */}
+                        <div className="widget">
+                          <h4 className="widget-title mb-4 animated-border-header">
+                            Our Newsletter
+                          </h4>
+                          <p className="mb-4 footer-tag">
+                            Never miss out on Akshara school's exclusive offers!
+                            Subscribe to our newsletter today.
+                          </p>
+                          <form onSubmit={handleSubmit}>
+                            <div className="row gy-2">
+                              <div className="col-12">
+                                <div className="input-group">
+                                  <span
+                                    className="input-group-text text-light"
+                                    id="email-newsletter-addon"
+                                  >
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width={16}
+                                      height={16}
+                                      fill="currentColor"
+                                      className="bi bi-envelope text-success"
+                                      viewBox="0 0 16 16"
+                                    >
+                                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                    </svg>
+                                  </span>
+                                  <input
+                                    type="email"
+                                    className="form-control"
+                                    id="email-newsletter"
+                                    placeholder="Email Address"
+                                    aria-label="email-newsletter"
+                                    aria-describedby="email-newsletter-addon"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-12">
+                                <div className="mb-sm-4">
+                                  <button
+                                    type="submit"
+                                    className="bg-success border-0 w-100 rounded-1 py-2 text-center text-white"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                          {feedback.message && (
+                            <p
+                              className={`mt-3 ${
+                                feedback.success
+                                  ? "text-success"
+                                  : "text-danger"
+                              }`}
+                            >
+                              {feedback.message}
+                            </p>
+                          )}
                         </div>
                       </div>
 
@@ -275,12 +380,13 @@ const Footer = () => {
                             <br />
                             01-5426371
                           </h6>
-                         
                         </div>
-                      <h4 className="text-center  text-white">Sister Organization</h4> 
+                        <h4 className="text-center  text-white">
+                          Sister Organization
+                        </h4>
                       </div>
                     </div>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>

@@ -8,8 +8,6 @@ const brandImg = [
 
   "/brand/logo.png",
   "/brand/logo partners.png",
-
- 
 ];
 
 const responsive = {
@@ -21,17 +19,21 @@ const responsive = {
 };
 
 const items = brandImg.map((img, index) => (
-<div className="item py-2 d-flex justify-content-center align-items-center" key={index}>
-  <div className=" rounded overflow-hidden" style={{ width: '150px', height: 'auto' }}>
-    <img 
-      src={img} 
-      alt={`Brand ${index + 1}`} 
-      className="img-fluid object-fit-cover w-100 h-100"
-    />
+  <div
+    className="item py-2 d-flex justify-content-center align-items-center"
+    key={index}
+  >
+    <div
+      className=" rounded overflow-hidden"
+      style={{ width: "150px", height: "auto" }}
+    >
+      <img
+        src={img}
+        alt={`Brand ${index + 1}`}
+        className="img-fluid object-fit-cover w-100 h-100"
+      />
+    </div>
   </div>
-</div>
-
-
 ));
 
 const Brand = () => {

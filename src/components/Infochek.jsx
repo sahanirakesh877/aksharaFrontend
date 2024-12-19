@@ -25,6 +25,7 @@ const Infochek = () => {
           <img
             src={ifograpgh}
             alt=""
+            loading="lazy"
            className="img-fluid w-75 w-md-75 w-lg-100 "
           />
         </figure>

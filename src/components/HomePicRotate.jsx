@@ -55,6 +55,7 @@ const HomePicRotate = () => {
                           }/${photo.images[0].replace(/\\/g, "/")}`}
                           alt={`Gallery Image ${photo._id}`}
                           className="img-fluid"
+                          loading="lazy"
                         />
                       </figure>
                     ))

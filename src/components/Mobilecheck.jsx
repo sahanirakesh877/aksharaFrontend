@@ -35,6 +35,7 @@ const Section = ({
         <img
           src={image}
           alt={imageAlt}
+          loading="lazy"
           className="img-fluid rounded custom-img"
         />
       </div>

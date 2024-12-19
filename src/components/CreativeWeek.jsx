@@ -8,7 +8,7 @@ import axios from "axios";
 import Loader from "./Loader";
 import SafeHTML from "../components/SafeHTML";
 
-const CreativeWeek = () =>{
+const CreativeWeek = () => {
   const dispatch = useDispatch();
   const { notices, loading, error } = useSelector((state) => state.notices);
 
@@ -19,18 +19,11 @@ const CreativeWeek = () =>{
   }, [dispatch]);
 
   useEffect(() => {
-    async function getCreativesOfWeek(){
+    async function getCreativesOfWeek() {
       try {
         const response = await axios.get(
-          `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/`,
-          // {
-          //   params: {
-          //     week: "true", 
-          //   },
-          // }
+          `${import.meta.env.VITE_SERVERAPI}/api/v1/activity/`
         );
-
-        console.log("Creative week response:", response.data);
 
         if (response.data.success) {
           if (response.data.activities.length === 0) {
@@ -91,6 +84,7 @@ const CreativeWeek = () =>{
               )}`}
               className="card-img-top img-fluid"
               alt={creative.title}
+              loading="lazy"
             />
           </div>
           <div className="card-body my-md-0  border position-relative">
@@ -196,7 +190,9 @@ const CreativeWeek = () =>{
                       import.meta.env.VITE_SERVERAPI
                     }/${notices[0].images.replace(/\\/g, "/")}`}
                     alt="Important Notice"
-                    className="img-fluid "
+                    className="img-fluid w-100 h-auto"
+              loading="lazy"
+              style={{ objectFit: "cover" }}
                   />
                 )}
               </div>

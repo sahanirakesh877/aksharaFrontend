@@ -21,9 +21,6 @@ import Photos from "./components/Photos";
 import ApplyOnline from "./pages/ApplyOnline";
 import ChairmanMsg from "./components/ChairmanMsg";
 import LRPA from "./pages/LRPA";
-// import ChatBoat from "./components/ChatBoat";
-// import Qrcode from "./components/Qrcode";
-import ChatApp from "./components/ChatApp";
 import Infrastructure from "./pages/Infrastructure";
 import LatestBlogDetails from "./pages/LatestBlogDetails";
 import CategoryBlogs from "./pages/categoryBlogs";
@@ -89,7 +86,6 @@ const App = () => {
         <Route path="/admission/procedure" element={<AdmissionProcedure />} />
         <Route path="/apply-online" element={<ApplyOnline />} />
         <Route path="/about/chairman" element={<ChairmanMsg />} />
-        {/* <Route path="/about/principal" element={<Principalmsg />} /> */}
         <Route path="/about/team" element={<Team />} />
         <Route path="/getinquiry" element={<EnquiryModel />} />
         <Route path="/about/lrpa" element={<LRPA />} />
@@ -115,9 +111,7 @@ const App = () => {
         <Route path="*" element={<Error />} />
       </Routes>
       <SideIcon />
-      <ChatApp />
-      {/* <ChatBoat/> */}
-      {/* <Qrcode/> */}
+
       <Footer />
     </>
   );

@@ -20,7 +20,6 @@ const HomeBlog = () => {
         );
 
         if (response.data.success) {
-          console.log("home blogs ", response.data.blogs);
           const blogsToShow = response.data.blogs.slice(-4);
           setData(blogsToShow.reverse());
         } else {
@@ -43,13 +42,7 @@ const HomeBlog = () => {
         <h2 className="border-bottom-title justify-content-center my-3 head-color d-flex align-items-start">
           <span className="addcolor">Latest&nbsp;</span>Blog
         </h2>
-        <p className="textjustify px-md-5">
-          Welcome to Aksharaa School's most recent blog session, where we offer
-          news, updates, and motivational tales from our active community. Keep
-          checking back as we examine the newest developments in education,
-          highlight the accomplishments of our students, and provide insightful
-          advice for both parents and teachers.
-        </p>
+       
 
         <div className="row py-2">
           {loading && (
@@ -70,17 +63,20 @@ const HomeBlog = () => {
                         import.meta.env.VITE_SERVERAPI
                       }/${item.image.replace(/\\/g, "/")}`}
                       alt={item.title}
+                      loading="lazy"
                       className="img-fluid w-100  "
                     />
                   </div>
-                  <div className="card-body position-relative">
+                  <div className="card-body  position-relative">
                     <h6>{item.title}</h6>
                     <p>
-                      <SafeHTML htmlString={item.description.slice(0, 180)} />
-                    </p>
+  <SafeHTML htmlString={`${item.description.slice(0, 60)}...`} />
+</p>
+
                     <button
-                      className="btn px-3 text-white rounded-pill blog-btn shadow-sm position-absolute end-0 bottom-0 mb-3 mx-3"
+                      className="btn px-3 text-white rounded-pill blog-btn shadow-sm  position-absolute end-0 bottom-0  mx-3"
                       onClick={() => navigate(`/blog/${item._id}`)}
+                      
                     >
                       Read More
                     </button>

@@ -20,7 +20,6 @@ const Photos = () => {
         const response = await axios.get(
         `${import.meta.env.VITE_SERVERAPI }/api/v1/getallgallery`
         );
-        console.log("response all galleries", response.data.gallery);
         setGalleries(response.data.gallery);
         setLoading(false);
       } catch (err) {
@@ -65,6 +64,7 @@ const Photos = () => {
                     )}`} // Adjust if necessary
                     className="card-img-top main-image"
                     alt={gallery.title}
+                    loading="lazy"
                   />
                   <div className="hover-text position-absolute bottom-0 start-0 p-2 bg-dark text-white">
                     <p onClick={() => navigate(`/gallery/${gallery._id}`)}>
