@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <>
-      {popupVisible && notices && notices.length && (
+      {popupVisible && notices && notices.length ? (
         <div id="popoupContainer">
           <div className="imageContainer">
             <img
@@ -68,7 +68,7 @@ const App = () => {
             </button>
           </div>
         </div>
-      )}
+      ) : ("")}
 
       <TopBar />
       <Head />

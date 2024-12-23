@@ -7,6 +7,7 @@ import Loader from "./Loader";
 const Banner = () => {
   const dispatch = useDispatch();
   const { herophoto, loading, error } = useSelector((state) => state.herophoto);
+  console.log("banner photo",herophoto.Heros)
 
   useEffect(() => {
     dispatch(fetchHeroPhoto());

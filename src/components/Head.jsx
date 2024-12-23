@@ -225,7 +225,7 @@ const Head = () => {
 
                   <li className="nav-item  py-2  ">
                     <Link className="nav-link" to="/akshara-mun" onClick={closeNav}>
-                      Akashara MUN
+                      Aksharaa MUN
                     </Link>
                   </li>
 
