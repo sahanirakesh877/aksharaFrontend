@@ -53,7 +53,7 @@ const infrastructureData = [
     id: 7,
     title: "Science Laboratory",
     iconClass: "fas fa-flask text-success",
-    description: `The Science Laboratory at Aksharaa School is equipped with the latest scientific instruments and materials, creating an ideal environment for hands-on learning and experimentation. Our spacious lab is designed to enhance the understanding of scientific concepts through practical, interactive experiments. Students regularly engage in experiments that complement their classroom learning, supported by our kitchen garden, school garden, and field visits. This practical approach helps students connect theoretical knowledge with real-world applications, fostering a deeper understanding of scientific principles and encouraging a lifelong curiosity about the natural world.`,
+    description: `The Science Laboratory at Aksharaa School is equipped with the latest scientific instruments and materials, creating an ideal environment for hands-on learning and experimentation. Our spacious lab is designed to enhance the understanding of scientific concepts through practical, interactive experiments. Students regularly engage in experiments that complement their classroom learning, supported by our kitchen garden, school garden, and field visits. This practical approach helps students to link theoretical knowledge with real-world applications, promoting a more profound comprehension of scientific principles and nurturing  a lifelong curiosity about the natural world.`,
     images: [
       sciencelab3,
       sciencelab1,
@@ -90,13 +90,13 @@ const infrastructureData = [
     description: `Our Play areas are designed to support the physical development and well-being of our students through engaging and dynamic recreational activities. These facilities are more than just spaces for play; they are integral to our holistic approach to education, combining academic learning with physical activity. Our play area features a range of equipment and sports facilities that encourage students to participate in various sports and games. This integration of physical fitness with educational experiences promotes a balanced lifestyle, fostering teamwork, resilience, and overall health in our students`,
     images: [playarea2,playarea1,  playarea3],
   },
-  {
-    id: 5,
-    title: "Visitors’ Lounge ",
-    iconClass: "fas fa-users text-danger",
-    description: `The visitors’ lounge provides a comfortable and inviting space for parents and visitors to engage with the school community. Equipped with modern amenities, it offers a venue for meetings, school events, and informal gatherings, fostering a collaborative relationship between the school and the other stakeholder.`,
-    images: [visitoelounge1, visitoelounge2, visitoelounge3],
-  },
+  // {
+  //   id: 5,
+  //   title: "Visitors’ Lounge ",
+  //   iconClass: "fas fa-users text-danger",
+  //   description: `The visitors’ lounge provides a comfortable and inviting space for parents and visitors to engage with the school community. Equipped with modern amenities, it offers a venue for meetings, school events, and informal gatherings, fostering a collaborative relationship between the school and the other stakeholder.`,
+  //   images: [visitoelounge1, visitoelounge2, visitoelounge3],
+  // },
 
 
   {

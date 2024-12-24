@@ -56,52 +56,52 @@ const Blog = () => {
   const blogData = [
     {
       id: 1,
-      title: "Annual Functions",
-      date: "2024-Mar-15",
-      des: "Our School celebrating National Parent Involvement Day on Dec 3.",
+      title: "PTM",
+      date: "2081-Pou-13",
+      des: "2nd Diagnostic Test",
     },
-    {
-      id: 2,
-      title: "Exhibition's day",
-      date: "2024-May-12",
-      des: "Year 6 pupils are invited to join us for a Taster Day.",
-    },
-    {
-      id: 3,
-      title: "Robotics Training",
-      date: "2024-Apr-10",
-      des: "Celebrating National Parent Involvement Day on December 3.",
-    },
-    {
-      id: 4,
-      title: "Online Learning Tips",
-      date: "2024-Jul-20",
-      des: "Year 6 pupils are invited to join us for a Taster Day.",
-    },
-    {
-      id: 5,
-      title: "Exhibition's day",
-      date: "2024-sep-29",
-      des: "Year 6 pupils are invited to join us for a Taster Day.",
-    },
-    {
-      id: 6,
-      title: "Training Corner",
-      date: "2024-apr-06",
-      des: "Year 6 pupils are invited to join us for a Taster Day.",
-    },
-    {
-      id: 7,
-      title: "Robotics Training",
-      date: "2024-feb-01",
-      des: "Year 6 pupils are invited to join us for a Taster Day.",
-    },
-    {
-      id: 8,
-      title: "Farewell Program",
-      date: "2024-Jan-10",
-      des: "Year 6 pupils are invited to join us for a Taster Day.",
-    },
+    // {
+    //   id: 2,
+    //   title: "Exhibition's day",
+    //   date: "2024-May-12",
+    //   des: "Year 6 pupils are invited to join us for a Taster Day.",
+    // },
+    // {
+    //   id: 3,
+    //   title: "Robotics Training",
+    //   date: "2024-Apr-10",
+    //   des: "Celebrating National Parent Involvement Day on December 3.",
+    // },
+    // {
+    //   id: 4,
+    //   title: "Online Learning Tips",
+    //   date: "2024-Jul-20",
+    //   des: "Year 6 pupils are invited to join us for a Taster Day.",
+    // },
+    // {
+    //   id: 5,
+    //   title: "Exhibition's day",
+    //   date: "2024-sep-29",
+    //   des: "Year 6 pupils are invited to join us for a Taster Day.",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Training Corner",
+    //   date: "2024-apr-06",
+    //   des: "Year 6 pupils are invited to join us for a Taster Day.",
+    // },
+    // {
+    //   id: 7,
+    //   title: "Robotics Training",
+    //   date: "2024-feb-01",
+    //   des: "Year 6 pupils are invited to join us for a Taster Day.",
+    // },
+    // {
+    //   id: 8,
+    //   title: "Farewell Program",
+    //   date: "2024-Jan-10",
+    //   des: "Year 6 pupils are invited to join us for a Taster Day.",
+    // },
   ];
 
   const scheduleData = [

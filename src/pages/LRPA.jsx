@@ -46,7 +46,7 @@ const LRPA = () => {
       reverse: true,
     },
     {
-      title: "Assignment",
+      title: "Assignments",
       text: ` that we provide play a vital role in children's learning and development. The assignment not only enhances their academic knowledge but also provides practical insights that reinforce a deeper understanding of the subject matter, catering to their individual levels. These assignments are designed to foster essential skills, such as critical thinking, research capabilities, and independent problem-solving, thereby equipping students with the tools necessary for their academic and personal growth.`,
       image: Assignment,
       numberClass: "number",

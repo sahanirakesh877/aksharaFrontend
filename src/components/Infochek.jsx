@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/infocheck.css";
 
-import ifograpgh from "/round.jpeg";
+ import ifograpgh from "/final img.png";
 
 const Infochek = () => {
   return (

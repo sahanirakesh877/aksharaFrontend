@@ -67,7 +67,7 @@ const Kindergarten = () => {
       <div className="bg-light py-2">
         <div className="container mx-auto">
           <h3 className="w-100 border-bottom-title head-color text-center">
-            <span className="addcolor">Kindergarten </span> (PG-KG)
+            <span className="addcolor">Kindergarten </span>Daycare - ECD II (PG-UKG)
           </h3>
           <div className="row d-flex justify-content-between align-items-start">
             <div className="col-md-5 col-12 px-4 py-4">

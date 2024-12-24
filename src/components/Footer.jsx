@@ -303,7 +303,7 @@ const Footer = () => {
                             Our Newsletter
                           </h4>
                           <p className="mb-4 footer-tag">
-                            Never miss out on Akshara school's exclusive offers!
+                            Never miss out on Aksharaa school's exclusive offers!
                             Subscribe to our newsletter today.
                           </p>
                           <form onSubmit={handleSubmit}>
@@ -366,7 +366,7 @@ const Footer = () => {
 
                       <div className="col-md-4 col-sm-3 ">
                         <div className="d-flex flex-column align-items-md-start align-items-center  text-center bg-white mb-2 p-2 rounded-1">
-                          <img
+                          <img 
                             src="/sisremove.png"
                             alt="sister organization..."
                             className="img-fluid "

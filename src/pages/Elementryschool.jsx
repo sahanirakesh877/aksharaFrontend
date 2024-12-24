@@ -62,13 +62,13 @@ const Elementryschool = () => {
 
 
           <h3 className="w-100 border-bottom-title head-color text-center">
-            <span className="addcolor">Elementary School  </span> (Grades  1-5)
+            <span className="addcolor">Elementary School  </span> (Grade  1-5)
           </h3>
 
           <div className="row d-flex align-items-start py-4 ">
             <div className="col-md-6 col-12 px-4">
               <p className="kinder-text">
-              Quality education is more than only academics; it encompasses life skills, manners, and cultural understanding. Elementary school, which includes grades from 1 to 5, is a special time in a child's life where they develop foundational academic and social skills. Our Elementary School program is a unique approach that focuses on empowering children not only academically but also socially. It emphasizes personalized attention with two instructors per classroom. 
+              Quality education is more than only academics; it encompasses life skills, manners, and cultural understanding. Elementary school, which includes grade from 1 to 5, is a special time in a child's life where they develop foundational academic and social skills. Our Elementary School program is a unique approach that focuses on empowering children not only academically but also socially. It emphasizes personalized attention with two instructors per classroom. 
               </p>
               <p className="kinder-text">
               By integrating reading, play, and culturally enriching activities, young learners find joy in education that goes beyond textbooks. Why settle for rote learning? Children deserve an environment where academics intertwine with personal growth, shaping them into well-rounded individuals. This approach fosters critical thinking and encourages children to express themselves while developing essential life skills. With a commitment to nurturing both intellect and character, this educational service prepares students not just for the next class but for a fulfilling life ahead. 

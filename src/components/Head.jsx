@@ -96,7 +96,7 @@ const Head = () => {
                           to="/infrastructure"
                           onClick={closeNav}
                         >
-                          Akshara Infrastructure
+                          Aksharaa Infrastructure
                         </Link>
                       </li>
                       <li>
@@ -188,7 +188,7 @@ const Head = () => {
                           to="/academics/high"
                           onClick={closeNav}
                         >
-                          High School
+                          Senior School
                         </Link>
                       </li>
 

@@ -6,7 +6,7 @@ const missionData = [
     iconClass: "fas fa-bullseye",
     title: "OUR MISSION",
     description:
-'Aksharaa School inculcates value-based education with academic excellence through collaboration with parents and other stakeholders to instill resilience, leadership skill and emotional intelligence in each learner.Our focus on these areas positions us among the leading schools in Kathmandu Valley, ensuring our students receive the best educational facilities in Kathmandu.' ,
+'Aksharaa School inculcates value-based education with academic excellence through collaboration with parents and other stakeholders to instill resilience, leadership skill and emotional intelligence in each learner. ' ,
    iconColorClass: "about-icon1",
   },  
 
@@ -14,7 +14,7 @@ const missionData = [
     iconClass: "fas fa-eye",
     title: "OUR VISION",
     description:
-       `We envision Aksharaa School as  a premier education center in Kathmandu  that equips pupils to prosper in a world that is changing quickly. Nurturing young learners to become lifelong learners, globally competent and responsible citizens`,
+       `Nurturing young learners to become lifelong learners globally competent and responsible citizens.`,
  
     iconColorClass: "about-icon2",
   },

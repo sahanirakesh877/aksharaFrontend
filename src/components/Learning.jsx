@@ -147,7 +147,7 @@ const Learning = () => {
                 <div className="inner-content">
                   <img src={seniorImg} alt="" className="img-custom" loading="lazy"/>
                   <p className="seniors border px-3 rounded-2 py-1 border me-4">
-                    High School
+                    Senior School
                   </p>
                 </div>
               </div>

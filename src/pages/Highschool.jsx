@@ -56,23 +56,17 @@ const Highschool = () => {
       <div className="bg-light py-2">
         <div className="container">
          <h3 className="w-100 border-bottom-title head-color text-center">
-              <span className="addcolor">Senior  School </span> (Class 8-10)
+              <span className="addcolor">Senior  School </span> (Grade 8-10)
             </h3>
           <div className="row d-flex  ">
             <div className="col-md-12">
               <p className="kinder-text">
-                At Aksharaa, our Senior School program (Classes 8-10) is
-                meticulously designed to prepare students for the academic rigor
-                and personal growth required for future success. The school
-                follows the Nepal Government’s curriculum formulated by the
-                Curriculum Development Center (CDC), Sanothimi, Bhaktapur to
-                attain the national goals of education. Students are required to
-                appear for the Secondary Education Examination (SEE) in grade 10
-                conducted by the National Examination Board, Nepal.
+              At Aksharaa, our Senior School program (Classes 8-10) is meticulously designed to prepare students for the academic rigor and personal growth required for success encompassing  the grit and growth mindset.  Our school follows Nepal's National  Curriculum formulated by the “Curriculum Development Center (CDC)”, Sanothimi, Bhaktapur to attain the national goals of education. Students are required to appear for the Secondary Education Examination (SEE) in grade 10 conducted by the National Examination Board, Nepal.
               </p>
 
               <p className="kinder-text">
-              We focus on delivering a challenging and well-rounded education that equips students with the knowledge, skills, and confidence necessary for higher education and beyond. Our holistic approach ensures that each student is not only prepared for exams but also developed as versatile individuals embedded in them the skills required for the present world.
+              
+              We focus on delivering a challenging and well-rounded education that equips students with the knowledge, skills, and confidence necessary for higher education and beyond. Our holistic approach ensures that each student is not only prepared for exams but also developed as versatile  individuals embedded in them the skills required for the present world.
               </p>
             </div>
 

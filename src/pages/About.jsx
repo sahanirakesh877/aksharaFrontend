@@ -5,8 +5,8 @@ import School2 from '../../src/assets/School2.jpg'
 // Extracted static data for AboutContent
 const aboutData = {
   introText: [
-    `Established in 2011, Aksharaa School is a co-education institute offering day school from Kindergarten through grade 10. The school operates in three earthquake-resistant academic and administrative blocks spread over 23 ropanis of land. Our advanced infrastructure includes modern classrooms and facilities designed to provide a safe, technologically advanced learning environment that meets international standards.`,
-    `Ranked among internationally accredited schools, Aksharaa is renowned for employing innovative teaching methodologies in technology-enhanced classrooms. Our child-friendly facilities create sophisticated learning environments, encouraging students to engage deeply during their study hours. We are committed to fostering a physically, mentally, and intellectually stimulating environment that promotes the holistic development of young children`,
+    `Established in 2011, Aksharaa School, the Best School in Kathmandu is a co-education institute offering day school from Kindergarten through grade 10. The school operates in three earthquake-resistant academic and administrative blocks spread over 23 ropanis of land. Our advanced infrastructure includes modern classrooms and facilities designed to provide a safe, technologically advanced learning environment that meets international standards.`,
+    `Ranked among internationally accredited schools, Aksharaa is renowned for employing innovative teaching methodologies in technology-enhanced classrooms. Our child-friendly facilities create sophisticated learning environments, encouraging students to engage deeply during their study hours. We are committed to fostering a physically, mentally, and intellectually stimulating environment that promotes the holistic development of young children.`,
   ],
   whyChooseUs: [
     {
@@ -94,7 +94,7 @@ const AboutContent = memo(() => (
   <div className="container py-4">
     <div className="text-center ">
       <h4 className=" border-bottom-title head-color">
-        <span className="">INTRODUCTION / The Best School in Kathmandu</span>
+        <span className="">INTRODUCTION</span>
       </h4>
     </div>
     <div className="mb-5">

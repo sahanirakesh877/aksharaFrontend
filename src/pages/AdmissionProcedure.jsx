@@ -10,7 +10,7 @@ const AdmissionProcedure = () => {
       {/* Admission Banner Section */}
       <section className="kinderbanner my-md-0">
         <img src={BreadImg} alt="Kindergarten" />
-        <h3 className="xyz">Admission Process</h3>
+        <h3 className="xyz">Admission Procedure</h3>
         <nav className="breadcrumb-container">
           <ul className="breadcrumb">
             <li>
@@ -27,9 +27,9 @@ const AdmissionProcedure = () => {
           <div className="row">
             {/* Admission Process Description */}
             <div className="col-md-4">
-              <h3 className="kinder-head mb-md-1">Admission Process:</h3>
+              <h3 className="kinder-head mb-md-1">Admission Procedure:</h3>
               <p className="kinder-text">
-                The Admission Process is as follows:
+                The Admission Procedure is as follows:
               </p>
               <ul className="list-unstyled">
                 <li className="d-flex admission-li">
