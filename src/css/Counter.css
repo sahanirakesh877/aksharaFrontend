@@ -61,15 +61,15 @@
   margin: 0 0 15px;
 }
 
-.counter.teacher .counter-value {
+.counter.teachers .counter-value {
   background: var(--green2);
 }
 
-.counter.teacher .counter-icon {
+.counter.teachers .counter-icon {
   background: linear-gradient(to right, #fe8c00, var(--green2));
 }
 
-.counter.teacher h3 {
+.counter.teachers h3 {
   color: #883b6f;
 }
 

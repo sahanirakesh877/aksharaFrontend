@@ -54,19 +54,19 @@ const PhilosophySection = memo(({ navigate }) => (
       </div>
       <div className="row d-flex align-items-start mt-4">
         <div className="col-lg-6 col-md-12 mb-4">
-          <p className="mission-p">
+          <p className="textcenter">
             Aksharaa School adopts a student-centered, constructivist
             philosophy, fostering autonomous learning and emphasizing awareness,
             autonomy, and authenticity. We cater to diverse intelligences,
             promoting holistic growth through a balanced education system.
           </p>
-          <p className="mission-p">
+          <p className="textcenter">
             Our Learning-Reinforcement-Practice-Application (LRPA) module
             enhances cognitive abilities with fun and curiosity, encouraging
             critical thinking, collaboration, creativity, and problem-solving.
             This prepares students to be global citizens.
           </p>
-          <p className="mission-p">
+          <p className="textcenter">
             We value respect and diversity, blending traditional values with
             modern technology. Through national festivals and educational trips,
             we instill patriotism and global awareness, aiming to nurture
@@ -77,7 +77,7 @@ const PhilosophySection = memo(({ navigate }) => (
           </button>
         </div>
         <div className="col-lg-6 col-md-12">
-          <video width="100%" height="auto" controls className="mission-p">
+          <video width="100%" height="auto" controls className="textcenter">
             <source
               src="https://www.aksharaaschool.edu.np/assets/aksharaa-space.mp4"
               type="video/mp4"
@@ -91,15 +91,15 @@ const PhilosophySection = memo(({ navigate }) => (
 ));
 
 const AboutContent = memo(() => (
-  <div className="container py-4">
-    <div className="text-center ">
+  <div className="container ">
+    <div className="text-center mb-3 ">
       <h4 className=" border-bottom-title head-color">
         <span className="">INTRODUCTION</span>
       </h4>
     </div>
     <div className="mb-5">
       {aboutData.introText.map((text, index) => (
-        <p className="mission-p" key={index}>
+        <p className="textcenter " key={index}>
           {text}
         </p>
       ))}
@@ -122,8 +122,8 @@ const AboutContent = memo(() => (
         )}
       </ul>
     </div>
-    <div className="mt-5">
-      <p className="mission-p">
+    <div className="mt-3">
+      <p className="textcenter">
         Through the implementation of a
         Learning-Reinforcement-Practice-Application (LRPA) approach that
         incorporates creative teaching techniques, ongoing reinforcement,
@@ -157,14 +157,14 @@ const About = () => {
         <h2 className="w-100 border-bottom-title head-color text-center py-2 mb-2">
           <span className="addcolor">About Us</span>
         </h2>
-        <p className="mission-p">
+        <p className="textcenter">
           Aksharaa School provides an enriching educational experience with its
           blend of modern facilities and innovative teaching methods. Our
           expansive premises feature spacious buildings and full-sized
           playgrounds, offering a holistic learning environment that extends
           beyond traditional classroom settings.
         </p>
-        <p className="mission-p">
+        <p className="textcenter">
           At Aksharaa School, we are committed to integrating cutting-edge
           technology into our curriculum. Our classrooms are equipped with
           computers, laptops, projectors, and other advanced tools, facilitating
@@ -172,7 +172,7 @@ const About = () => {
           students in conducting research, creating multimedia presentations,
           and collaborating effectively on group projects.
         </p>
-        <p className="mission-p">
+        <p className="textcenter">
           We pride ourselves on fostering critical thinking and problem-solving
           skills through hands-on experiences. Our students engage in a variety
           of enriching activities, including educational field trips, guest
@@ -180,7 +180,7 @@ const About = () => {
           broaden their perspectives and apply classroom knowledge to real-world
           situations.
         </p>
-        <p className="mission-p">
+        <p className="textcenter">
           Our approach to education combines intellectual mentoring with
           practical application. Students are encouraged to explore, discuss,
           and apply their knowledge through diverse methods such as role plays,
@@ -188,7 +188,7 @@ const About = () => {
           practice not only strengthens their understanding but also prepares
           them for future challenges with confidence and adaptability.
         </p>
-        <p className="mission-p">
+        <p className="textcenter">
           At Aksharaa School, we believe in nurturing well-rounded individuals
           who are ready to make meaningful contributions to society. Our focus
           on holistic development ensures that students leave us not only with

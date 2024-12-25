@@ -25,7 +25,7 @@ const InfraDetails = () => {
         {/* Title and Description Section */}
         <div className="col-lg-8 text-center">
           <h1 className="infra-details-title">{infraItem.title}</h1>
-          <p className=" mission-p">{infraItem.description}</p>
+          <p className=" textcenter">{infraItem.description}</p>
         </div>
       </div>  
 

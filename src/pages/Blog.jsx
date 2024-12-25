@@ -57,7 +57,7 @@ const Blog = () => {
     {
       id: 1,
       title: "PTM",
-      date: "2081-Pou-13",
+      date: "2081-Poush-13",
       des: "2nd Diagnostic Test",
     },
     // {
@@ -414,9 +414,9 @@ const Blog = () => {
                   <div className="col-md-6 mb-4" key={item.id}>
                     <div className="d-flex justify-content-center align-items-center p-3 border">
                       <div className="calenderBox d-flex justify-content-center align-items-center flex-column">
-                        <span className="fs-1">{item.date.slice(9, 11)}</span>
+                        <span className="fs-1">{item.date.slice(11, 15)}</span>
                         <span className="calen-date">
-                          {item.date.slice(5, 8)}
+                          {item.date.slice(5, 10)}
                         </span>
                       </div>
                       <div className="calender-text d-flex flex-column justify-content-center align-items-start ms-3 flex-fill">
@@ -484,10 +484,10 @@ const Blog = () => {
                             <h5 className="card-title text-dark text-center">
                               {project.title}
                             </h5>
-                            <p className="card-text">
+                            {/* <p className="card-text">
                               {project.description.slice(0,60)}
-                            </p>
-                            <button className="border-0 ">View More</button>
+                            </p> */}
+                            <button className="border-0 px-4 btn bg-success text-light">View More</button>
                           </div>
                         </div>
                       </Link>

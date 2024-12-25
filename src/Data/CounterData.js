@@ -33,7 +33,7 @@
 const counter = [
   {
     id: 1,
-    name: "Teacher",
+    name: "Teachers & Staff",
     icon: "fa fa-user",
     counterNo: 200,
   },

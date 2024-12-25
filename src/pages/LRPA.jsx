@@ -8,11 +8,8 @@ import Observation from "../../src/assets/LRPA/Active Observation/GP4A7847.jpg";
 import Continous from "../../src/assets/LRPA/Continous Assestment/GP4A7977.jpg";
 import Time from "../../src/assets/LRPA/Time Bound/GP4A7970.jpg";
 
-
-
-
 const LRPA = () => {
-  const brandImg = [Assignment,Observation,Continous,Time];
+  const brandImg = [Assignment, Observation, Continous, Time];
   const responsive = {
     0: { items: 1 },
     568: { items: 2 },
@@ -20,12 +17,17 @@ const LRPA = () => {
   };
 
   const carouselItems = brandImg.map((img, index) => (
-    <div className="academic-itemk" key={index}  >
-      <img src={img} alt={`Brand ${index + 1}`} className="img-fluid object-fit " style={{
-      width: '100%',
-      height: 'auto',
-      objectFit: 'cover', 
-    }} />
+    <div className="academic-itemk" key={index}>
+      <img
+        src={img}
+        alt={`Brand ${index + 1}`}
+        className="img-fluid object-fit "
+        style={{
+          width: "100%",
+          height: "auto",
+          objectFit: "cover",
+        }}
+      />
     </div>
   ));
 
@@ -84,12 +86,27 @@ const LRPA = () => {
       <div className="container">
         <div className="row">
           <h2 className="text-center border-bottom-title  pt-5 addcolor">
-            Learn Through LRPA <span className="head-color">: A Comprehensive Approach to Education </span>
+            Learn Through LRPA{" "}
+            <span className="head-color">
+              : A Comprehensive Approach to Education{" "}
+            </span>
           </h2>
-          <p className="lrpa-p-text py-2">
-            
-The LRPA (Learning, Reinforcement, Practice, and Application) model implemented at Aksharaa represents a distinctive approach to education, seamlessly blending traditional classroom instruction with hands-on, real-world application. In this innovative learning environment, students not only grasp theoretical concepts but also achieve mastery through repeated practical engagement. The educational emphasis lies in identifying and nurturing each student's individual strengths and addressing their challenges, fostering an environment where exploration is encouraged. The overarching goal is to empower students to apply their acquired knowledge and skills in practical, real-life scenarios. The adoption of this approach serves as a guiding principle, facilitating learning through the practical application of knowledge, thereby preparing children for the challenges and complexities of the contemporary world.
-
+          <p className="textcenter py-2">
+            The LRPA (Learning, Reinforcement, Practice, and Application) model
+            implemented at Aksharaa represents a distinctive approach to
+            education, seamlessly blending traditional classroom instruction
+            with hands-on, real-world application. In this innovative learning
+            environment, students not only grasp theoretical concepts but also
+            achieve mastery through repeated practical engagement. The
+            educational emphasis lies in identifying and nurturing each
+            student's individual strengths and addressing their challenges,
+            fostering an environment where exploration is encouraged. The
+            overarching goal is to empower students to apply their acquired
+            knowledge and skills in practical, real-life scenarios. The adoption
+            of this approach serves as a guiding principle, facilitating
+            learning through the practical application of knowledge, thereby
+            preparing children for the challenges and complexities of the
+            contemporary world.
           </p>
         </div>
       </div>
@@ -111,9 +128,9 @@ The LRPA (Learning, Reinforcement, Practice, and Application) model implemented 
                   <p className="lrpamid-p pt-2">
                     <strong>{section.title}</strong> {section.text}
                   </p>
-                  <div className={section.numberClass + " fs-5"}>
+                  {/* <div className={section.numberClass + " fs-5"}>
                     {section.number}
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-md-4 px-md-0">
                   <div className="contimg">
@@ -135,9 +152,9 @@ The LRPA (Learning, Reinforcement, Practice, and Application) model implemented 
                   <p className="lrpamid-p pt-2">
                     <strong>{section.title}</strong> {section.text}
                   </p>
-                  <div className={section.numberClass + " fs-5"}>
+                  {/* <div className={section.numberClass + " fs-5"}>
                     {section.number}
-                  </div>
+                  </div> */}
                 </div>
               </>
             )}

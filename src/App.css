@@ -490,6 +490,49 @@ a {
 }
 
 
-.textjustify{
+/* Default styles */
+.textjustify {
+  text-align: left;
+  word-spacing: 2px;
+}
+
+.textcenter {
   text-align: justify;
+  word-spacing: 2px;
+}
+
+/* Styles for small screens (mobile) */
+@media (max-width: 576px) {
+  .textjustify {
+      text-align: center; 
+      word-spacing: 1px; 
+  }
+  .textcenter {
+      text-align: left; 
+      word-spacing: 1px; 
+  }
+}
+
+/* Styles for medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .textjustify {
+      text-align: left; 
+      word-spacing: 2px; 
+  }
+  .textcenter {
+      text-align: justify; 
+      word-spacing: 1.5px; 
+  }
+}
+
+/* Styles for large screens (desktops) */
+@media (min-width: 769px) {
+  .textjustify {
+      text-align: left; 
+      word-spacing: 2px; 
+  }
+  .textcenter {
+      text-align: justify;
+      word-spacing: 2px; 
+  }
 }

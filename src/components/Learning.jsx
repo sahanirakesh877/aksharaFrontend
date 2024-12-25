@@ -40,7 +40,9 @@ const Learning = () => {
             <div className={`col-md-4 pe-4  ${activeSection ? "d-none" : ""}`}>
               <h5>Aksharaa‘s Guiding Principle</h5>
               <h2 className="fw-semibold sanskar  ">संस्कारयुक्त शिक्षा</h2>
-              <p className="lrpa-text ">
+              <p className=" text-light  "
+                style={{  textAlign: "left",  }}
+                >
               Our guiding concept at Aksharaa School is "संस्कारयुक्त शिक्षा" which translates education infused with values. Our commitment lies in shaping individuals of exemplary character. Placing greater emphasis on instilling and nurturing the value of integrity rather than solely focusing on textbook knowledge or examination preparation, empowering students to navigate the world beyond the classroom with confidence and moral clarity. Our Learning-Reinforcement-Practice-Application (LRPA) module enhances cognitive abilities with fun and curiosity, encouraging critical thinking, collaboration, creativity, and problem-solving. We believe the entire development of a child's character and values to be an integral part of meaningful education, which goes beyond academic achievement. In addition to fostering academic development, our curriculum aims to cultivate values like respect, compassion, responsibility and many more. This positions Aksharaa as a top educational institution in Kathmandu, preparing students to become well rounded individuals who are both intellectually enriched and conscious of their moral and social responsibilities. 
               </p>
 

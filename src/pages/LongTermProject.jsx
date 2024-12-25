@@ -32,7 +32,7 @@ const LongTermProject = () => {
  {/* Video and Image Section */}
  <div className="row d-flex align-items-center mb-5">
     {/* Video Section */}
-    <div className="col-md-6">
+    {/* <div className="col-md-6">
       <h4  className="mb-4 text-center">Project Video</h4>
       <div className="ratio ratio-16x9 rounded shadow">
         <iframe
@@ -42,10 +42,10 @@ const LongTermProject = () => {
           className="rounded"
         ></iframe>
       </div>
-    </div>
+    </div> */}
 
     {/* Image Gallery Section */}
-    <div className="col-md-6">
+    <div className="col-md-12">
       <h4 className="mb-4 text-center">Project Demonstration</h4>
       <div className="d-flex flex-wrap gap-3 justify-content-center">
         {project.image.map((image, index) => (

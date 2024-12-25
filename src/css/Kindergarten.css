@@ -108,9 +108,9 @@
 .kinder-text {
     font-size: 0.95rem;
     line-height: 1.5;
+   
     text-align: justify;
     color: rgb(100, 96, 96);
-    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .kinder-ul {

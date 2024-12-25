@@ -72,8 +72,8 @@ const Mobilecheck = () => {
 
         {/* Sections */}
         <Section
-          title="High School (Class 8-10)"
-          description="Our Senior School program combines rigorous academics with value-based education, ensuring students are well-prepared for higher education and life’s challenges. Display of handmade crafts and DIY projects created by our students. Local & natural materials are used for creating these crafts."
+          title="Senior School (Grade 8-10)"
+          description="Our Senior School program combines rigorous academics with value-based education, ensuring students are well-prepared for higher education and real-life challenges. Counseling and support services are available to guide students through their academic and personal decisions. Our graduates leave with a strong academic foundation, leadership qualities, critical thinking skills, problem-solving skills and a deep sense of social responsibility.."
           image={seniorImg}
           imageAlt="Senior School"
           buttonText="Enroll now"
@@ -81,8 +81,8 @@ const Mobilecheck = () => {
         />
 
         <Section
-          title="Middle School (Class 6-7)"
-          description="Middle School education at Aksharaa encourages independent learning and ethical reasoning, equipping students with skills and values for future success. Our advisory programs provide additional support and mentorship."
+          title="Middle School (Grade 6-7)"
+          description="Middle School education at Aksharaa encourages independent ethical learning and reasoning, equipping students with the skills and values necessary for future success. Students learn to manage their time effectively taking responsibility for their own learning. Our advisory programs provide exposure, additional support and mentorship, helping students navigate this critical stage."
           image={middleImg}
           imageAlt="Girl"
           buttonText="Enroll now"
@@ -91,7 +91,7 @@ const Mobilecheck = () => {
         />
 
         <Section
-          title="Elementary School"
+          title="Elementary School (Grade 1-5)"
           description="Aksharaa’s Elementary School nurtures intellectual growth and character development, ensuring students excel academically while embodying ethical principles. We aim to develop confident, well-rounded individuals prepared for middle school and beyond."
           image={kindergartenImg}
           imageAlt="Girl 2"
@@ -100,8 +100,8 @@ const Mobilecheck = () => {
         />
 
         <Section
-          title="Kindergarten (PG-KG)"
-          description="In our Kindergarten classes, children learn through playful experiences while instilling values like kindness, honesty, and respect. Our fun and educational activities promote holistic growth, teaching empathy and cooperation."
+          title="Kindergarten Daycare - ECD II (PG-UKG)"
+          description="In our Kindergarten classes, children learn through playful experiences while instilling values like kindness, honesty, and respect, creating a strong educational foundation. Activities are carefully crafted to be fun and educational, promoting holistic growth. We believe in teaching children the importance of empathy and cooperation from an early age."
           image={elementaryImg}
           imageAlt="Kindergarten"
           buttonText="Enroll now"

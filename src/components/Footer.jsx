@@ -365,11 +365,17 @@ const Footer = () => {
                       </div>
 
                       <div className="col-md-4 col-sm-3 ">
-                        <div className="d-flex flex-column align-items-md-start align-items-center  text-center bg-white mb-2 p-2 rounded-1">
+                      <h5 className="text-center  text-white">
+                          Sister Organization
+                        </h5>
+                        <div className="d-flex flex-column align-items-md-start align-items-center  text-center bg-white mb-2  rounded-1">
+                        
                           <img 
                             src="/sisremove.png"
                             alt="sister organization..."
                             className="img-fluid "
+                            loading="lazy"
+                            // style={{ width: '200px', height: 'auto' }} 
                           />
 
                           <h6 className="w-100  head-color text-center">
@@ -381,9 +387,7 @@ const Footer = () => {
                             01-5426371
                           </h6>
                         </div>
-                        <h4 className="text-center  text-white">
-                          Sister Organization
-                        </h4>
+                      
                       </div>
                     </div>
                   </div>

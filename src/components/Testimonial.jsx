@@ -54,8 +54,15 @@ const Testimonial = () => {
             />
           </div>
           <div className="content">
-            <h4 className="name">{testimonial.parentname}</h4>
-            <span className="post">Parent</span>
+            {/* <h4 className="name">{testimonial.parentname}</h4> */}
+            <h4 className="name">
+  {testimonial.parentname.split(",")[0]} 
+  <br />
+  <small className="position" style={{ fontSize: "0.9rem", color: "#777" }}>
+    {testimonial.parentname.split(",")[1]}
+  </small>
+</h4>
+           
             <ul className="rating">
               {Array(testimonial.rating || 5)
                 .fill()

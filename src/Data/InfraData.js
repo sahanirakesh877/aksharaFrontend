@@ -30,9 +30,7 @@ import infirmary1 from '../../src/assets/infrastructure/infirmary/GP4A8031.jpg';
 import infirmary2 from '../../src/assets/infrastructure/infirmary/GP4A8053.jpg';
 import infirmary3 from '../../src/assets/infrastructure/infirmary/GP4A8130.jpg';
 
-import visitoelounge1 from '../../src/assets/infrastructure/visitorlounge/GP4A7964.jpg';
-import visitoelounge2 from '../../src/assets/infrastructure/visitorlounge/GP4A7985.jpg';
-import visitoelounge3 from '../../src/assets/infrastructure/visitorlounge/GP4A8373.jpg';
+
 
 
 import outdoor1 from '../../src/assets/infrastructure/outdoor/GP4A7705.jpg';

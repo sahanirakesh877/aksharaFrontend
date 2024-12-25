@@ -62,7 +62,7 @@ const Middleschool = () => {
             </h3>
             <div className="col-md-12 col-12 px-4 py-2">
               <p className="kinder-text">
-              The Middle School is, where the journey of discovery and growth continues for students in grade 6-7 as they experience academic and social  development. At our school, we believe that education is not just about imparting knowledge but also about shaping character and nurturing values. Our commitment to providing quality academic education, coupled with a strong focus on ethics and moral education, sets us apart and makes our middle school experience truly extraordinary
+              The Middle School, is where the journey of discovery and growth continues for students in grade 6-7 as they experience academic and social  development. At our school, we believe that education is not just about imparting knowledge but also about shaping character and nurturing values. Our commitment to providing quality academic education, coupled with a strong focus on ethics and moral education, sets us apart and makes our middle school experience truly extraordinary
               </p>
               <p className="kinder-text">
               In Middle School, we recognize that students are at a critical stage of their development. They are curious, energetic, and eager to explore the world around them. Our dynamic learning environment is designed to cater to their evolving needs, fostering a love for learning and encouraging intellectual curiosity.

@@ -13,7 +13,7 @@ const Infrastructure = () => {
               <h3 className="w-100 border-bottom-title head-color">
                 <span className="addcolor">Our </span> Infrastructure
               </h3>
-              <p className=" mission-p">
+              <p className="textcenter">
                 At Aksharaa School, we believe that a well-designed
                 infrastructure is vital for nurturing young minds and supporting
                 their educational journey. Our school, strategically situated in
@@ -24,7 +24,7 @@ const Infrastructure = () => {
                 physical health, and overall well-being, ensuring that they have
                 access to the best resources for their development.
               </p>
-              <p className="mission-p">
+              <p className="textcenter">
                 Our infrastructure is not just about providing physical spaces;
                 it's about creating an environment where students can explore,
                 learn, and grow holistically. From advanced technological
@@ -45,7 +45,6 @@ const Infrastructure = () => {
                       <div className="col-6 d-flex flex-column justify-content-center align-items-center">
                         <i className={`${item.iconClass} infra-icon mb-3`}></i>
                         <h4>{item.title}</h4>
-                        {/* <p className="card-texts">{item.description}</p> */}
                       </div>
 
                       {/* Right Side: Image */}
